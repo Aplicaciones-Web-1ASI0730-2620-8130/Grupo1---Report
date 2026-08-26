@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="300" height="300" alt="UPC_logo_transparente" src="https://github.com/user-attachments/assets/27a7b6df-fdb4-4135-bb20-cd8379d94c96" />
+<img src="assets/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
