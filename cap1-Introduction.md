@@ -4,18 +4,16 @@
 ### 1.1.1 Descripción de la Startup
 <a id="1-1-1-descripcion-de-la-startup"></a>
 
-
 ### 1.1.2. Perfiles de los Miembros del Equipo
 <a id="1-1-2-perfiles-de-los-miembros-del-equipo"></a>
 
-docs: update formatting and improve table structure in readme.
 | Foto | Apellido y Nombre | 
 | --- | --- | 
-![italo](assets/images/chapter-1/diego.jpeg) | *Italo Raul Pancorbo Amorós - u202418029* 
-![eduardo](assets/images/chapter-1/dylan.jpeg) | *Eduardo Martín Guillen Chavez - U202421413* 
-![eduardo.t](assets/images/chapter-1/cesar.jpeg) | *Eduardo Miguel Taza Curay - U* 
-![andy](assets/images/chapter-1/alvaro.png) | *Andy Alfredo Hipolito Salcedo Muñoz -  U20241E417* 
-![miguel](assets/images/chapter-1/mauricio.jpeg) | *Miguel Angel Junior Roman Lopez - U*  
+| | |
+| | |
+| | |
+| | |
+| | |
 
 ## 1.2 Solution Profile
 <a id="1-2-solution-profile"></a>
@@ -24,24 +22,17 @@ docs: update formatting and improve table structure in readme.
 
 #### What / ¿QUÉ?
 
-
 #### When / ¿CUÁNDO?
-
 
 #### Where / ¿DÓNDE?
 
-
 #### Who / ¿QUIÉN?
-
 
 #### Why / ¿POR QUÉ?
 
-
 #### How / ¿CÓMO?
 
-
 #### How Much / ¿CUÁNTO?
-
 
 ### 1.2.2 Lean UX Process
 <a id="1-2-2-lean-ux-process"></a>
@@ -54,47 +45,69 @@ docs: update formatting and improve table structure in readme.
 <a id="1-2-2-2-lean-ux-assumptions"></a>
 
 ##### A. Business Assumptions
-1. **Creemos que nuestros clientes necesitan:** 
+1. **Creemos que nuestros clientes necesitan:**
 
-2. **Estas necesidades se resuelven con:** 
+2. **Estas necesidades se resuelven con:**
 
-3. **Nuestros primeros clientes serán:** 
+3. **Nuestros primeros clientes serán:**
 
-4. **Valor #1 esperado:** 
+4. **Valor #1 esperado:**
 
-5. **Beneficios adicionales:** 
+5. **Beneficios adicionales:**
 
-6. **Adquisición:** 
+6. **Adquisición:**
 
-7. **Ingresos:** 
+7. **Ingresos:**
 
-8. **Competencia principal:** 
+8. **Competencia principal:**
 
-9. **Ventaja competitiva:** 
+9. **Ventaja competitiva:**
 
-10. **Mayor riesgo de producto:** 
+10. **Mayor riesgo de producto:**
 
-11. **Mitigación:** 
+11. **Mitigación:**
+
 
 ###### B. User Assumptions
-**- ¿Quién es el usuario?** 
+**- ¿Quién es el usuario?**
 
-**- ¿Dónde encaja el producto?** 
-**- Problema a resolver:** 
+**- ¿Dónde encaja el producto?**
 
-**- Uso típico:** 
+**- Problema a resolver:**
 
-**- Características importantes:** 
+**- Uso típico:**
 
-**- Look & feel:** 
+**- Características importantes:**
+
+**- Look & feel:**
+
 
 ##### C. User Outcome & Benefit Assumptions
+- 
+
+- 
+
+- 
+
+- 
 
 
 ##### D. Business Outcome Assumptions
+- 
+
+- 
+
+- 
+
+- 
 
 
 ##### E. Feature Assumptions
+1. **Dashboard Centralizado:**
+
+2. **Generador de Reportes Automático:**
+
+3. **Sistema de Alertas Tempranas:**
 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
@@ -115,12 +128,22 @@ docs: update formatting and improve table structure in readme.
 #### 1.2.2.4. Lean UX Canvas
 <a id="1-2-2-4-lean-ux-canvas"></a>
 
+| **Business Problem** | **Solutions** | **Business Outcomes** |
+| :------------------- | :------------ | :------------------- |
+| | | |
 
+| **Users** | **User Outcomes & Benefits** |
+| :-------- | :-------------------------- |
+| | |
+
+| **Hypotheses** | **What’s the most important thing we need to learn first?** | **What’s the least amount of work we need to do to learn the next most important thing?** |
+| :------------- | :------------------------ | :----------------------- |
+| | | |
 
 ## 1.3 Segmentos Objetivos
 <a id="1-3-segmentos-objetivos"></a>
 
-### Segmento 1: 
+### Segmento 1: Líderes y Jefes de Gestión de Proyectos
 
 
-### Segmento 2: 
+### Segmento 2: Empresas Medianas y Grandes con Múltiples Portafolios
