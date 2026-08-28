@@ -13,7 +13,7 @@ docs: update formatting and improve table structure in readme.
 | --- | --- | 
 ![italo](assets/images/chapter-1/diego.jpeg) | *Italo Raul Pancorbo Amorós - u202418029* 
 ![eduardo](assets/images/chapter-1/dylan.jpeg) | *Eduardo Martín Guillén Chávez - U202421413* 
-![eduardo.t](assets/images/chapter-1/cesar.jpeg) | *Eduardo Miguel Taza Curay - U* 
+![eduardo.t](assets/images/chapter-1/cesar.jpeg) | *Eduardo Miguel Taza Curay - U22255522* 
 ![andy](assets/images/chapter-1/alvaro.png) | *Andy Alfredo Hipolito Salcedo Muñoz -  U20241E417* 
 ![miguel](assets/images/chapter-1/mauricio.jpeg) | *Miguel Angel Junior Roman Lopez - U*  
 
