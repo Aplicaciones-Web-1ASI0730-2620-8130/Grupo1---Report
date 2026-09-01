@@ -66,72 +66,27 @@
 ---
 
 ## 4. Requerimientos de Negocio Compartidos (Fullstack)
-| ID | Título | Descripción | Criterios de Aceptación| Relacionado con |
-| :--- | :--- | :--- | :--- | :--- |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+
+| ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
+|---|---|---|---|---|
+| US40 | Creación de Proyecto Vial | Como jefe de gestión ambiental, quiero crear un proyecto asignando ubicación y fechas para tener su registro en la plataforma. | Dado que los datos son válidos, cuando se guarda, entonces el proyecto aparece en el portafolio y en el mapa. | EP01: Proyecto |
+| US41 | Registro de Punto de Monitoreo | Como supervisor de obra, quiero registrar puntos de monitoreo geolocalizados dentro de un proyecto para estructurar la toma de mediciones. | Dado que se crea un proyecto, cuando se agrega un punto con coordenadas, entonces queda disponible para el registro de indicadores. | EP02: Indicador |
+| US42 | Asignación de Responsable por Proyecto | Como PMO/Gerente, quiero asignar un responsable ambiental a cada proyecto para dar claridad de accountability. | Dado que se crea el proyecto, cuando se asigna un usuario, entonces este recibe notificación de asignación. | EP08: Usuario |
+| US43 | Comentarios en Incidencia | Como usuario, quiero dejar comentarios en una incidencia para mantener la comunicación fluida entre campo y oficina. | Dado que se visualiza una incidencia, cuando se envía un mensaje, entonces se guarda con fecha y autor. | EP04: Incidencia |
+| US44 | Salud Ambiental del Portafolio | Como gerente de cartera, quiero ver un gráfico de salud ambiental de todos mis proyectos para tomar decisiones preventivas. | Dado que hay incumplimientos, cuando se abre el dashboard multi-proyecto, entonces el indicador general cambia a Rojo/Ámbar. | EP06: Dashboard |
+| US45 | Reporte de Auditoría por Proyecto | Como consultora ambiental, quiero generar un reporte PDF por proyecto para presentarlo ante fiscalización. | Dado que se elige exportar, cuando el sistema procesa, entonces descarga el reporte con histórico e incidencias. | EP07: Reporte |
+| US46 | Alerta de Incumplimiento Inminente | Como responsable ambiental, quiero recibir una alerta cuando un indicador se acerque al límite normativo, no solo cuando lo supere. | Dado que el valor está dentro del rango de advertencia (ej. 90% del límite), cuando se registra, entonces se dispara una alerta preventiva. | EP03: Alerta |
+| US47 | Alerta de Incidencia sin Atender | Como jefe de gestión ambiental, quiero recibir alerta si una incidencia no tiene seguimiento en 3 días para intervenir a tiempo. | Dado que no hay actividad registrada en 72h, cuando el sistema valida, entonces marca la incidencia como "estancada" y notifica. | EP03: Alerta |
+| US48 | Eliminación/Archivo de Proyecto | Como PMO Lead, quiero archivar proyectos finalizados para mantener organizado el portafolio activo. | Dado que se confirma archivar, cuando se ejecuta, entonces el proyecto desaparece de la vista activa pero conserva su histórico. | EP01: Proyecto |
+| US49 | Seguimiento de Indicadores por Proyecto | Como PM, quiero monitorear el estado histórico de los indicadores de un proyecto para ver su evolución en el tiempo. | Dado que se accede al panel del proyecto, cuando se filtran por tipo, entonces se muestra la tendencia en el tiempo. | EP02: Indicador |
+| US50 | Visualización de KPIs Ambientales | Como Stakeholder, quiero ver indicadores clave (% cumplimiento, incidencias abiertas, tiempo promedio de resolución) para evaluar el desempeño. | Dado que el dashboard está activo, cuando se consulta, entonces muestra los KPIs actualizados. | EP06: Dashboard |
+| US51 | Actualización en Tiempo Real del Dashboard | Como usuario, quiero que el dashboard se actualice solo al registrarse una nueva medición para tener datos confiables sin recargar. | Dado que hay un cambio en la base de datos, cuando ocurre, entonces la interfaz refleja el cambio automáticamente. | EP06: Dashboard |
+| US52 | Historial de Estados de Incidencia | Como Stakeholder, quiero ver el historial de cambios de una incidencia para entender su evolución completa. | Dado que se consulta la bitácora, cuando se despliega, entonces muestra autor, fecha y estado anterior/nuevo. | EP04: Incidencia |
+| US53 | Roles y Permisos | Como administrador de cuenta, quiero asignar roles (Admin, Supervisor, Lector) para proteger la información sensible del proyecto. | Dado que se invita a un usuario, cuando se le asigna un rol, entonces se limitan sus acciones según el rol. | EP08: Usuario |
+| US54 | Control de Versiones de Documento Normativo | Como consultor ambiental, quiero conservar el historial de versiones de instrumentos de gestión ambiental subidos para no perder revisiones anteriores. | Dado que se sube un archivo con el mismo nombre, cuando se detecta duplicado, entonces se crea una nueva versión sin sobrescribir. | EP10: Documento |
+| US55 | Búsqueda Global de Proyectos/Incidencias | Como Líder, quiero buscar proyectos o incidencias por nombre/código para ahorrar tiempo localizando información. | Dado que se ingresa un término, cuando se busca, entonces lista resultados relevantes de todo el sistema. | EP10: Documento |
+| US56 | Documentos Obligatorios por Hito Normativo | Como consultora ambiental, quiero marcar qué documentos son indispensables para un hito de auditoría, para estandarizar el proceso. | Dado que se define el hito, cuando se marca como "Requerido", entonces bloquea el cierre del hito si el documento falta. | EP10: Documento |
+| US57 | Upgrade/Downgrade de Plan | Como cliente, quiero cambiar mi plan de suscripción para ajustarlo a mi cantidad real de proyectos activos. | Dado que el usuario solicita cambio de plan, cuando se confirma, entonces se actualizan los límites y el ciclo de facturación. | EP09: Suscripción |
 
 ---
 
