@@ -1,4 +1,4 @@
-# Introduccion
+# Introducción
 
 El presente proyecto tiene como finalidad el diseño, desarrollo e implementación de una solución SaaS, compuesta por un RESTful API de elaboración interna y una Web Application integrada con dicho API, con el objetivo de resolver problemáticas reales del sector de infraestructura vial en el ámbito de la gestión y el cumplimiento ambiental. Esta solución se construye bajo un enfoque de ingeniería de software moderna, incorporando metodologías ágiles, diseño centrado en el usuario (Lean UX) y una arquitectura orientada a servicios.
 
