@@ -21,22 +21,22 @@
 ## 2. Web Application (Frontend Interactivo)
 | ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 | :--- | :--- | :--- | :--- | :--- |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| US09|Formulario de Registro de Indicador | Como responsable de gestión ambiental quiero llenar un formulario validado para registrar mediciones sin enviar errores al servidor.| Dado que un campo numérico es obligatorio, cuando se deja vacío o fuera de rango, entonces el botón "Guardar" se deshabilita.|EP02: Indicador |
+| US10| Tarjetas de Proyecto (Cards)| Como usuario de EcoRoad quiero ver tarjetas visuales de cada proyecto para entender su estado ambiental de un vistazo.|Dado que se carga el portafolio, cuando llegan los datos, entonces se renderiza una Card por proyecto con semáforo de estado (verde/amarillo/rojo). | EP06: Dashboard|
+| US11|	Tablero Kanban de Incidencias |Como responsable de gestión ambiental, quiero mover incidencias entre columnas (Abierta/En revisión/Resuelta) para gestionar mi flujo visualmente. |Dado que se arrastra una incidencia, cuando se suelta en otra columna, entonces el estado cambia y se persiste | EP04: Incidencia|
+|US12 |	Vista de Mapa Interactivo |Como responsable de gestión ambiental quiero ver un mapa con pines de colores por punto de monitoreo para identificar zonas críticas rápidamente. | Dado que se cargan los puntos del proyecto, cuando el mapa renderiza, entonces cada pin muestra color según nivel de riesgo del indicador.| EP05: Mapa|
+| US13|	Filtro por Tipo de Indicador | Como responsable de gestión ambiental quiero filtrar el mapa/dashboard por tipo de indicador (aire, ruido, agua) para enfocar mi revisión.|Dado que hay indicadores de varios tipos, cuando se selecciona un filtro, entonces la vista se actualiza al instante. | EP02: Indicador|
+|US14 |	Adjuntar Evidencia Fotográfica |Como responsable de gestión ambiental quiero arrastrar fotos al navegador para adjuntarlas como evidencia de una medición. | Dado que el archivo está en el dispositivo, cuando se suelta o selecciona, entonces inicia la barra de progreso de subida.| EP10: Documento|
+|US15 | Barra de Progreso de Cumplimiento|Como jefe de proyecto, quiero ver una barra de progreso del % de indicadores dentro de norma para medir el avance rápidamente. | Dado que se actualizan indicadores, cuando cambia el estado, entonces la barra se recalcula.| EP06: Dashboard|
+| US16| Feed de Comentarios en Incidencia| Como usuario de EcoRoad quiero ver el historial de comentarios de una incidencia para entender el contexto de su seguimiento.| Dado que hay mensajes previos, cuando se abre la incidencia, entonces se visualizan en formato de burbujas de texto con fecha y autor.| EP04: Incidencia|
+|US17 | Alertas y Notificaciones| Como usuario de EcoRoad quiero un icono de notificaciones para ver alertas de incumplimientos recientes.| Dado que llega una nueva alerta, cuando el usuario ve el header, entonces la campana muestra un punto rojo con el conteo.|EP03: Alerta |
+|US18 |Tabla de Incidencias Críticas | Como gerente de carrera de proyectos quiero una tabla con filas resaltadas para identificar las incidencias críticas de un vistazo.|Dado que la severidad es alta, cuando se renderiza la fila, entonces el fondo se pinta de rojo. | EP04: Incidencia|
+| US19| Selector de Rango de Fechas| Como usuario de EcoRoad, quiero elegir un rango de fechas para revisar el histórico de mediciones de un periodo específico.| Dado que se abre el selector, cuando se elige un rango, entonces el dashboard filtra los datos a ese periodo.| EP06: Dashboard|
+| US20|Edición Visual de Punto de Monitoreo | Como responsable de gestión ambiental quiero un botón de editar en cada punto de monitoreo para corregir su ubicación o umbral normativo.| Dado que el usuario presiona "Editar", cuando guarda, entonces la UI se actualiza sin recargar la página. | EP01: Proyecto|
+|US21 | Login Minimalista|Como usuario de EcoRoad quiero una interfaz de login minimalista para reducir la fricción al entrar a la plataforma. | Dado que el usuario carga la URL, cuando no hay sesión activa, entonces ve un login centrado y limpio.| EP08: Usuario|
+|US22 |	Vista de Lista de Proyectos |Como gerente de carrera de proyectos quiero una vista de lista compacta para ver más proyectos en una sola pantalla. | Dado que el usuario cambia la vista, cuando se activa "Lista", entonces las tarjetas se convierten en filas. |EP01: Proyecto |
+| US23| Selector de Color de Marca|Como administrador de cuenta Enterprise, quiero elegir el color corporativo para que el dashboard refleje la identidad de mi empresa. | Dado que se abre configuración, cuando se elige un color, entonces los elementos de UI cambian de tono.| EP09: Suscripción|
+
 
 ---
 
