@@ -96,71 +96,64 @@
 ### 3.3. Product Backlog
 <a id="3-3-product-backlog"></a>
 
+## 3.3. Product Backlog
+
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
-| :--- | :--- | :--- | :--- | :--- |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+|---|---|---|---|---|
+| 1 | US21 | Login Minimalista | Como usuario de EcoRoad, quiero una interfaz de login minimalista para reducir la fricción al entrar a la plataforma. | 2 |
+| 2 | US24 | Auth JWT | Como Backend, quiero generar tokens JWT para asegurar todas las peticiones a la API. | 5 |
+| 3 | US32 | Cifrado de Contraseñas | Como seguridad, quiero cifrar contraseñas con BCrypt para proteger los datos de los usuarios. | 3 |
+| 4 | US01 | Autenticación | Como usuario de EcoRoad, quiero poder iniciar sesión para acceder a mis cuentas y perfiles. | 2 |
+| 5 | US53 | Roles y Permisos | Como administrador de cuenta, quiero asignar roles (Admin, Supervisor, Lector) para proteger la información sensible del proyecto. | 8 |
+| 6 | US40 | Creación de Proyecto Vial | Como jefe de gestión ambiental, quiero crear un proyecto asignando ubicación y fechas para tener su registro en la plataforma. | 3 |
+| 7 | US26 | CRUD Proyectos API | Como Dev, quiero endpoints GET/POST/PUT/DELETE para la persistencia de proyectos viales. | 5 |
+| 8 | US38 | Validación de Umbral por Tipo de Norma | Como API, quiero permitir configurar distintos límites normativos según el tipo de zona/proyecto para adaptarse a la regulación vigente. | 5 |
+| 9 | US42 | Asignación de Responsable por Proyecto | Como PMO/Gerente, quiero asignar un responsable ambiental a cada proyecto para dar claridad de accountability. | 3 |
+| 10 | US41 | Registro de Punto de Monitoreo | Como supervisor de obra, quiero registrar puntos de monitoreo geolocalizados dentro de un proyecto para estructurar la toma de mediciones. | 5 |
+| 11 | US20 | Edición Visual de Punto de Monitoreo | Como responsable de gestión ambiental, quiero un botón de editar en cada punto de monitoreo para corregir su ubicación o umbral normativo. | 2 |
+| 12 | US22 | Vista de Lista de Proyectos | Como gerente de cartera de proyectos, quiero una vista de lista compacta para ver más proyectos en una sola pantalla. | 2 |
+| 13 | US48 | Eliminación/Archivo de Proyecto | Como PMO Lead, quiero archivar proyectos finalizados para mantener organizado el portafolio activo. | 3 |
+| 14 | US10 | Tarjetas de Proyecto (Cards) | Como usuario de EcoRoad, quiero ver tarjetas visuales de cada proyecto para entender su estado ambiental de un vistazo. | 3 |
+| 15 | US27 | Endpoint de Registro de Indicador | Como Dev, quiero un endpoint POST para recibir mediciones ambientales de campo y persistirlas. | 5 |
+| 16 | US09 | Formulario de Registro de Indicador | Como responsable de gestión ambiental, quiero llenar un formulario validado para registrar mediciones sin enviar errores al servidor. | 3 |
+| 17 | US13 | Filtro por Tipo de Indicador | Como responsable de gestión ambiental, quiero filtrar el mapa/dashboard por tipo de indicador (aire, ruido, agua) para enfocar mi revisión. | 2 |
+| 18 | US49 | Seguimiento de Indicadores por Proyecto | Como PM, quiero monitorear el estado histórico de los indicadores de un proyecto para ver su evolución en el tiempo. | 5 |
+| 19 | US19 | Selector de Rango de Fechas | Como usuario de EcoRoad, quiero elegir un rango de fechas para revisar el histórico de mediciones de un periodo específico. | 3 |
+| 20 | US28 | Motor de Comparación Normativa | Como API, quiero comparar cada medición contra el límite normativo correspondiente para determinar si hay incumplimiento. | 8 |
+| 21 | US29 | Generador Automático de Incidencia | Como motor de reglas, quiero crear automáticamente un ticket de incidencia ante un incumplimiento detectado. | 5 |
+| 22 | US46 | Alerta de Incumplimiento Inminente | Como responsable ambiental, quiero recibir una alerta cuando un indicador se acerque al límite normativo, no solo cuando lo supere. | 5 |
+| 23 | US34 | Tarea Programada de Revisión de Vencimientos | Como proceso de fondo, quiero identificar incidencias sin resolución en X días para escalar su prioridad. | 3 |
+| 24 | US47 | Alerta de Incidencia sin Atender | Como jefe de gestión ambiental, quiero recibir alerta si una incidencia no tiene seguimiento en 3 días para intervenir a tiempo. | 3 |
+| 25 | US17 | Alertas y Notificaciones | Como usuario de EcoRoad, quiero un icono de notificaciones para ver alertas de incumplimientos recientes. | 2 |
+| 26 | US11 | Tablero Kanban de Incidencias | Como responsable de gestión ambiental, quiero mover incidencias entre columnas (Abierta/En revisión/Resuelta) para gestionar mi flujo visualmente. | 8 |
+| 27 | US18 | Tabla de Incidencias Críticas | Como gerente de cartera de proyectos, quiero una tabla con filas resaltadas para identificar las incidencias críticas de un vistazo. | 2 |
+| 28 | US43 | Comentarios en Incidencia | Como usuario, quiero dejar comentarios en una incidencia para mantener la comunicación fluida entre campo y oficina. | 3 |
+| 29 | US16 | Feed de Comentarios en Incidencia | Como usuario de EcoRoad, quiero ver el historial de comentarios de una incidencia para entender el contexto de su seguimiento. | 3 |
+| 30 | US52 | Historial de Estados de Incidencia | Como Stakeholder, quiero ver el historial de cambios de una incidencia para entender su evolución completa. | 3 |
+| 31 | US14 | Adjuntar Evidencia Fotográfica | Como responsable de gestión ambiental, quiero arrastrar fotos al navegador para adjuntarlas como evidencia de una medición. | 3 |
+| 32 | US30 | API de Subida de Evidencias | Como Dev, quiero un endpoint multipart para subir archivos binarios (fotos/documentos) a almacenamiento en la nube. | 5 |
+| 33 | US54 | Control de Versiones de Documento Normativo | Como consultor ambiental, quiero conservar el historial de versiones de instrumentos de gestión ambiental subidos para no perder revisiones anteriores. | 8 |
+| 34 | US56 | Documentos Obligatorios por Hito Normativo | Como consultora ambiental, quiero marcar qué documentos son indispensables para un hito de auditoría, para estandarizar el proceso. | 3 |
+| 35 | US55 | Búsqueda Global de Proyectos/Incidencias | Como Líder, quiero buscar proyectos o incidencias por nombre/código para ahorrar tiempo localizando información. | 5 |
+| 36 | US12 | Vista de Mapa Interactivo | Como responsable de gestión ambiental, quiero ver un mapa con pines de colores por punto de monitoreo para identificar zonas críticas rápidamente. | 8 |
+| 37 | US02 | Demo de Tablero Geolocalizado (Landing) | Como responsable de gestión ambiental, quiero ver una vista previa del mapa de indicadores para entender cómo se visualizaría mi obra. | 3 |
+| 38 | US33 | Cálculo de Salud Ambiental del Proyecto | Como API, quiero calcular el % de indicadores fuera de norma para determinar el color de semáforo del proyecto. | 3 |
+| 39 | US15 | Barra de Progreso de Cumplimiento | Como jefe de proyecto, quiero ver una barra de progreso del % de indicadores dentro de norma para medir el avance rápidamente. | 2 |
+| 40 | US44 | Salud Ambiental del Portafolio | Como gerente de cartera, quiero ver un gráfico de salud ambiental de todos mis proyectos para tomar decisiones preventivas. | 5 |
+| 41 | US50 | Visualización de KPIs Ambientales | Como Stakeholder, quiero ver indicadores clave (% cumplimiento, incidencias abiertas, tiempo promedio de resolución) para evaluar el desempeño. | 5 |
+| 42 | US51 | Actualización en Tiempo Real del Dashboard | Como usuario, quiero que el dashboard se actualice solo al registrarse una nueva medición para tener datos confiables sin recargar. | 8 |
+| 43 | US05 | CTA Segmento Empresa Multi-Proyecto (Landing) | Como gerente de cartera de proyectos, quiero un botón dirigido a gestión multi-proyecto para acceder a la vista que necesito. | 2 |
+| 44 | US35 | Generador de JSON para Reporte de Auditoría | Como API, quiero estructurar un JSON con histórico de indicadores e incidencias para alimentar el motor de generación de PDF. | 5 |
+| 45 | US36 | Endpoint de Exportación a PDF | Como backend, quiero generar la descarga de un PDF de auditoría para que el usuario lo presente ante el ente fiscalizador. | 5 |
+| 46 | US45 | Reporte de Auditoría por Proyecto | Como consultora ambiental, quiero generar un reporte PDF por proyecto para presentarlo ante fiscalización. | 3 |
+| 47 | US06 | Caso de Uso / Testimonio (Landing) | Como usuario de EcoRoad, quiero ver un caso de éxito o cifra de impacto para confiar en la efectividad de la plataforma. | 2 |
+| 48 | US04 | CTA Segmento Consultora (Landing) | Como responsable de gestión ambiental, quiero un botón claro para probar la plataforma, para evaluar si resuelve mi problema de monitoreo. | 2 |
+| 49 | US03 | Explicación de Planes (Landing) | Como gerente de cartera de proyectos, quiero comparar los planes Base, Profesional y Enterprise para elegir el que se ajuste a mi empresa. | 3 |
+| 50 | US08 | Formulario de Contacto Comercial (Landing) | Como gerente de cartera de proyectos, quiero dejar mis datos de contacto para que ventas me contacte con una propuesta personalizada. | 2 |
+| 51 | US39 | Gestión de Planes de Suscripción (API) | Como API, quiero validar el plan activo del cliente para restringir el número de proyectos/usuarios permitidos. | 5 |
+| 52 | US57 | Upgrade/Downgrade de Plan | Como cliente, quiero cambiar mi plan de suscripción para ajustarlo a mi cantidad real de proyectos activos. | 5 |
+| 53 | US23 | Selector de Color de Marca | Como administrador de cuenta Enterprise, quiero elegir el color corporativo para que el dashboard refleje la identidad de mi empresa. | 5 |
+| 54 | US07 | Notificaciones Push Landing | Como usuario de EcoRoad, quiero aceptar notificaciones del navegador para recibir alertas de incumplimientos sin ingresar a la plataforma. | 5 |
+| 55 | US25 | Swagger / Documentación | Como Frontend, quiero ver la documentación de la API para integrarme de forma autónoma. | 2 |
+| 56 | US31 | Paginación de Resultados | Como Frontend, quiero resultados paginados en los listados de indicadores/incidencias para optimizar el rendimiento. | 3 |
+| 57 | US37 | Limitación de Peticiones (Rate Limiting) | Como Admin, quiero limitar peticiones por IP para evitar ataques de denegación de servicio. | 5 |
