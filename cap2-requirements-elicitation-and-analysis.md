@@ -12,7 +12,7 @@
 
 | **Categoría** | **EcoRoad (Kaimán)** | **SiteHive** | **Sonitus Systems** | **Autodesk Construction Cloud** |
 | :--- | :--- | :--- | :--- | :--- |
-| **Cabecera** | *(Logo de EcoRoad)* | *(Logo de SiteHive)* | *(Logo de Sonitus Systems)* | *(Logo de Autodesk CC)* |
+| **Cabecera** | *(Logo de EcoRoad)* | assets/img/Chapter2/SiteHiveLogo.png | assets/img/Chapter2/SonitusSystemsLogo.png | assets/img/Chapter2/AutodeskCCLogo.png |
 | **Perfil** | | | | |
 | **Overview** | Plataforma HaaS/SaaS integrada con red propia de sensores IoT en comodato para monitoreo ambiental (aire, ruido, agua) y gestión preventiva en obras viales. | Plataforma SaaS australiana especializada en monitoreo ambiental continuo (ruido, polvo, vibración) para construcción y minería. | Proveedor global especializado en instrumentación y monitores IoT de nivel de ruido y calidad del aire para monitoreo ambiental. | Suite integral de software basada en la nube para la gestión de proyectos de construcción, flujos de trabajo BIM y control documental. |
 | **Ventaja competitiva (valor al cliente)** | Modelo HaaS sin inversión inicial de hardware, rol de árbitro neutral con telemetría inalterable y motor de mitigación preventiva para constructoras y supervisoras. | Automatización del procesamiento de datos ambientales de campo con algoritmos de reconocimiento de eventos de ruido mediante IA. | Equipos de medición de alta robustez, precisión instrumental y cumplimiento estricto de estándares internacionales de calibración sonora. | Integración nativa y madura con modelos BIM (Revit/Civil 3D), gestión de calidad global y amplia adopción corporativa en el sector. |
