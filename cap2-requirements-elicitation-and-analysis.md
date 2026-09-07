@@ -440,47 +440,66 @@ Para las consultoras y supervisoras se elaboró el User Persona Gisela Chavez. S
 
 
 ### 2.3.2. User Task Matrix
-<a id="2-3-2-user-task-matrix"></a>
 
-**Segmento 1**
-|                                             Task   | Frequency | Importance |
-|-------------------------------------------------------------|----------|------------|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+El User Task Matrix presenta las tareas que realizan los User Persona para cumplir sus objetivos en su día a día, independientemente de si usan nuestro software o no. Se evalúa la frecuencia y la importancia de cada tarea para identificar dónde aportar valor.
 
-**Análisis**
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; font-family:Arial, sans-serif; text-align:center;">
+  <thead>
+    <tr style="background-color:#eef3f7;">
+      <th rowspan="2">Tarea (Task)</th>
+      <th colspan="2">Administrador (Mauricio)</th>
+      <th colspan="2">Familiar (Carmen)</th>
+    </tr>
+    <tr style="background-color:#eef3f7;">
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left;">Mantener actualizado el registro de residentes</td>
+      <td>Often</td><td>High</td>
+      <td>Rarely</td><td>Low</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Planificar citas médicas y terapias</td>
+      <td>Often</td><td>High</td>
+      <td>Occasionally</td><td>Medium</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Comunicar incidencias o urgencias a la familia</td>
+      <td>Occasionally</td><td>High</td>
+      <td>Rarely</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Supervisar el cumplimiento de la medicación</td>
+      <td>Often</td><td>High</td>
+      <td>Often</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Consultar el estado de salud y evolución</td>
+      <td>Often</td><td>Medium</td>
+      <td>Often</td><td>High</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Coordinar turnos del personal de cuidado</td>
+      <td>Often</td><td>Medium</td>
+      <td>Rarely</td><td>Low</td>
+    </tr>
+    <tr>
+      <td style="text-align:left;">Realizar pagos o cobros de mensualidad</td>
+      <td>Monthly</td><td>High</td>
+      <td>Monthly</td><td>High</td>
+    </tr>
+  </tbody>
+</table>
 
-- 
+**Análisis del Task Matrix:**
+Se observa que la tarea **"Supervisar cumplimiento de medicación"** y **"Consultar estado de salud"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos (el administrador para controlar, el familiar para saber). Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas. Además, la tarea crítica de **"Comunicar incidencias"** es de alta importancia para ambos, validando la necesidad de un sistema de alertas.
 
-- 
-
-- 
-
-**Segmento 2**
-
-|                                             Task   | Frequency | Importance |
-|-------------------------------------------------------------|----------|------------|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-
-**Análisis**
-
-
-- 
-
-- 
-
-- 
+<div style="page-break-after: always;"></div>
 
 ### 2.3.3. User Journey Mapping
 <a id="2-3-3-user-journey-mapping"></a>
