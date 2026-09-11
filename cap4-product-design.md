@@ -737,35 +737,64 @@ Wireframe - Executive Profile (Mobile)
 <div style="text-align: left; max-width: 900px; margin: 0 auto;">
 
 ### 4.6.2. Software Architecture Context Diagram.
+El Diagrama de Contexto representa la vista de más alto nivel de EcoRoad, detallando cómo el sistema interactúa con los usuarios y sistemas externos sin profundizar en detalles técnicos.
 <a id="4-6-2-software-architecture-context-diagram"></a>
 
 #### Sistema Central
-- **Vantage PMO**:
+
+
+
+* **EcoRoad**: Solución integral para la gestión y monitoreo ambiental de proyectos de infraestructura vial, orientada a centralizar la información, detectar riesgos ambientales y facilitar el cumplimiento de las normativas.
 
 #### Usuarios
 
-##### Segmento A: Líderes y Jefes
-- 
-- 
-- 
+##### Segmento A: Empresas Constructoras Viales
 
-##### Segmento B: Administradores PMO
-- 
-- 
-- 
+
+* Gestionan proyectos de construcción y mantenimiento de carreteras.
+* Supervisan las condiciones ambientales de sus proyectos.
+* Identifican y atienden riesgos e incidentes ambientales.
+* Realizan seguimiento de medidas de mitigación y cumplimiento normativo.
+
+##### Segmento B: Consultoras y Supervisoras Ambientales
+
+
+
+* Supervisan el cumplimiento ambiental de múltiples proyectos.
+* Realizan inspecciones y monitoreo de indicadores ambientales.
+* Validan evidencias y acciones de mitigación.
+* Elaboran reportes y dan seguimiento a las incidencias detectadas.
 
 #### Sistemas Externos
-- **Auth0 (Servicio de Identidad)**  
-- **AWS S3 (Servicio de Almacenamiento)**  
-- **SendGrid (Servicio de Notificaciones)**  
+
+
+
+* **Servicio de Mapas y Geolocalización**
+  Permite visualizar proyectos, puntos de monitoreo e incidencias ambientales mediante información geográfica.
+
+* **Servicio Meteorológico**
+  Proporciona información climática que permite relacionar las condiciones ambientales con posibles riesgos dentro de los proyectos.
+
+* **Servicio de Notificaciones**
+  Permite enviar alertas automáticas a los responsables cuando se detectan riesgos, incidencias o condiciones que requieren atención.
 
 #### Resumen de Interacción
-- 
-- **Vantage PMO** delega:
-  - 
-  - 
-  - 
 
+
+
+* Los usuarios (Segmento A y B) interactúan directamente con **EcoRoad**.
+* **EcoRoad** centraliza la información ambiental y gestiona:
+
+  * Monitoreo de indicadores ambientales.
+  * Registro y seguimiento de incidencias.
+  * Acciones de mitigación y responsables.
+  * Evidencias y trazabilidad de las actividades.
+* **EcoRoad** integra servicios externos para:
+
+  * Geolocalización mediante servicios de mapas.
+  * Consulta de condiciones meteorológicas.
+  * Envío de notificaciones y alertas.
+* Los dispositivos **IoT** pueden enviar datos de sensores ambientales a EcoRoad, permitiendo detectar automáticamente condiciones fuera de los parámetros establecidos y generar alertas o incidencias para su atención.
 
 
 ### 4.6.3. Software Architecture Container Diagrams.
