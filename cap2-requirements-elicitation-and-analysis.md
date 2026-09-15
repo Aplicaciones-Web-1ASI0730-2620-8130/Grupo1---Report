@@ -506,43 +506,16 @@ Preguntas complementarias:
 
 *Eventos de Dominio:*
 
+Step 1 – Unstructured Exploration
+En esta fase inicial de exploración libre, el equipo llevó a cabo una sesión de ideación colaborativa intensiva sobre un lienzo digital en blanco. El objetivo principal fue mapear de forma abierta y sin restricciones metodológicas todos los acontecimientos, puntos de contacto, actores y situaciones críticas que ocurren a lo largo del ciclo de vida del monitoreo socioambiental en los tramos viales. Durante este acercamiento inicial, se identificaron de manera espontánea los principales dolores operativos, como la fricción en el registro manual de datos, la dependencia de canales de comunicación informales y la complejidad de compilar información dispersa para los entes reguladores.
 * 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
+<img src="assets/img/Chapter2/step1.jpeg" alt="Setp1" >
 
 ## 2.5. Ubiquitous Language
 <a id="2-5-ubiquitous-language"></a>
+Tras la exploración inicial, el equipo estructuró y ordenó cronológicamente los acontecimientos de izquierda a derecha en un flujo continuo. Para darle mayor claridad operacional al ciclo de vida del monitoreo en obra, los eventos se agruparon en 5 etapas viales clave:
 
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-*Implementation example:*
+<img src="assets/img/Chapter2/step2.jpeg" alt="Setp1" >
 
 
 ##
