@@ -904,30 +904,27 @@ De esta manera, el Component Diagram complementa los diagramas de clases y de ba
 
 ### 4.7.1. Class Diagrams.
 <a id="4-7-1-class-diagrams"></a>
+Se centra en la definición de diagramas de clases, la interacción entre objetos y la aplicación de principios.
+
+### Bounded Context 1 - Suscriptions and Payment:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD1.png)
+### Bounded Context 2 - Identity and Access Management:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD2.png)
+### Bounded Context 3 - Project and Road Site Management:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD3.png)
+### Bounded Context 4 - Monitoring Asset and Deployment:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD4.png)
+### Bounded Context 5 - Environmental Monitoring:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD5.png)
+### Bounded Context 6 - Alerting and Risk Evaluation:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD6.png)
+### Bounded Context 7 - Incident and Remediation Management:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD7.png)
+### Bounded Context 8 - Compliance and Reporting:
+![Class Diagram - EcoRoad](/assets/images/chapter4/EcoRoad-CD8.png)
 
 
-|Entidad|Descripcion|
-|-------|-----------|
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+
 
 ## 4.8. Database Design.
 <a id="4-8-database-design"></a>
