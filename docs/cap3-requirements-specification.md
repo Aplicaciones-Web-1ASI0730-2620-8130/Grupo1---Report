@@ -61,3 +61,12 @@
 | US55 | Integración con Servicio de Geolocalización de Terceros | Como Developer, quiero integrar la API con un servicio externo de mapas y geocodificación para obtener coordenadas y trazados viales precisos de los tramos registrados. | Escenario 1: Normalización de coordenadas<br>Dado que se registra un tramo vial con una dirección o referencia geográfica,<br>cuando la API consulta el servicio externo de geocodificación,<br>entonces almacena las coordenadas normalizadas devueltas para su uso en los tableros geolocalizados. | EP12: Integración |
 ---
 
+### 3.2. Impact Mapping
+<a id="3-2-impact-mapping"></a>
+
+En esta sección se presenta el desglose estratégico del modelo de negocio de EcoRoad mediante la técnica de **Impact Mapping**, vinculando la meta de negocio SMART con los cambios de comportamiento requeridos en los segmentos de cliente, las soluciones funcionales provistas y las historias de usuario asociadas.
+
+<p align="center">
+  <img src="../assets/Chapter-3/ImpactMapping.png" alt="Impact Mapping Consolidado - EcoRoad" width="100%"/>
+</p>
+
