@@ -1,166 +1,158 @@
 # Product Design
 ## 4.1. Style Guidelines.
 <a id="4-1-style-guidelines"></a>
+ 
+En esta sección, el equipo sienta las bases para contar con un repositorio central y organizado de uso común para todo el equipo, que incluye assets, fuentes tipográficas, componentes visuales, entre otros. 
+Esto con el fin de mantener una presentación consistente y enfocada de la marca EcoRoad a lo largo de todos los puntos de contacto con el usuario, ya sea en campo, en oficina o en los distintos dispositivos desde los que se accede a la plataforma.
 
 ### 4.1.1. General Style Guidelines.
 <a id="4-1-1-general-style-guidelines"></a>
 
-**Colores**
+ Construimos la identidad de EcoRoad bajo directrices visuales de Branding, Typography, Colors y Spacing, así como las dimensiones adoptadas para el tono de comunicación y lenguaje aplicado por la marca.
+Estas decisiones se sustentan en el posicionamiento de EcoRoad como una plataforma que transforma el monitoreo ambiental en un flujo de gestión de detección de riesgos, alerta, incidencia, acción correctiva y evidencia, por lo que la identidad visual busca transmitir confiabilidad, precisión técnica y una ingeniería civil preventiva y sostenible.
 
-- **Azul primario – #1E40AF:**
+**Branding:**
 
-- **Gris azulado secundario – #475569:**
+El logotipo de EcoRoad sintetiza los pilares conceptuales de la propuesta: naturaleza, infraestructura vial y monitoreo ambiental en tiempo real mediante IoT.
 
-- **Marrón acento – #882D00:**
+* **Hoja (naturaleza/sostenibilidad)**: Representa el componente ambiental que la plataforma monitorea (aire, ruido, agua, vibraciones) y la orientación hacia una gestión vial más sostenible. 
+* **Carretera (infraestructura vial)**: Representa el sector de aplicación del producto, construcción, mantenimiento y rehabilitación de vías, transmite avance, trazabilidad y dirección, en línea con el seguimiento de acciones correctivas hasta el cierre de cada incidencia. 
+* **Montañas y sol (contexto geográfico y monitoreo)**: Hacen referencia a los tramos, frentes de trabajo y puntos de monitoreo que la plataforma visualiza mediante dashboards geolocalizados. 
+* **Contenedor circular**: Refuerza la idea de un ciclo completo de gestión ambiental (monitoreo -> alerta -> incidencia -> acción correctiva -> evidencia -> cierre), coherente con el enfoque preventivo y no solo descriptivo de la plataforma.
 
-- **Gris neutro – #64748B:**
+**Typography:**
 
-- **Escalas de color:**
-
-
-**Tipografía**
-
-
-
-**Branding**
+Siguiendo la construcción geométrica y redondeada del logotipo, se adopta una familia tipográfica sans-serif geométrica como base del sistema, priorizando legibilidad en pantallas de campo (tablets, móviles con luz solar directa) y coherencia con el tono técnico y confiable de la marca.
 
 
+| Uso                        | Tipografía                     | Aplicación |
+|:---------------------------|:-------------------------------| :--- |
+| Encabezados                | Poppins Bold / SemiBold        | Títulos de dashboard, nombres de proyecto |
+| Subtítulos                 | Poppins Medium                 | Nombres de módulos, tarjetas de indicadores |
+| Cuerpo de texto            | Inter Regular                  |  Tablas, formularios, descripciones |
+| Datos numéricos / métricas | Inter Medium (tabular figures) |Valores de sensores, timestamps |
 
-**Espaciado**
+**Colors:**
 
+La paleta se deriva directamente de los colores institucionales definidos para EcoRoad, con un rol funcional asignado a cada uno para su uso en interfaz:
 
-
-**Dimensiones para el tono de comunicación y lenguaje aplicado**
-
-
-
-- **Consistencia:**
-
-- **Navegación:**
-
-- **Accesibilidad:**
-
-
-**Elementos de Diseño**
-
-
-
-**Principios de Diseño**
+| Color         | Hex | Rol funcional en la plataforma                                                                                          |
+|:--------------| :--- |:------------------------------------------------------------------------------------------------------------------------|
+| Verde         | `#2E9E7A` | Color principal de la marca; estado óptimo / sin riesgo detectado (semáforo verde)                                       |
+| Azul petróleo | `#264653` | Color secundario; tipografía principal, fondos de navegación, elementos estructurales                                   |
+| Crema         | `#F5F1E8` | Fondo base de la interfaz; transmite neutralidad y bajo cansancio visual en uso prolongado                              |
+| Amarillo      | `#E9B44C` | Condición de advertencia (semáforo ámbar) — indicador que se acerca al umbral establecido y puede derivar en una alerta |
+| Rojo          | `#C0392B` | Condición crítica (semáforo rojo) — el indicador supera el umbral y el sistema genera una incidencia                    |
 
 
+**Spacing**
+
+Se define un sistema de espaciado en base 8px (8, 16, 24, 32, 40), compatible con grillas de 12 columnas para web y facilitando la futura adaptación a interfaces móviles. 
+El espaciado busca priorizar la lectura rápida de indicadores en campo, evitando el amontonamiento de datos en tableros con múltiples proyectos simultáneos.
+
+**Lenguaje de comunicación**
+
+Dado que los usuarios principales (responsables del monitoreo, gestión y atención de incidencias ambientales dentro de empresas constructoras y de conservación/rehabilitación vial) 
+operan bajo presión de tiempo en campo y necesitan actuar con rapidez ante un riesgo, el tono de EcoRoad se posiciona de la siguiente manera:
+
+| Posicionamiento                | Justificación |
+|:-------------------------------| :--- |
+| Serio                          | La plataforma respalda decisiones sobre riesgos ambientales reales en obra; el lenguaje debe transmitir precisión técnica. |
+| Formal, con cercanía funcional | Se usa terminología técnica correcta (umbrales, incidencias, acciones correctivas), con instrucciones claras y directas para uso rápido en campo. |
+| Respetuoso                     | El lenguaje describe condiciones y acciones sin atribuir culpas; una incidencia se comunica como un hecho a resolver, no como un señalamiento. |
+| Sereno                         | Las alertas y notificaciones comunican el nivel de riesgo con claridad, priorizando que el usuario entienda qué acción tomar sobre la urgencia emocional del mensaje. |
 
 
 ### 4.1.2. Web Style Guidelines.
 <a id="4-1-2-web-style-guidelines"></a>
 
+<a id="4-1-2-Web-Style-Guidelines"></a>
+
+En esta sección se explican e ilustran las decisiones sobre los estándares visuales y de interacción para las interfaces web responsive de EcoRoad, 
+aplicables al panel de gestión donde una misma empresa constructora o de conservación/rehabilitación vial, administra sus proyectos, sensores IoT, alertas e incidencias.
+
+* **Grid system:** grilla de 12 columnas con márgenes fluidos, breakpoints en 1280px (desktop), 1024px (tablet/laptop) y 768px (tablet vertical), 
+priorizando el desktop como plataforma principal para el análisis multi-proyecto y la vista tablet para el registro de evidencias en campo.
+* **Componentes de dashboard:** tarjetas de indicador (KPI cards) con codificación semáforo (verde/amarillo/rojo) según la paleta funcional; 
+los dashboards geolocalizados usan el azul petróleo como color base del mapa y marcadores en los tres colores de estado para representar tramos, frentes de trabajo y puntos de monitoreo.
+* **Navegación:** barra lateral fija en azul petróleo (
+#264653) con el isotipo de EcoRoad, manteniendo contraste alto con el fondo crema (
+#F5F1E8) del área de contenido para reducir fatiga visual en sesiones prolongadas de monitoreo.
+* **Botones y estados interactivos:** botón primario en verde EcoRoad (
+#2E9E7A) para acciones de confirmación (registrar medición, cerrar incidencia); botón de alerta en rojo (
+#C0392B) reservado exclusivamente para acciones críticas (crear/escalar una incidencia), evitando el uso decorativo de este color para no diluir su significado funcional.
+* **Gestión de incidencias (tipo Kanban):** columnas por estado del flujo de riesgo (Alerta -> Incidencia  -> Acción correctiva -> Evidencia registrada -> Cerrada), 
+con tarjetas que muestran responsable asignado, ubicación, fecha/hora y miniatura de evidencia fotográfica, facilitando el seguimiento hasta el cierre.
+* **Formularios de registro de campo:** diseñados con campos grandes y espaciado generoso, priorizando el ingreso rápido de mediciones y evidencias 
+(foto, descripción, fecha, hora, ubicación) desde dispositivos móviles en obra.
+* **Accesibilidad:**  contraste mínimo AA (WCAG 2.1) entre texto y fondo en todas las combinaciones de la paleta, verificado especialmente en el uso del amarillo 
+(#E9B44C) sobre crema, que requiere texto oscuro (#264653) para mantener legibilidad.
 
 
 ## 4.2. Information Architecture.
 <a id="4-2-information-architecture"></a>
 
+La arquitectura de información de EcoRoad está diseñada para garantizar una navegación fluida, intuitiva y eficiente, permitiendo que tanto los ingenieros de campo (constructoras) como los auditores (supervisoras) accedan con rapidez al valor de la plataforma y a sus herramientas de gestión y fiscalización.
 
 ### 4.2.1. Organization Systems.
 <a id="4-2-1-organization-systems"></a>
 
+<a id="4-2-1-organization-systems"></a>
+
+* **Jerarquía de Contenidos:** La estructura de la información fluye de lo general a lo específico. En la Landing Page pública se prioriza la propuesta de valor HaaS/SaaS y los beneficios de Caiman, mientras que en la Web Application la jerarquía organiza el portafolio global de proyectos viales hasta llegar al detalle micro de cada tramo, punto de monitoreo e incidencia.
+
+* **Secciones Principales de la Aplicación:** La plataforma se divide en módulos funcionales clave:
+    * **Dashboard Global:** Vista ejecutiva y multi-proyecto con indicadores de salud ambiental.
+    * **Mapa Interactivo:** Visualización geolocalizada de tramos viales y pines semafóricos.
+    * **Gestión de Proyectos:** Alta, configuración y administración de frentes de obra viales.
+    * **Puntos de Monitoreo:** Registro de telemetría y parámetros físicos (aire, ruido, agua).
+    * **Tablero de Incidencias:** Flujo Kanban para el seguimiento y resolución de desvíos normativos con evidencia multimedia.
+    * **Reportes y Auditorías:** Generación automatizada de expedientes y exportación en formato PDF.
+    * **Configuración y Suscripción:** Gestión de planes (Base, Profesional, Enterprise) y control de accesos basados en roles (RBAC).
+
+* **Agrupación de Contenidos:** Los datos operativos se agrupan lógicamente por severidad y contexto temporal. Las alertas y tickets críticos se destacan mediante códigos de color estandarizados (semáforo), permitiendo un escaneo visual rápido sin saturar al operador de campo.
 
 
 ### 4.2.2. Labeling Systems.
 <a id="4-2-2-labeling-systems"></a>
 
-**Landing Page**
+Para asegurar la visibilidad en motores de búsqueda y la correcta compartición en canales digitales B2B, se establecen los siguientes metadatos principales para la experiencia web de EcoRoad:
 
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-**Aplicación Web - Project Managers y PMO Leads**
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-* 
-
-**Aplicación Web – Stakeholders**
-
-* 
-
-* 
-
-* 
-
-* 
 
 
 ### 4.2.3. SEO Tags and Meta Tags.
 <a id="4-2-3-seo-tags-meta-tags"></a>
 
 
+* **Landing Page (Sitio Web Estático):**
+    * **Title:** `EcoRoad by Caiman | Monitoreo y Cumplimiento Ambiental en Infraestructura Vial`
+    * **Meta Description:** `Plataforma HaaS/SaaS líder en el Perú para la gestión ambiental vial. Automatiza sensores IoT en comodato, alertas de umbrales y reportes de auditoría para constructoras y supervisoras.`
+    * **Meta Keywords:** `monitoreo ambiental vial, cumplimiento normativo OEFA MTC, sensores IoT construcción, gestión ambiental carreteras, auditoría ambiental RPA.`
+    * **Meta Author:** `Caiman Tech Startup`
 
-* **Title Tag:** en html: 
-
-* **Description:** en html:
-
-* **Keywords:** en html:
-
-* **Open Graph (Optimización para redes sociales):**
-    * 
-
-    * 
-
-    * 
-
-    * 
-
-* **Robots:** en html:
+* **Web Application (Plataforma Privada):**
+    * **Title:** `EcoRoad App | Gestión y Fiscalización Ambiental en Tiempo Real`
+    * **Meta Description:** `Panel de control privado para el seguimiento de indicadores ambientales, mapa geolocalizado de tramos viales y resolución de incidencias operativas.`
+    * **Meta Keywords:** `dashboard ambiental, tramos viales, tablero kanban incidencias, reportes PDF auditoría.`
+    * **Meta Author:** `Caiman Tech Startup`
 
 
 ### 4.2.4. Searching Systems.
 <a id="4-2-4-searching-systems"></a>
 
-
-
-1. **Barra de Búsqueda Global:**
-    * 
-    * 
-    * 
-2. **Filtro de Avances:**
-    * **Indicadores de Salud:**
-    * **Estado Operativo:**
-    * **Prioridad y Carga:**
-3. **Búsqueda Documental:**
+* **Barra de Búsqueda Global:** Ubicada de forma prominente en el encabezado principal de la Web Application, permitiendo localizar de inmediato proyectos por nombre o código de tramo vial, puntos de control específicos e incidencias registradas.
+* **Filtros y Facetas Contextuales:** Herramientas de acotación de datos dentro de los módulos para filtrar la información por tipo de indicador ambiental (*aire, ruido, agua*), rango de fechas y niveles de severidad del riesgo.
+* **Historial de Búsqueda:** Registro automatizado de consultas recientes para agilizar el flujo de trabajo de los auditores y residentes de obra que alternan entre múltiples frentes de trabajo.
+* **Resultados Relevantes:** Priorización inteligente de resultados basada en los permisos de usuario (RBAC) y la cartera de proyectos activa asignada a su cuenta.
 
 
 ### 4.2.5. Navigation Systems.
 <a id="4-2-5-navigation-systems"></a>
 
-
-
-1. **Navegación Global (Menú Lateral):**
-    * **Dashboard:**
-    * **Proyectos:**
-    * **Reportes:**
-    * **Riesgos:**
-
-2. **Navegación de Contexto:** 
-
-3. **Navegación Local:** 
-
-4. **Acciones Rápidas:** 
+* **Navegación Global:** La barra superior y el menú lateral (*Sidebar*) permanente aseguran el acceso transversal a las secciones principales de la plataforma desde cualquier pantalla del sistema.
+* **Navegación Contextual:** Enlaces integrados dentro de las tarjetas de proyectos y botones de acción rápida (*CTAs*) que guían al usuario desde la vista macro del portafolio hasta el detalle analítico de una incidencia o punto de monitoreo.
+* **Migas de Pan (Breadcrumbs):** Elementos de rastreo ubicados en la cabecera interna (ej. *Portafolio > Autopista Norte > Tramo 3 > Punto de Control #02*) que indican la ruta de navegación actual y permiten un retroceso jerárquico inmediato.
+* **Navegación Móvil:** Adaptación mediante menús colapsables tipo hamburguesa optimizados para pantallas táctiles, asegurando la usabilidad de campo en dispositivos móviles de los ingenieros residentes.
 
 
 ## 4.3. Landing Page UI Design.
