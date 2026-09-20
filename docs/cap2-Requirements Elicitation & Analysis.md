@@ -261,7 +261,7 @@ Si analizamos cómo se comportan ambos perfiles a partir de la matriz, saltan a 
 
 El recorrido actual de Diego se centra en la ejecución física de la obra vial y comprende las siguientes etapas principales: 1. Planificación inicial y despliegue en campo, 2. Monitoreo diario de indicadores ambientales (aire, ruido, agua), 3. Detección y respuesta ante una alerta o desvío, y 4. Preparación de evidencias para auditorías o inspecciones imprevistas.
 Durante este ciclo, el punto más crítico ocurre en las etapas 2 y 4. Al depender de registros manuales y planillas de Excel dispersas, Diego experimenta una alta frustración debido a la intermitencia de conectividad en zonas alejadas y al riesgo latente de enterarse tarde de una superación de límites normativos. La necesidad de recopilar papeles y fotos sueltas para armar carpetas de cumplimiento genera una carga de estrés considerable antes de cada fiscalización del Estado.
-<div align="center"><img src="../assets/Chapter-2/JourneyMapDiego.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
+<div align="center"><img src="../assets/img/Chapter2/JourneyMapDiego.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
 <br>
 
 **Segmento 2: Empresas de mantenimiento y rehabilitación vial**
@@ -269,7 +269,7 @@ Durante este ciclo, el punto más crítico ocurre en las etapas 2 y 4. Al depend
 El recorrido de Piero abarca una perspectiva operativa de campo y control multisitio, dividida en: 1. Incorporación y configuración inicial de los tramos viales en mantenimiento, 2. Monitoreo diario de las condiciones ambientales frente a la operación de maquinaria pesada, 3. Detección temprana y atención de alertas o quejas por emisiones de polvo y ruido, y 4. Generación y consolidación de reportes ejecutivos de cumplimiento para la gerencia.
 
 El mayor cuello de botella en el viaje de Piero se concentra en las etapas 2 y 3. Debido a la dispersión geográfica de los frentes de trabajo en vías abiertas al tráfico y a la dependencia de registros manuales fragmentados, recopilar evidencias y coordinar acciones correctivas inmediatas le demanda una sobrecarga operativa de llamadas y visitas de campo constantes. Esto lo expone a retrasos en la mitigación de riesgos y a posibles amonestaciones operativas por la falta de visibilidad centralizada en tiempo real.
-<div align="center"><img src="../assets/Chapter-2/JourneyMapPiero.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
+<div align="center"><img src="../assets/img/Chapter2/JourneyMapPiero.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
 <br>
 2.3.4. Empathy Mapping.
 
