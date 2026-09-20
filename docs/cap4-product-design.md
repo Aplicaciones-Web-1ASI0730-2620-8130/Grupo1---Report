@@ -159,492 +159,381 @@ Para asegurar la visibilidad en motores de búsqueda y la correcta compartición
 <a id="4-3-landing-page-ui-design"></a>
 
 
-### 4.3.1. Landing Page Wireframe.
-<a id="4-3-1-landing-page-wireframe"></a>
+4.3.1. Landing Page Wireframe.
 
-**LADING PAGE WEB**
+El wireframe de nuestra página de inicio sirve como un mapa visual que define la estructura y el flujo de la información. Este esquema asegura una disposición lógica de los componentes, facilitando la navegación y destacando la propuesta de valor de EcoRoad. Las secciones del wireframe están diseñadas para contar una historia completa y persuasiva:
 
+**Hero**
 
+El hero de nuestra plataforma EcoRoad presenta una interfaz limpia e institucional alineada a la supervisión ambiental, destacando con un título directo: "Automated Environmental Compliance & Mitigation for Highway Construction". Una breve descripción que enfatiza el monitoreo en tiempo real y la prevención de multas, acompañada por un botón de llamado a la acción rápida y de alto contraste ("Get Started") que orienta al usuario hacia la conversión. En la parte inferior, una imagen de infraestructura vial que incluye indicadores clave sobre nodos IoT activos y porcentaje de cumplimiento normativo, como un ejemplo de la precisión técnica del sistema.
 
-**Barra de Navegación**:
+<div align="center">
+  <img src="../assets/images/chapter4/hero.png" alt="Hero">
+</div>
 
-**Título Principal**:
+**Solutions**
 
-**Texto**:
+La sección "Solutions" presenta la oferta de valor mediante un encabezado claro ("Specialized Solutions for the Highway Construction Sector") e introduce una retícula de cuatro tarjetas interactivas que detallan las áreas clave de monitoreo: calidad del aire y polvo, nivel sonoro y ruido, supervisión de recursos hídricos y protección de fauna/hábitats sensibles. Cada tarjeta utiliza un ícono representativo, una breve descripción técnica del proceso automatizado y etiquetas que destacan los estándares normativos o de calibración correspondientes, garantizando una lectura estructurada y fluida de las capacidades de la plataforma, mostrando lo que ofrece la plataforma.
 
-**Llamados a la Acción**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-solutions.png" alt="Paso 4">
+</div>
 
-**Elemento Visual**:
+**Benefits**
 
-**Sección de Pilares de Gestión**:
-- **Pilar 1**:
-- **Pilar 2**:
-- **Pilar 3**:
+La sección "Benefits" resalta las ventajas competitivas del sistema bajo el título "The EcoRoad Advantage: From Manual Logs to Real-Time Telemetry". Mediante una cuadrícula de cuatro tarjetas con apoyo visual e infográfico, detalla los beneficios clave de la plataforma: prevención de multas y paralizaciones mediante detección preventiva ("Zero Shutdowns & Fines"), consolidación automática de evidencias con encriptación SHA-256 para auditorías ("Automated Audits"), trazabilidad y flujo de trabajo de mitigación inmediata con georreferenciación GPS RTK desde la app offline ("Immediate Mitigation Workflow"), y respaldo legal/técnico continuo frente a inspecciones normativas ("Legal Peace of Mind & Expert Backing"). Cada bloque incluye métricas de impacto que refuerzan la eficiencia operativa y el cumplimiento normativo en obra.
 
-**Contenido**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-benefits.png" alt="Paso 4">
+</div>
 
-**Flujo de Onboarding**:
+**About Us**
 
-- 1:
-- 2:
-- 3:
+La sección "About Us" resalta la propuesta tecnológica bajo el título "Advanced Management & Compliance Technology". Incluye un video explicativo en función de la plataforma junto a un menú interactivo que detalla sus capacidades clave: dashboards GIS georreferenciados, alertas regulatorias automáticas por SMS/WhatsApp/email, cadena de custodia de evidencias con metadatos forenses y exportación en un clic de reportes oficiales en formato PDF/A y GeoJSON.
 
-**Logotipos**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-aboutus.png" alt="Paso 4">
+</div>
 
-**Pie de Página**:
+**Testimonials**
 
+La sección presenta ejemplos de experiencias basados en casos de éxito de la plataforma. Muestra testimonios ficticios pero realistas atribuidos a roles clave del sector (directores ambientales, consultores senior y supervisores de obra) para validar el impacto técnico y operacional de EcoRoad ante potenciales clientes.
 
-**LADING PAGE MOBILE**
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-testimonials.png" alt="Paso 4">
+</div>
 
+**Pricing**
 
+La sección "Pricing" expone el modelo de monetización bajo el título "Flexible, Scalable Subscription Plans". Estructura la oferta en tres planes SaaS escalables (Base, Professional y Enterprise), permitiendo alternar entre facturación mensual y anual con descuento. Cada tarjeta detalla el precio, el perfil de cliente objetivo, un botón directo de acción y un listado de funcionalidades clave que van desde el monitoreo básico de proyectos hasta integraciones avanzadas y soporte 24/7.
 
-**Cabecera y Navegación**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-pricing.png" alt="Paso 4">
+</div>
 
-**Headline**:
+**About team**
 
-**Imagen de Soporte**:
+La sección "About Team" presenta al equipo detrás de la plataforma bajo el título "Driving Innovation and Sustainability in Highway Infrastructure". Incluye un video institucional que muestra el proceso colaborativo del grupo, acompañado por un bloque explicativo que resalta su enfoque multidisciplinario, la combinación de ingeniería de software con sostenibilidad y su visión para transformar el monitoreo ambiental tradicional en una experiencia digital eficiente e intuitiva.
 
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-aboutus.png" alt="Paso 4">
+</div>
 
-1. **Pilares de Gestión**:
+**Our team**
 
-2. **Beneficios Enumerados**:
+La sección "Our Team" presenta a los integrantes del proyecto bajo el título "Meet the multidisciplinary team behind EcoRoad's environmental telemetry platform". Organiza los perfiles en tarjetas individuales que incluyen fotografía, como Software Engineers y una breve descripción profesional centrada en sus habilidades de desarrollo y contribución a la plataforma. Justo debajo, la sección concluye con un banner final de conversión enfocado en la transformación de la sostenibilidad ambiental, ofreciendo botones directos para iniciar o agendar una sesión con un especialista.
 
-3. **Sección de Autoridad Técnica**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-ourteam.png" alt="Paso 4">
+</div>
 
+**Footer**
 
-**Flujo de Usuario y Conversión**:
+El Footer (pie de página) de la plataforma cierra el sitio con una estructura institucional sobre fondo oscuro. Se divide en cuatro columnas principales: la primera incluye el logotipo, una breve descripción de la propuesta de valor y el eslogan ("Infrastructure today, a better environment"); las dos siguientes organizan enlaces rápidos hacia los módulos de telemetría y el marco regulatorio/normativo; y la última muestra los canales de contacto, soporte técnico y sedes regionales. En la franja inferior incluye los derechos de autor reservados e información de políticas de privacidad y seguridad de datos.
 
-**Testimonios**:
+<div align="center">
+  <img src="../assets/chapter4/wf-landing-footer.png" alt="Paso 4">
+</div>
 
-**Logos de Respaldo**:
 
-**Cierre**:
 
-**Newsletter**:
+4.3.2. Landing Page Mock-up.
 
+Esta sección presenta los mock-ups de la landing page para versiones web de escritorio y móvil. En ambas se explica la aplicación de los principios de diseño, diseño inclusivo y arquitectura de la información.
 
-### 4.3.2. Landing Page Mock-up.
-<a id="4-3-2-landing-page-mock-up"></a>
+**Hero de la aplicación**
 
-**LADING PAGE MOCK-UP WEB**
+El hero de nuestra plataforma EcoRoad presenta una interfaz limpia e institucional alineada a la supervisión ambiental, destacando con un título directo: "Automated Environmental Compliance & Mitigation for Highway Construction". Una breve descripción que enfatiza el monitoreo en tiempo real y la prevención de multas, acompañada por un botón de llamado a la acción rápida y de alto contraste ("Get Started") que orienta al usuario hacia la conversión. En la parte inferior, una imagen de infraestructura vial que incluye indicadores clave sobre nodos IoT activos y porcentaje de cumplimiento normativo, como un ejemplo de la precisión técnica del sistema.
 
+<div align="center">
+  <img src="../assets/chapter4/hero.png" alt="Hero">
+</div>
 
+**Solutions**
 
-**Barra de Navegación**:
+La sección "Solutions" presenta la oferta de valor mediante un encabezado claro ("Specialized Solutions for the Highway Construction Sector") e introduce una retícula de cuatro tarjetas interactivas que detallan las áreas clave de monitoreo: calidad del aire y polvo, nivel sonoro y ruido, supervisión de recursos hídricos y protección de fauna/hábitats sensibles. Cada tarjeta utiliza un ícono representativo, una breve descripción técnica del proceso automatizado y etiquetas que destacan los estándares normativos o de calibración correspondientes, garantizando una lectura estructurada y fluida de las capacidades de la plataforma, mostrando lo que ofrece la plataforma.
 
-**Título Principal**:
+<div align="center">
+  <img src="../assets/chapter4/solutions.png" alt="Paso 4">
+</div>
 
-**Cuerpo de Texto**:
+**Benefits**
 
-**Llamados a la Acción**:
+La sección "Benefits" resalta las ventajas competitivas del sistema bajo el título "The EcoRoad Advantage: From Manual Logs to Real-Time Telemetry". Mediante una cuadrícula de cuatro tarjetas con apoyo visual e infográfico, detalla los beneficios clave de la plataforma: prevención de multas y paralizaciones mediante detección preventiva ("Zero Shutdowns & Fines"), consolidación automática de evidencias con encriptación SHA-256 para auditorías ("Automated Audits"), trazabilidad y flujo de trabajo de mitigación inmediata con georreferenciación GPS RTK desde la app offline ("Immediate Mitigation Workflow"), y respaldo legal/técnico continuo frente a inspecciones normativas ("Legal Peace of Mind & Expert Backing"). Cada bloque incluye métricas de impacto que refuerzan la eficiencia operativa y el cumplimiento normativo en obra.
 
-**Elemento Visual Principal**:
+<div align="center">
+  <img src="../assets/chapter4/benefits.png" alt="Paso 4">
+</div>
 
-**Sección de Pilares de Gestión**:
-- **Pilar 1**:
-- **Pilar 2**:
-- **Pilar 3**:
+**About Us**
 
-**Sección de Transformación y Beneficios**:
-- **01. Control**:
-- **02. Alineación**:
-- **03. Comunicación**:
-- **04. Datos**:
+La sección "About Us" resalta la propuesta tecnológica bajo el título "Advanced Management & Compliance Technology". Incluye un video explicativo en función de la plataforma junto a un menú interactivo que detalla sus capacidades clave: dashboards GIS georreferenciados, alertas regulatorias automáticas por SMS/WhatsApp/email, cadena de custodia de evidencias con metadatos forenses y exportación en un clic de reportes oficiales en formato PDF/A y GeoJSON.
 
-**Testimonios**:
+<div align="center">
+  <img src="../assets/chapter4/aboutus.png" alt="Paso 4">
+</div>
 
-**Logotipos**:
+**Testimonials**
 
-**Final**:
+La sección presenta ejemplos de experiencias basados en casos de éxito de la plataforma. Muestra testimonios ficticios pero realistas atribuidos a roles clave del sector (directores ambientales, consultores senior y supervisores de obra) para validar el impacto técnico y operacional de EcoRoad ante potenciales clientes.
 
-**Newsletter**:
+<div align="center">
+  <img src="../assets/chapter4/testimonials.png" alt="Paso 4">
+</div>
 
-**Pie de Página**:
+**Pricing**
 
+La sección "Pricing" expone el modelo de monetización bajo el título "Flexible, Scalable Subscription Plans". Estructura la oferta en tres planes SaaS escalables (Base, Professional y Enterprise), permitiendo alternar entre facturación mensual y anual con descuento. Cada tarjeta detalla el precio, el perfil de cliente objetivo, un botón directo de acción y un listado de funcionalidades clave que van desde el monitoreo básico de proyectos hasta integraciones avanzadas y soporte 24/7.
 
-**LADING PAGE MOCK-UP MOBILE**
+<div align="center">
+  <img src="../assets/chapter4/plans.png" alt="Paso 4">
+</div>
 
+**About team**
 
+La sección "About Team" presenta al equipo detrás de la plataforma bajo el título "Driving Innovation and Sustainability in Highway Infrastructure". Incluye un video institucional que muestra el proceso colaborativo del grupo, acompañado por un bloque explicativo que resalta su enfoque multidisciplinario, la combinación de ingeniería de software con sostenibilidad y su visión para transformar el monitoreo ambiental tradicional en una experiencia digital eficiente e intuitiva.
 
-**Header y Navegación**:
+<div align="center">
+  <img src="../assets/chapter4/abouteam.png" alt="Paso 4">
+</div>
 
-**Título (H1)**:
-**Texto**:
+**Our team**
 
-**Opciones**:
+La sección "Our Team" presenta a los integrantes del proyecto bajo el título "Meet the multidisciplinary team behind EcoRoad's environmental telemetry platform". Organiza los perfiles en tarjetas individuales que incluyen fotografía, como Software Engineers y una breve descripción profesional centrada en sus habilidades de desarrollo y contribución a la plataforma. Justo debajo, la sección concluye con un banner final de conversión enfocado en la transformación de la sostenibilidad ambiental, ofreciendo botones directos para iniciar o agendar una sesión con un especialista.
 
-**Elemento Visual**:
+<div align="center">
+  <img src="../assets/chapter4/ourteam.png" alt="Paso 4">
+</div>
 
-**Cuerpo de Contenidos**:
-1. **Pilares de Gestión**:
-2. **Beneficios Enumerados (01-04)**:
-3. **Autoridad y Respaldo**:
+**Footer**
 
-**Onboarding en Pasos**:
+El Footer (pie de página) de la plataforma cierra el sitio con una estructura institucional sobre fondo oscuro. Se divide en cuatro columnas principales: la primera incluye el logotipo, una breve descripción de la propuesta de valor y el eslogan ("Infrastructure today, a better environment"); las dos siguientes organizan enlaces rápidos hacia los módulos de telemetría y el marco regulatorio/normativo; y la última muestra los canales de contacto, soporte técnico y sedes regionales. En la franja inferior incluye los derechos de autor reservados e información de políticas de privacidad y seguridad de datos.
 
-**Testimonios**:
+<div align="center">
+  <img src="../assets/chapter4/footer.png" alt="Paso 4">
+</div>
 
-**Logos de Respaldo**:
+4.4. Web Applications UX/UI Design.
 
-**Cierre**:
+4.4.1. Web Applications Wireframes.
 
-**Newsletter**:
+**Home**
 
-**Footer Organizado**:
+Muestra el resumen global de la red telemática (proyectos, sensores, alertas e incidentes activos) y el estado general de los proyectos junto con un feed de lecturas recientes fuera de parámetro
 
+<div align="center">
+  <img src="../assets/chapter4/wf-home.png" alt="Home">
+</div>
 
-## 4.4. Web Applications UX/UI Design.
-<a id="4-4-web-applications-ux-ui-design"></a>
+**Projects**
 
+Ofrece el listado general de obras viales indicando su estado ambiental (óptimo, bajo observación o crítico), cantidad de sensores IoT asociados y métricas de alertas e incidentes
+<div align="center">
+  <img src="../assets/chapter4/wf-projects.png" alt="Projects">
+</div>
 
-### 4.4.1. Web Applications Wireframes.
-<a id="4-4-1-web-applications-wireframes"></a>
+**Project Dashboard**
 
-**Web applications** 
+Presenta la vista detallada de un proyecto vial específico con el porcentaje de cumplimiento normativo (ECA), estado de la red de sensores LoRaWAN, lista de incidentes pendientes y los responsables técnicos asignados.
 
- Wireframe - Team Chat Hub (Desktop) 
+<div align="center">
+  <img src="../assets/chapter4/wf-dashboard.png" alt="Dashboard">
+</div>
 
+**Alerts**
 
-Wireframe - Quick Reports (Desktop)
+Gestiona las alertas telemáticas preventivas por exceso de parámetros (material particulado, ruido, calidad de agua) y detalla la ubicación, sensor y acción preventiva recomendada en un panel técnico.
+<div align="center">
+  <img src="../assets/chapter4/wf-alerts.png" alt="Alerts">
+</div>
 
+**Incidents**
 
-Wireframe - Profile & Settings (Desktop)
+Proporciona un tablero Kanban organizado según el estado del flujo de trabajo (Pendiente, En Progreso, Resuelto, Cerrado) para la asignación y gestión operativa de contingencias ambientales.
+<div align="center">
+  <img src="../assets/chapter4/wf-incidents.png" alt="Incidents">
+</div>
 
+**History**
 
-Wireframe - My Projects (Desktop)
+Grafica la evolución temporal de los indicadores ambientales (como PM10) comparándolos contra los límites normativos del estándar ECA, incluyendo promedios del periodo y simulador de estado sin datos
+<div align="center">
+  <img src="../assets/chapter4/wf-history.png" alt="History">
+</div>
 
+**Reports**
 
-Wireframe - Home Leader Hub (Desktop)
+Facilita la configuración y generación de informes oficiales de cumplimiento ambiental exportables en PDF, integrando validación por firma digital y código de seguridad encriptado SHA-256.
+<div align="center">
+  <img src="../assets/chapter4/wf-reportsEnv.png" alt="Reports">
+</div>
 
+**Traceability history**
 
-Wireframe - Team Board (Desktop)
+Muestra la secuencia cronológica y la trazabilidad completa de un evento ambiental desde la detección de la alerta hasta el registro de evidencia e implementación de la acción correctiva.
+<div align="center">
+  <img src="../assets/chapter4/wf-historyEnv.png" alt="Reports">
+</div>
 
+**Collaborators**
 
-Wireframe - Meetings & Agreements (Desktop)
+Permite administrar usuarios y asignar permisos granulares basados en roles (RBAC), incluyendo un área para simular la experiencia de restricciones de acceso según el perfil seleccionado
+<div align="center">
+  <img src="../assets/chapter4/wf-team.png" alt="Team">
+</div>
 
+4.4.2. Web Applications Wireflow Diagrams.
 
-Wireframe - Profile (Desktop)
+4.4.3. Web Applications Mock-ups.
 
+En esta sección se presentan los mock-ups diseñados para la aplicación web de EcoRoad. Cada pantalla responde a las funcionalidades principales del sistema.
 
-Wireframe - Resource Planning (Desktop)
+**Home**
 
+Panel principal con resumen de red de telemetría, métricas globales (proyectos, sensores, alertas, incidentes) y lista de proyectos activos con tarjetas de alertas recientes en tiempo real.
 
-Wireframe - Risk & Compliance (Desktop)
+<div align="center">
+  <img src="../assets/images/chapter4/home.png" alt="Home">
+</div>
 
+**Projects**
 
-Wireframe - Advanced Analytics (Desktop)
+Listado general de obras viales con filtro por estado ambiental (óptimo, observación, crítico), conteo de sensores activos y accesos directos al detalle de cada proyecto
 
+<div align="center">
+  <img src="../assets/images/chapter4/projects.png" alt="Projects">
+</div>
 
-Wireframe - Settings (Desktop)
+**Project Dashboard**
 
+Vista detallada de un proyecto específico (Carretera Lima-Canta) con porcentaje de cumplimiento normativo, datos de telemetría LoRaWAN, lista de incidentes pendientes y responsables técnicos.
 
-Wireframe - Portfolio Master (Desktop)
+<div align="center">
+  <img src="../assets/images/chapter4/projects-dashboard.png" alt="Dashbpard">
+</div>
 
+**Alerts**
 
-Wireframe - Home Leader Hub (Desktop)
+Gestor de alertas preventivas que notifica excesos de parámetros (material particulado, ruido, agua) e incluye un panel técnico con detalles y acciones de mitigación recomendadas.
 
+<div align="center">
+  <img src="../assets/images/chapter4/alerts.png" alt="Alerts">
+</div>
 
-**Web applications mobil** 
+**Incidents**
 
-Wireframe - Team Chat Hub (Mobile)
+Tablero tipo Kanban organizado por estado (Pendiente, En Progreso, Resuelto, Cerrado) para la trazabilidad y asignación de responsables en la atención de eventos ambientales.
 
+<div align="center">
+  <img src="../assets/images/chapter4/incidents.png" alt="Incidents">
+</div>
 
-Wireframe - Quick Reports (Mobile)
+**History**
 
+Gráfico de evolución temporal de indicadores (como PM10) comparados contra los límites normativos del estándar (ECA), con promedios y simulador de estados sin datos
 
-Wireframe - My Projects (Mobile)
+<div align="center">
+  <img src="../assets/images/chapter4/projects-history.png" alt="History">
+</div>
 
+**Reports**
 
-Wireframe - Profile & Settings (Mobile)
+Módulo de generación de informes ambientales oficiales exportables en PDF con validación de firma digital y código de seguridad encriptado SHA-256.
 
+<div align="center">
+  <img src="../assets/images/chapter4/reports.png" alt="Reports">
+</div>
 
-Wireframe - Leader Hub Home (Mobile)
+**Collaborators**
 
+Panel de administración de usuarios y permisos (RBAC), con simulación de restricciones de acceso según el perfil técnico asignado.
 
-Wireframe - Team Board (Mobile)
+<div align="center">
+  <img src="../assets/images/chapter4/team.png" alt="Team">
+</div>
 
+### Mock-ups Version Mobile
 
-Wireframe - Meetings & Agreements (Mobile)
+**Projects**
 
+Listado vertical de concesiones viales que muestra métricas rápidas de estado ambiental (Critical, Observation, Optimal), sensores, alertas e incidentes por proyecto.
+<div align="center">
+  <img src="../assets/chapter4/projects-mob.png" alt="Team">
+</div>
 
-Wireframe - Admin & System (Mobile)
+**Project Dashboard**
 
+Vista de detalle del proyecto (Carretera Lima–Canta) con porcentaje de cumplimiento normativo (ECA), métricas de red telemática LoRaWAN, incidentes pendientes y profesionales responsables
+<div align="center">
+  <img src="../assets/images/chapter4/dashboard-mob.png" alt="Team">
+</div>
 
-Wireframe - Portfolio Master (Mobile)
+**IoT Sensors**
 
+Panel telemático de red con el mapa/perfil topográfico de nodos, estado de conexión de estaciones y tarjetas de monitoreo en tiempo real por variable (PM10, ruido ambiental).
+<div align="center">
+  <img src="../assets/images/chapter4/iot-mob.png" alt="Team">
+</div>
 
-Wireframe - Resource Planning (Mobile)
+**Alerts**
 
+Gestor móvil de alertas preventivas que notifica desviaciones críticas de parámetros con gráfico de tendencia, protocolo técnico y acciones preventivas recomendadas.
 
-Wireframe - Risk & Compliance (Mobile)
+<div align="center">
+  <img src="../assets/images/chapter4/alert-mob.png" alt="Team">
+</div>
 
+**Environmental Incidents**
 
-Wireframe - Advanced Analytics (Mobile)
+Tablero de seguimiento de eventos e incidentes ambientales con filtro por estado (Pending, In Progress, Resolved) y tarjetas para la asignación de responsables en campo.
+<div align="center">
+  <img src="../assets/images/chapter4/env-inc-mob.png" alt="Team">
+</div>
 
+**Traceability History**
 
-Wireframe - Admin Settings (Mobile)
+Línea de tiempo cronológica (Event Audit Trail) que detalla la trazabilidad desde la alerta inicial hasta el registro de evidencia fotográfica y la acción correctiva aplicada.
 
+<div align="center">
+  <img src="../assets/images/chapter4/envi-mob.png" alt="Team">
+</div>
 
-Wireframe - Executive Profile (Mobile)
+**Indicator History**
 
+Gráfico de evolución temporal de variables (PM10) frente a los límites normativos del ECA, acompañados de promedios, valores máximos/mínimos y certificado de monitoreo.
 
-## 4.4.2. Web Applications Wireflow Diagrams.
-<a id="4-4-2-web-applications-wireflow-diagrams"></a>
+<div align="center">
+  <img src="../assets/images/chapter4/envi-mob.png" alt="Team">
+</div>
 
+**Environmental Reports**
 
-## 4.4.3. Web Applications Mock-ups.
-<a id="4-4-3-web-applications-mock-ups"></a>
+Configuración y generación de informes oficiales de cumplimiento ambiental con opción de descarga en PDF, vista previa e historial con hash de seguridad SHA-256.
+<div align="center">
+  <img src="../assets/images/chapter4/report-mob.png" alt="Team">
+</div>
 
-**Versión Desktop Mockups - Líderes y Jefes de Gestión de Proyectos** 
+**Collaborators & Permissions**
 
-**El usuario inicia con el Login correspondiente colocando sus datos**
+Administración móvil de personal asignado al corredor y gestor de permisos por rol (RBAC) para el control de lectura, edición y exportación de datos.
 
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
+<div align="center">
+  <img src="../assets/images/chapter4/team-mob.png" alt="Team">
+</div>
 
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
+**Subscription & Licensing**
 
-**El usuario entra y lo primero que se observa es el Home de la aplicación web**
+Tarjetas de planes de suscripción (Starter Corridor y Enterprise Concession) que detallan costos, capacidades telemáticas e integración normativa.
+<div align="center">
+  <img src="../assets/images/chapter4/sus-mob.png" alt="Team">
+</div>
 
-**Después de presionar Apply Optimization aparece el mensaje Optimization Applied Successfully**
+4.4.3. Web Applications User Flow Diagrams.
 
-**El usuario se dirige a la sección de su perfil donde puede ver sus datos**
+4.5. Web Applications Prototyping.
 
-**El usuario desplega la sección Team Board en la cual se observa la función Operativa**
+4.6. Domain-Driven Software Architecture.
 
-**El usuario despliega la sección Reports donde puede exportar diferentes proyectos**
-
-**El usuario despliega la sección ChatHub donde puede ver los canales de sus compañeros**
-
-**El usuario despliega la sección My Projects donde puede contemplar sus diversos proyectos**
-
-**Aquí el usuario puede ir a Team Heatmap de un proyecto y ver el Resource Management**
-
-**El usuario también puede ver los Quick Reports en la plataforma**
-
-**El usuario despliega la sección Budgets y contempla la función Executive Health Summary**
-
-**El usuario despliega la sección Meetings y en ella puede ver los Meetings y Agreements**
-
-**El usuario puede exportar minutos de reuniones en los formatos visibles**
-
-**El usuario se dirige a Schedule New Meeting para programar alguna reunión**
-
-
-**Versión Desktop Mockups - Empresas Medianas y Grandes con Múltiples Portafolios**
-
-**El usuario inicia con el Login correspondiente colocando sus datos**
-
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
-
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
-
-**El usuario decide ir a la sección de Projects y seleccionar su Portafolio**
-
-**El usuario se dirige a la seccipin de Resource Planning donde mira el Team Bandwidth Analysis**
-
-**El usuario también se puede dirigir a la sección de Team Optimization para ver los resultados**
-
-**El usuario entra y lo primero que se observa es el Home de la aplicación web**
-
-**El usuario se dirige a la sección de Portfolio Results y contempla su análisis**
-
-**El usuario se dirige a la sección de Risk & Compliance donde contempla el Heatmap**
-
-**El usuario se dirige a Action Plans para la mitigación de riesgos**
-
-**El usuario se dirige a la sección de analytics donde aprecia el Advanced Analytics**
-
-**El usuario puede compartir su perfil a través de su configuración**
-
-**El usuario se dirige a la sección de su Perfil y puede ver su información personal**
-
-**El usuario se dirige a la herramienta de Settings**
-
-**Puede dirigirse a la configuración de integraciones**
-
-**Puede dirigirse a la configuración de los miembros del equipo**
-
-**Puede dirigirse a la configuración de notificaciones**
-
-
-**Versión Mobile Mockups - Líderes y Jefes de Gestión de Proyectos** 
-
-**El usuario inicia con el Login correspondiente colocando sus datos**
-
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
-
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
-
-**El usuario desplega la sección Board en la cual se observa la función Operativa**
-
-**El usuario puede añadir una nueva tarea si el lo desea**
-
-**El usuario se dirige a la sección de Meetings y puede acceder a múltiples funcionalidades**
-
-**En la sección Log el usuario puede elaborar una nota rápida del registro para un proyecto**
-
-**El usuario puede acceder a Calendar donde se puede apreciar mejor el calendario del equipo**
-
-**El usuario se dirige a la sección de Chat donde puede acceder a la funcionalidad de Chat Hub**
-
-**El usuario al presionar Attach Files puede subir archivos de manera adjunta**
-
-**El usuario al desplegar la sección Reports puede realizar un generador de reportes**
-
-**El usuario puede seleccionar un proyecto de la lista en donde puede seleccionar un proyecto de la lista**
-
-**El usuario puede descargar el reporte en formato PDF**
-
-**El usuario se dirige a la sección de su perfil y puede gestionar su información**
-
-**El usuario puede dirigirse a la sección de Security y ver el tema de la autenticación**
-
-**El usuario puede ver los detalles en su cuenta y a la vez puede gestionarlos**
-
-**El usuario se dirige a Notifications Preferences para ver si quiere o no recibir estas mismas**
-
-**El usuario despliega la opción de ver sus proyectos donde se aprecia mejor su organización**
-
-**El usuario al entrar en la sección Calendar puede ver el calendario del equipo**
-
-**El usuario entra y lo primero que se observa es el Home de la aplicación mobile**
-
-
-**Versión Mobile Mockups - Empresas Medianas y Grandes con Múltiples Portafolios** 
-
-**El usuario inicia con el Login correspondiente colocando sus datos**
-
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
-
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
-
-**El usuario puede dirigirse a la sección del Portfolio Govemance**
-
-**El usuario se dirige a la sección de Admin & Systems Control**
-
-**El usuario puede añadir una entidad para dicho portafolio que seleccione**
-
-**El usuario se dirige a la función de Advanced Analytics**
-
-**En base a lo que el usuario selecciono se genera un pronóstico**
-
-**El usuario se dirige a la sección de Resources y va a la planificación de recursos**
-
-**El usuario selecciona la sección de Risks y selecciona la función Risk & Compliance**
-
-**El usuario por otro lado puede iniciar una auditoría para los proyectos**
-
-**El usuario se dirige a la sección de Strategy y puede seleccionar la función del informe de la estrategia de contratación**
-
-**El usuario visita su cuenta mobile y selecciona Account Settings**
-
-**El usuario puede apreciar mejor su perfil y gestionarlo**
-
-**El usuario puede visualizar a los Team Members de cada proyecto**
-
-**El usuario se dirige a la sección Integrations de los proyectos**
-
-
-<div style="text-align: left; max-width: 900px; margin: 0 auto;">
-
-# 4.4.4. Web Applications User Flow Diagrams.
-<a id="4-4-4-web-applications-user-flow-diagrams"></a>
-
-## Segmento 1: Líderes y Jefes de Gestión de Proyectos
-**User Flow Web**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad**
-
-**El usuario puede ir a su perfil para gestionar alguna característica**
-
-**El usuario puede acceder a la sección del Team Board y sus funciones**
-
-**El usuario accede tanto al Chat Hub de los proyectos y Team Headmap**
-
-**El usuario puede ver sus proyectos activos y a detalle**
-
-**El usuario accede a las secciones tanto de Quick Reports y Budgets**
-
-**El usuario puede acceder a la sección de Meetings & Agreements**
-
-**También puede optar por presionar el botón Schedule Meeting**
-
-
-**User Flow Mobile**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad**
-
-**Este es el menú para el usuario donde aparecen múltiples opciones**
-
-**Aquí el usuario accede a la sección Board la cual permite añadir tareas**
-
-**El usuario puede acceder a la sección del chat y visita su perfil**
-
-**El usuario accede a algunas opciones del System Settings**
-
-**El usuario presiona Notification Preferences, otra función de System Settings**
-
-**El usuario puede acceder a la sección de Reports donde hay diversas funcionalidades**
-
-**El usuario accede a la sección Projects donde se observa el Team Bandwidth**
-
-**El usuario puede acceder a la sección Meetings & Agreements**
-
-**El usuario puede acceder a la sección Log Quick Note y Attach Files**
-
-**El usuario puede acceder a la sección Schedule New junto con la de Projects**
-
-
-## Segmento 2: Empresas Medianas y Grandes con Múltiples Portafolios
-**User Flow Web**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad y aparece la pantalla principal**
-
-**El usuario puede acceder a la sección de Resource Planning**
-
-**El usuario puede acceder a la sección Account y el usuario puede compartir su perfil**
-
-**El usuario puede acceder a la sección de Settings**
-
-**El usuario puede acceder a más funciones de la sección Settings**
-
-**El usuario puede acceder a la sección de Analysis y se dirige a su Portafolio**
-
-**El usuario puede acceder a la sección Projects**
-
-**El usuario puede acceder a la sección Risk & Compliance, el usuario accede a más funciones**
-
-
-**User Flow Mobile**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad**
-
-**El usuario se encuentra en la pantalla de inicio**
-
-**El usuario puede acceder a la sección Healthy, también a otras funciones**
-
-**El usuario al presionar Add Entity, continua con las Advanced Analytics**
-
-**El usuario puede seleccionar Generate Forecast**
-
-**El usuario puede acceder a Capacity & Bandwidth Analysis**
-
-**El usuario presiona Initiate Audit y se va a Hiring Strategy Report**
-
-**El usuario se dirige a la configuración de la cuenta, para seleccionar su información**
-
-**El usuario puede ver a los Team Members, tambien el architect de si mismo**
-
-## 4.5. Web Applications Prototyping.
-<a id="4-5-web-applications-prototyping"></a>
 
 
 
