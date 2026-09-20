@@ -21,10 +21,10 @@
     </tr>
     <tr align="center">
       <th colspan="2" style="vertical-align: middle;">(En la cabecera colocar por cada competidor nombre y logo)</th>
-      <th style="vertical-align: middle;"><strong>Su startup</strong><br><br><strong>EcoRoad (Caiman)</strong><br><br><img src="../assets/Chapter-2/EcoRoadLogo.png" alt="Logo EcoRoad" width="110"/></th>
-      <th style="vertical-align: middle;"><strong>Competidor 1</strong><br><br><strong>SiteHive</strong><br><br><img src="../assets/Chapter-2/SiteHiveLogo.png" alt="Logo SiteHive" width="110"/></th>
-      <th style="vertical-align: middle;"><strong>Competidor 2</strong><br><br><strong>Sonitus Systems</strong><br><br><img src="../assets/Chapter-2/SonitusSystemsLogo.png" alt="Logo Sonitus Systems" width="110"/></th>
-      <th style="vertical-align: middle;"><strong>Competidor 3</strong><br><br><strong>Autodesk CC</strong><br><br><img src="../assets/Chapter-2/AutodeskCCLogo.png" alt="Logo Autodesk CC" width="110"/></th>
+      <th style="vertical-align: middle;"><strong>Su startup</strong><br><br><strong>EcoRoad (Caiman)</strong><br><br><img src="../assets/img/Chapter2/EcoRoadLogo.png" alt="Logo EcoRoad" width="110"/></th>
+      <th style="vertical-align: middle;"><strong>Competidor 1</strong><br><br><strong>SiteHive</strong><br><br><img src="../assets/img/Chapter2/SiteHiveLogo.png" alt="Logo SiteHive" width="110"/></th>
+      <th style="vertical-align: middle;"><strong>Competidor 2</strong><br><br><strong>Sonitus Systems</strong><br><br><img src="../assets/img/Chapter2/SonitusSystemsLogo.png" alt="Logo Sonitus Systems" width="110"/></th>
+      <th style="vertical-align: middle;"><strong>Competidor 3</strong><br><br><strong>Autodesk CC</strong><br><br><img src="../assets/img/Chapter2/AutodeskCCLogo.png" alt="Logo Autodesk CC" width="110"/></th>
     </tr>
   </thead>
   <tbody>
