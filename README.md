@@ -13,11 +13,11 @@ NRC<br>
 **Informe del Trabajo Final**<br>
 Docente<br>
 **Villafuerte Bazan, Oscar Ivan**<br>
-<br>
-    <strong>Nombre del Startup:</strong> Caiman
-    <br><br>
-    <strong>Nombre del Producto:</strong> EcoRoad
-    <br><br>
+Equipo<br>
+
+
+Proyecto<br>
+****
 
 <br>**Integrantes**
 | Código      | Apellidos y Nombres                  |
@@ -25,8 +25,8 @@ Docente<br>
 | U202418029  | Pancorbo Amorós , Italo Raul         |
 | U202421413  | Guillen Chavez , Eduardo Martín      |
 | U20241E417  | Salcedo Muñoz , Andy Alfredo Hipolito|
-| U20241D483  | Taza Curay , Eduardo Miguel          | 
-| U202212897  | Roman Lopez , Miguel Angel Junior    |
+| U202        | Taza Curay , Eduardo Miguel          | 
+| U202        | Roman Lopez , Miguel Angel Junior    |
 
 **Período 202610**
 
