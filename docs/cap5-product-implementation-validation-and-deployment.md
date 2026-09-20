@@ -6,7 +6,39 @@
 
 ### 5.1.1. Software Development Environment Configuration
 <a id="5-1-1-software-development-environment-configuration"></a>
+#### Gestión del Proyecto
+Para la coordinación del proyecto y el seguimiento del trabajo colaborativo se utilizaron plataformas de comunicación, almacenamiento y gestión ágil. El código fuente de la Landing Page y del informe se centralizó en una organización de GitHub. Las reuniones virtuales del equipo y coordinaciones diarias se realizaron mediante Discord y WhatsApp, mientras que la planificación y asignación de tareas se gestionó a través de Zoho Sprints.
 
+* **Coordinación de código y repositorios:** GitHub
+* **Reuniones virtuales y syncs:** Discord
+* **Comunicación diaria:** WhatsApp
+* **Organización y seguimiento de tareas (Agile):** Zoho Sprints
+
+#### Gestión de Requerimientos
+Durante la fase de análisis y estructuración de requerimientos, se empleó UXPressia para diseñar las User Personas, Mapas de Empatía e Impact Maps. Se utilizó Miro para la construcción de escenarios As-Is / To-Be y los tableros de Event Storming.
+
+* **Diseño UX y Mapas de Impacto:** UXPressia
+* **Event Storming y Escenarios:** Miro
+* **Gestión de User Stories:** Zoho Sprints / GitHub Projects
+
+#### Diseño de Experiencia e Interfaz del Producto
+Para la concepción visual de la Landing Page y la maquetación preliminar de las interfaces de la plataforma, el equipo empleó Figma. Se elaboraron wireframes y maquetas de alta fidelidad para validar la estructura visual, paleta de colores y la disposición de las secciones informativas antes de su codificación.
+
+* **Diseño de Interfaz y Prototipado:** Figma
+
+#### Desarrollo de Software
+El desarrollo de la Landing Page responsiva se realizó utilizando tecnologías web estándar (HTML5, CSS3 y JavaScript). El informe del proyecto se redactó en formato Markdown (.md). Para el desarrollo del código y del informe se emplearon editores e IDEs como Visual Studio Code, WebStorm e IntelliJ IDEA, administrados mediante JetBrains Toolbox para mantener la homogeneidad del entorno.
+
+* **IDEs y Editores:** Visual Studio Code, WebStorm, IntelliJ IDEA
+* **Gestor de IDEs:** JetBrains Toolbox
+
+#### Documentación de Software
+La documentación técnica del informe se gestionó en archivos Markdown (.md) sincronizados con el repositorio central del grupo en GitHub mediante la metodología Git Flow, asegurando un trabajo colaborativo ordenado.
+
+#### Despliegue de Software
+Para la publicación de la Landing Page como primer entregable accesible al público, se utilizó GitHub Pages (o Vercel), plataforma que permite el alojamiento continuo desde la rama correspondiente del repositorio.
+
+* **Hosting y Despliegue Continuo:** GitHub Pages / Vercel
 
 <div style="text-align: left; max-width: 900px; margin: 0 auto;">
 
