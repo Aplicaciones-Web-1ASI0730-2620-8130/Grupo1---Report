@@ -37,7 +37,7 @@ Ser la plataforma HaaS/SaaS de referencia en Latinoamérica para la gestión y f
 | | Eduardo Martín Guillén Chávez |
 | | Andy Alfredo Hipolito Salcedo Muñoz |
 | <img src="../assets/images/chapter1/Italo.jpeg" alt="Italo" width="120" height="120" style="object-fit: cover;">  | Italo Raul Pancorbo Amorós|
-| | |
+| <img src="../assets/images/chapter1/Eduardo2.png" alt="Italo" width="120" height="120" style="object-fit: cover;">| Eduardo Miguel Taza Curay |
 
 ## 1.2 Solution Profile
 
