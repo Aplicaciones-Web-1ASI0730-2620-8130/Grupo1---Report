@@ -189,13 +189,13 @@ Las entrevistas semiestructuradas tienen como objetivo validar las hipótesis de
 **Segmento 1: Empresas constructoras viales**
 
 Para las empresas constructoras se elaboró el User Persona Diego Davalos. Se consideraron factores como su edad, su rol operativo y de mitigación ambiental en proyectos viales, su experiencia en la gestión de frentes de obra y su necesidad de optimizar procesos de registro preventivo de indicadores ambientales (aire, ruido, agua). Sus principales frustraciones giran en torno a la falta de un sistema automatizado para el monitoreo en tiempo real, la dependencia de registros manuales dispersos y la dificultad para recopilar evidencia ante auditorías imprevistas. Asimismo, se tomó en cuenta su familiaridad con herramientas móviles en campo y la necesidad de contar con una solución ágil y resistente a problemas de conectividad que le permita mitigar riesgos y evitar multas o paralizaciones de obra.
-<div align="center"><img src="../assets/Chapter-2/DiegoDávalos.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
+<div align="center"><img src="../assets/img/Chapter2/DiegoDávalos.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
 <br>
 
 **Segmento 2: Empresas de mantenimiento y rehabilitación vial**
 
 Para las empresas de mantenimiento y rehabilitación vial se elaboró el User Persona Piero Deza. Se consideraron factores como su rol de residente y supervisor de campo en la conservación de infraestructura de transporte existente, su experiencia en la gestión multisitio de frentes de trabajo dispersos y su necesidad de contar con un control operativo centralizado. Sus principales frustraciones se relacionan con la falta de visibilidad en tiempo real por la dispersión geográfica, la pérdida de tiempo en la búsqueda manual de registros fragmentados y el estrés ante imprevistos en vías abiertas al tráfico. Asimismo, se tomó en cuenta su uso de herramientas móviles y de escritorio, y la necesidad de una plataforma SaaS que permita gestionar alertas preventivas, automatizar el registro de evidencias y asegurar la eficiencia en la ejecución de los proyectos.
-<div align="center"><img src="../assets/Chapter-2/PieroDezaUser.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
+<div align="center"><img src="../assets/img/Chapter2/PieroDezaUser.png" alt="Gráfico Estadístico Administradores" width="80%"></div>
 <br>
 
 2.3.2. User Task Matrix.
