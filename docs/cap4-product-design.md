@@ -534,249 +534,140 @@ Tarjetas de planes de suscripción (Starter Corridor y Enterprise Concession) qu
 
 4.6. Domain-Driven Software Architecture.
 
+La arquitectura de software de EcoRoad se construye a partir de los resultados obtenidos en el Big Picture EventStorming, que permitió comprender en profundidad los flujos clave del dominio de gestión y cumplimiento ambiental en infraestructura vial, así como las interacciones entre las empresas constructoras, supervisoras y los dispositivos IoT de campo. A partir de este análisis inicial, se desarrolló una visión más estructurada del dominio utilizando los principios de Domain-Driven Design (DDD).
 
+En las siguientes secciones se presenta cada nivel del modelo, explicando la estructura, responsabilidades y comunicación entre los elementos que conforman la arquitectura de EcoRoad.
 
+4.6.1. Design-Level Event Storming.
 
-## 4.6. Domain-Driven Software Architecture.
-<a id="4-6-domain-driven-software-architecture"></a>
+Para identificar los eventos de dominio y profundizar en el modelado táctico, se realizó una sesión de EventStorming. Esta técnica permite visualizar y comprender el flujo de eventos dentro del dominio, facilitando la identificación de los Bounded Contexts, los aggregates (agregados) como fronteras transaccionales, los comandos, eventos, políticas y vistas de lectura.
 
-### 4.6.1. Design-Level EventStorming.
-<a id="4-6-1-design-level-eventstorming"></a>
+1. Commercial and Subscription Management
 
-**Global**
+Este contexto gestiona todo el ciclo comercial y el modelo de negocio de doble ingreso (dual revenue) de EcoRoad. Administra el registro de las cuentas corporativas y los contratos de suscripción independientes tanto para las empresas constructoras como para las supervisoras/consultoras ambientales. Su propósito es validar el acceso financiero a la plataforma mediante planes segmentados (Base, Profesional y Enterprise), asegurando que las operaciones viales de los clientes estén debidamente respaldadas por una suscripción activa.
+<div align="center">
+  <img src="../assets/images/chapter4/paso1.jpg" alt="Paso 4">
+</div>
 
+2. Identity and Access Management (IAM)
 
+El Bounded Context IAM se encarga de la autenticación, autorización y gobernanza de credenciales dentro del ecosistema EcoRoad. Administra procesos críticos como el registro de usuarios corporativos, inicio de sesión y la asignación granular de permisos y roles (tales como administradores, residentes de obra o personal de fiscalización). Su objetivo es garantizar accesos seguros, confiables y alineados con las políticas de control de seguridad de la información.
+<div align="center">
+  <img src="../assets/images/chapter4/paso2.jpg" alt="Paso 4">
+</div>
 
-*Leyenda*
-<table align="center">
-  <tr>
-    <td align="center">
-      Aggregate
-    </td>
-    <td align="center">
-      Command
-    </td>
-    <td align="center">
-      Domain Event
-    </td>
-    <td align="center">
-      External System
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      Policy
-    </td>
-    <td align="center">
-      Question / Risk
-    </td>
-    <td align="center">
-      User Actor
-    </td>
-    <td align="center">
-      View / Read Model
-    </td>
-  </tr>
-</table>
 
-**IAM(Identity and Access Management)**
+3. Project and Road Site Management
 
+Este contexto es el núcleo operativo para la planificación de la infraestructura vial. Permite registrar formalmente los proyectos de construcción y mantenimiento, configurar los tramos viales y establecer los frentes de trabajo donde se desarrollarán las operaciones. Su diseño valida de forma estricta que exista una cuenta y suscripción comercial activa antes de autorizar la creación y el despliegue lógico de cualquier nuevo proyecto de carretera.
+<div align="center">
+  <img src="../assets/images/chapter4/paso3.jpg" alt="Paso 4">
+</div>
 
+4. Monitoring Asset and Deployment
 
-**Project Management**
+Se encarga de la gestión del hardware de sensores IoT propios que provee el modelo HaaS (Hardware as a Service) de EcoRoad. Este contexto administra la geolocalización de los puntos de monitoreo, la habilitación de los dispositivos de campo, su asignación específica a los frentes de obra, así como su calibración y activación. Su propósito es asegurar que solo los sensores autorizados y debidamente vinculados puedan reportar datos al sistema.
+<div align="center">
+  <img src="../assets/images/chapter4/paso4.jpg" alt="Paso 4">
+</div>
 
+5. Environmental Monitoring
 
+Este contexto gestiona la captura y el procesamiento de la telemetría ambiental (indicadores de aire, ruido, agua y vibración) recopilada por la red de sensores IoT. Se encarga de configurar los parámetros ambientales y perfiles de umbrales normativos, permitiendo procesar tanto las mediciones automatizadas en tiempo real como los registros manuales efectuados en campo, reduciendo la dependencia de reportes que puedan ser alterados.
+<div align="center">
+  <img src="../assets/images/chapter4/paso5.jpg" alt="Paso 4">
+</div>
 
-**Task & Collaboration**
+6. Alerting and Risk Evaluation
 
+Funciona como el motor preventivo de la plataforma. Evalúa de manera continua las mediciones e indicadores ambientales frente a los límites y umbrales normativos establecidos. Su propósito es detectar desviaciones de manera temprana, confirmar riesgos ambientales críticos y emitir las alertas preventivas necesarias para que las empresas constructoras actúen antes de incurrir en incumplimientos legales o sanciones.
+<div align="center">
+  <img src="../assets/images/chapter4/paso6.jpg" alt="Paso 4">
+</div>
 
+7. Incident and Remediation Management
 
-**Governance & Risk**
+Este contexto coordina la respuesta operativa ante incidentes ambientales detectados en las obras viales. Controla el ciclo de vida de los tickets de incidencia, la asignación de responsables y cuadrillas de campo, la ejecución de acciones correctivas (como riego de vías o instalación de barreras acústicas), la subida de evidencias verificables y el cierre formal de las incidencias.
+<div align="center">
+  <img src="../assets/images/chapter4/paso7.jpg" alt="Paso 4">
+</div>
 
+8. Compliance and Reporting
 
+Agrupa la consolidación de los datos históricos de monitoreo, alertas e incidentes para la generación de reportes regulatorios de cumplimiento. Su propósito es proveer a las empresas supervisoras y consultoras ambientales una herramienta neutral y basada en datos inalterables, facilitando los procesos de auditoría, reduciendo los costos de fiscalización y generando confianza mutua entre los ejecutores de la obra y los entes fiscalizadores.
+<div align="center">
+  <img src="../assets/images/chapter4/paso8.jpg" alt="Paso 4">
+</div>
 
-**Resource & Capacity**
+4.6.2. Software Architecture Context Diagram.
 
+En este nivel se presenta una vista de alto nivel de la arquitectura, donde el foco está en el sistema de software **EcoRoad** como una “caja negra” y en las interacciones que mantiene con sus usuarios, sus dispositivos de campo y con otros sistemas externos.
 
+El *Context Diagram* muestra al **EcoRoad Software System** como un recuadro en el centro, rodeado por los principales actores y sistemas con los que se comunica:
 
-**Document Management**
+* **Site Resident**: usuario interno principal (ingeniero residente o supervisor de obra) responsable de registrar proyectos viales, monitorear alertas ambientales en tiempo real, asignar acciones de remediación a las cuadrillas y autorizar el cierre de incidencias socioambientales.
+* **Regulatory Auditor**: usuario externo o entidad fiscalizadora (MTC / OEFA) que accede a la plataforma para revisar expedientes de cumplimiento y validar el acatamiento normativo del Plan de Manejo Ambiental.
+* **IoT Sensor Node**: dispositivo físico de campo distribuido en los frentes de obra que captura continuamente datos de telemetría (material particulado PM10/PM2.5, ruido, calidad de agua y vibraciones) y los transmite en tiempo real al sistema central.
+* **Payment System (Stripe / Niubiz)**: sistema externo encargado de procesar las suscripciones B2B y los pagos asociados al uso de la plataforma SaaS y al arrendamiento del hardware IoT (modelo HaaS).
+* **Google Maps API / GIS**: servicio de mapas utilizado para obtener la geolocalización, el trazado de tramos carreteros y la ubicación espacial de los nodos sensores en las obras.
+* **Notification Service (SendGrid / Twilio)**: servicio de mensajería utilizado para enviar notificaciones e instructivos automáticos por correo electrónico y SMS ante desvíos de umbrales normativos ECA.
 
+En el diagrama se representan las relaciones entre estos elementos, destacando que tanto los usuarios humanos (**Site Resident** y **Regulatory Auditor**) como los instrumentos de campo (**IoT Sensor Node**) interactúan directamente con **EcoRoad**, mientras que el sistema central se encarga de orquestar las integraciones con los servicios externos (pagos, mapas y notificaciones). Esta vista permite entender el alcance del sistema, los límites de responsabilidad y el ecosistema en el que se inserta **EcoRoad** antes de entrar a detalles de implementación.
 
 
-**Profile Management**
+<div align="center"><img src="../assets/images/chapter4/ContextDiagram.png" alt="Software Architecture Context Diagram"></div>
+<br>
 
+4.6.3. Software Architecture Container Diagrams.
 
+En el nivel de contenedores, la atención se desplaza desde “quién usa el sistema” hacia “cómo se organiza internamente el sistema en aplicaciones y fuentes de datos”. El *Container Diagram* muestra los elementos de alto nivel de la arquitectura de **EcoRoad**, sus responsabilidades principales y la forma en que se comunican entre sí y con los sistemas externos.
 
-**System Administration**
+La arquitectura lógica de **EcoRoad** se estructura en los siguientes contenedores:
 
+* **Landing Page**: aplicación web estática que presenta la propuesta de valor de **EcoRoad** (modelo híbrido HaaS/SaaS) para empresas constructoras y de conservación vial, guía a nuevos usuarios y redirige a la aplicación principal. Está desarrollada con tecnologías web estándar (HTML5, CSS3 y JavaScript) y se despliega en un entorno orientado a contenido estático.
+* **Single Page Application (SPA)**: aplicación web principal, implementada en Angular, donde interactúan el **Site Resident** y el **Regulatory Auditor**. Este contenedor concentra la experiencia de usuario, las vistas y la lógica de presentación para los 8 contextos del dominio (*Commercial &amp; Subscription Management*, *Identity &amp; Access Management - IAM*, *Project &amp; Road Site Management*, *Monitoring Asset &amp; Deployment*, *Environmental Telemetry &amp; Monitoring*, *Alerting &amp; Risk Evaluation*, *Incident &amp; Remediation Management*, y *Compliance &amp; Audit Reporting*).
+* **API Application**: backend implementado con Spring Boot, que expone una API REST, gestiona la ingesta continua de telemetría IoT y encapsula la lógica de negocio, reglas de evaluación de umbrales normativos ECA y orquestación de procesos. Este contenedor agrupa los módulos backend por contexto (*Subscription Backend*, *IAM Backend*, *Project Backend*, *Asset Management Backend*, *Telemetry Backend*, *Alert Engine Backend*, *Incident Backend* y *Compliance Reporting Backend*).
+* **Database**: base de datos relacional (PostgreSQL / MySQL), donde se persiste la información estructurada del sistema: proyectos viales, tramos carreteros, nodos sensores, mediciones telemétricas (material particulado PM10/PM2.5, ruido, agua y vibraciones), reglas de alerta ECA, tickets de incidencias, evidencias fotográficas, expedientes de cumplimiento, cuentas de usuario y suscripciones.
 
+En el diagrama se observa que:
 
-**Analytics & Reporting**
-
-
-
-<div style="text-align: left; max-width: 900px; margin: 0 auto;">
-
-### 4.6.2. Software Architecture Context Diagram.
-El Diagrama de Contexto representa la vista de más alto nivel de EcoRoad, detallando cómo el sistema interactúa con los usuarios y sistemas externos sin profundizar en detalles técnicos.
-<a id="4-6-2-software-architecture-context-diagram"></a>
-
-#### Sistema Central
-
-
-
-* **EcoRoad**: Solución integral para la gestión y monitoreo ambiental de proyectos de infraestructura vial, orientada a centralizar la información, detectar riesgos ambientales y facilitar el cumplimiento de las normativas.
-
-#### Usuarios
-
-##### Segmento A: Empresas Constructoras Viales
-
-
-* Gestionan proyectos de construcción y mantenimiento de carreteras.
-* Supervisan las condiciones ambientales de sus proyectos.
-* Identifican y atienden riesgos e incidentes ambientales.
-* Realizan seguimiento de medidas de mitigación y cumplimiento normativo.
-
-##### Segmento B: Consultoras y Supervisoras Ambientales
-
-
-
-* Supervisan el cumplimiento ambiental de múltiples proyectos.
-* Realizan inspecciones y monitoreo de indicadores ambientales.
-* Validan evidencias y acciones de mitigación.
-* Elaboran reportes y dan seguimiento a las incidencias detectadas.
-
-#### Sistemas Externos
-
-
-
-* **Servicio de Mapas y Geolocalización**
-  Permite visualizar proyectos, puntos de monitoreo e incidencias ambientales mediante información geográfica.
-
-* **Servicio Meteorológico**
-  Proporciona información climática que permite relacionar las condiciones ambientales con posibles riesgos dentro de los proyectos.
-
-* **Servicio de Notificaciones**
-  Permite enviar alertas automáticas a los responsables cuando se detectan riesgos, incidencias o condiciones que requieren atención.
-
-#### Resumen de Interacción
-
-
-
-* Los usuarios (Segmento A y B) interactúan directamente con **EcoRoad**.
-* **EcoRoad** centraliza la información ambiental y gestiona:
-
-  * Monitoreo de indicadores ambientales.
-  * Registro y seguimiento de incidencias.
-  * Acciones de mitigación y responsables.
-  * Evidencias y trazabilidad de las actividades.
-* **EcoRoad** integra servicios externos para:
-
-  * Geolocalización mediante servicios de mapas.
-  * Consulta de condiciones meteorológicas.
-  * Envío de notificaciones y alertas.
-* Los dispositivos **IoT** pueden enviar datos de sensores ambientales a EcoRoad, permitiendo detectar automáticamente condiciones fuera de los parámetros establecidos y generar alertas o incidencias para su atención.
-
-
-### 4.6.3. Software Architecture Container Diagrams.
-Este nivel desglosa el sistema EcoRoad en aplicaciones y componentes independientes, especificando las tecnologías y responsabilidades principales de cada contenedor que conforma la solución.
-
-Web Application
-
-
-Aplicación web desarrollada con Vue.js, encargada de proporcionar una interfaz interactiva para empresas constructoras viales y consultoras ambientales.
-
-Permite:
-
-Visualizar dashboards de monitoreo ambiental.
-Gestionar proyectos y puntos de monitoreo.
-Consultar incidencias y alertas.
-Registrar y supervisar acciones de mitigación.
-Visualizar información geolocalizada.
-Consultar evidencias y generar reportes.
-
-La aplicación se comunica con el backend mediante peticiones HTTPS hacia la API RESTful.
-
-API Application
-
-
-Construida en C# utilizando ASP.NET Core, constituye el núcleo de EcoRoad y centraliza la lógica de negocio y el procesamiento de la información ambiental.
-
-Este componente se encarga de:
-
-Gestionar proyectos y puntos de monitoreo.
-Procesar información proveniente de los dispositivos IoT.
-Analizar los valores de los indicadores ambientales.
-Comparar los datos recibidos con umbrales configurados.
-Generar automáticamente alertas e incidencias.
-Gestionar acciones de mitigación y responsables.
-Exponer endpoints RESTful para la Web Application.
-Integrarse con servicios externos de mapas, clima y notificaciones.
-IoT Monitoring
-
-
-Componente encargado de recibir y gestionar los datos provenientes de sensores ambientales instalados en los proyectos viales.
-
-Los dispositivos IoT pueden monitorear variables como:
-
-Calidad del aire.
-Nivel de ruido.
-Temperatura.
-Humedad.
-Calidad del agua.
-
-Los datos recopilados son enviados hacia la API Application, donde son procesados y evaluados según los parámetros ambientales establecidos. Cuando se detecta un valor fuera del rango permitido, EcoRoad puede generar automáticamente una alerta e incidencia para su atención.
-
-Database
-
-
-Motor de base de datos relacional basado en MySQL, responsable de almacenar de forma persistente la información generada por EcoRoad.
-
-Garantiza:
-
-Integridad de la información de los proyectos.
-Persistencia de los datos de monitoreo ambiental.
-Registro histórico de incidencias y alertas.
-Trazabilidad de las acciones de mitigación.
-Almacenamiento de responsables, evidencias y estados.
-Consulta histórica para la generación de reportes.
-
-La API Application es responsable de gestionar las operaciones de lectura y escritura sobre la base de datos, evitando que la Web Application acceda directamente a ella.
-
-
-### 4.6.4. Software Architecture Components Diagrams.
-<a id="4-6-4-software-architecture-components-diagrams"></a>
-
-En el nivel de componentes se detalla la descomposición interna de los contenedores de EcoRoad, mostrando los bloques estructurales que conforman la solución y las relaciones entre ellos. Debido a que la Web Application y la Database pueden ser complementadas mediante diagramas específicos de frontend y base de datos, esta sección pone especial énfasis en el contenedor API Application, donde se concentra la lógica de negocio y el procesamiento de la información ambiental.
-
-El diagrama de componentes de la API Application organiza la arquitectura interna de EcoRoad de acuerdo con los principales contextos funcionales del dominio. Cada módulo backend representa un componente encargado de una responsabilidad específica:
-
-Project Management Backend: administra los proyectos viales, sus datos generales, ubicaciones, estados y puntos de monitoreo asociados. Permite crear, consultar, actualizar y gestionar la información de los proyectos.
-Environmental Monitoring Backend: procesa y administra los indicadores ambientales registrados en los proyectos, permitiendo consultar mediciones históricas y actuales de variables como calidad del aire, ruido, temperatura, humedad y calidad del agua.
-IoT Integration Backend: gestiona la comunicación entre EcoRoad y los dispositivos IoT instalados en los proyectos. Recibe los datos provenientes de los sensores, valida las mediciones y las incorpora al sistema para su posterior análisis.
-Risk & Incident Backend: analiza las mediciones ambientales y las compara con los parámetros establecidos. Cuando identifica condiciones que superan los límites permitidos, genera alertas e incidencias ambientales de manera automática.
-Mitigation Backend: administra las acciones correctivas y medidas de mitigación asociadas a las incidencias. Permite asignar responsables, establecer fechas límite, actualizar estados y realizar el seguimiento hasta la resolución del problema.
-Evidence Backend: gestiona las evidencias relacionadas con inspecciones, incidencias y acciones de mitigación, permitiendo registrar fotografías, documentos y otros archivos que respalden las actividades realizadas.
-Reports Backend: centraliza la generación de reportes ambientales y de cumplimiento, utilizando la información almacenada de proyectos, mediciones, incidencias, acciones y evidencias.
-Geolocation Backend: administra la información geográfica de proyectos, puntos de monitoreo e incidencias, integrándose con el servicio externo de mapas y geolocalización para representar visualmente la información.
-Weather Backend: obtiene información meteorológica mediante el servicio externo correspondiente, permitiendo complementar el análisis de las condiciones ambientales y riesgos asociados a cada proyecto.
-Notification Backend: gestiona el envío de alertas y notificaciones a los responsables cuando se generan incidencias, se detectan valores fuera de los parámetros establecidos o existen acciones de mitigación pendientes.
-Shared Backend: proporciona componentes comunes, utilidades, validaciones, clases base, manejo de errores y mecanismos de infraestructura reutilizados por los demás módulos de la API.
+* Los usuarios humanos (**Site Resident** y **Regulatory Auditor**) acceden primero a la **Landing Page**, la cual redirige a la **SPA** tras el proceso de autenticación.
+* Los dispositivos físicos **IoT Sensor Node** transmiten lecturas telemétricas en tiempo real directamente hacia la **API Application** mediante protocolos de comunicación como MQTT o HTTPS.
+* La **SPA** se comunica exclusivamente con la **API Application** mediante peticiones HTTP/HTTPS con mensajes JSON, siguiendo un estilo REST.
+* La **API Application** persiste y consulta datos en la **Database** mediante JDBC y mapeo objeto–relacional (JPA/Hibernate).
+* Tanto la **SPA** como la **API Application** interactúan con los sistemas externos: el **Payment System (Stripe / Niubiz)** para el cobro de suscripciones y arrendamiento de hardware, la **Google Maps API** para la geolocalización y trazado espacial de tramos viales, y el **Notification Service (SendGrid / Twilio)** para el envío automático de notificaciones de alerta por correo electrónico y SMS.
+
+Esta vista resume la distribución de responsabilidades entre las capas de presentación (Landing Page y SPA), lógica e ingesta (API Application) y persistencia (Database), detallando sus tecnologías clave. A través de flujos unidireccionales y bidireccionales, el diagrama delimita el alcance de EcoRoad, mostrando cómo interactúan los usuarios y sensores, y cómo el sistema central orquesta las integraciones externas de pagos, mapas, notificaciones y fiscalización.
+<div align="center"><img src="../assets/images/chapter4/ContainerDiagram.png" alt="Incident & Remediation Management Context"></div>
+<br>
+
+4.6.4. Software Architecture Components Diagrams.
+
+En el nivel de componentes se detalla la descomposición interna de los contenedores, mostrando los bloques estructurales que conforman cada uno y las relaciones entre ellos. Dado que la **Single Page Application** y la **Database** son descritas mediante diagramas de clases frontend y de base de datos, en esta sección se pone especial énfasis en el contenedor **API Application**, donde reside la mayor parte de la lógica de negocio y la ingesta de telemetría ambiental.
+
+El *Component Diagram* de la **API Application** agrupa la arquitectura interna siguiendo los Bounded Contexts definidos en el dominio de **EcoRoad**. Cada módulo backend representa un componente principal dentro del contenedor:
+
+* **Subscription Backend**: administra el modelo comercial de doble ingreso (dual revenue), gestionando los contratos de suscripción SaaS (planes Starter, Professional y Enterprise) y los acuerdos HaaS de alquiler de sensores IoT. Se integra con el **Payment System (Stripe / Niubiz)** para el procesamiento de cobros y facturación.
+* **IAM Backend**: se encarga de la autenticación de usuarios, emisión y validación de tokens JWT, gestión de cuentas corporativas, roles (RBAC) y control de permisos de acceso a la plataforma.
+* **Project Backend**: gestiona el alta de proyectos de infraestructura vial, la sectorización de tramos carreteros y el establecimiento de frentes de obra.
+* **Asset Management Backend**: administra el inventario de dispositivos **IoT Sensor Node**, su estado operativo, la calibración de hardware y su vinculación lógica a tramos viales específicos.
+* **Telemetry Backend**: gestiona la ingesta de alto rendimiento y el procesamiento en tiempo real de las lecturas telemétricas (material particulado PM10/PM2.5, ruido, calidad de agua y vibraciones) enviadas por los sensores de campo.
+* **Alert Engine Backend**: evalúa continuamente las mediciones ambientales frente a los Estándares de Calidad Ambiental (ECA) para detectar desvíos e interactúa con el **Notification Service (SendGrid / Twilio)** para despachar avisos automáticos por correo electrónico y SMS.
+* **Incident Backend**: coordina el flujo de trabajo de tickets de incidencia socioambiental, la asignación de tareas a cuadrillas, la carga de evidencias fotográficas en campo y la autorización de cierre.
+* **Compliance Reporting Backend**: consolida el historial inmutable de telemetría, alertas e incidencias para empaquetar expedientes digitales de cumplimiento en PDF presentables ante auditorías regulatorias (MTC / OEFA).
+* **Shared Backend**: provee componentes compartidos, utilidades, clases base auditables, eventos y mecanismos de infraestructura transversales reutilizados por los demás módulos backend.
 
 En el diagrama se refleja cómo:
 
-La Web Application consume los servicios expuestos por los componentes de la API Application mediante endpoints RESTful, permitiendo gestionar proyectos, monitoreo, incidencias, acciones de mitigación, evidencias y reportes.
-El IoT Integration Backend recibe las mediciones provenientes del IoT Monitoring, validando y procesando los datos antes de almacenarlos.
-El Environmental Monitoring Backend administra las mediciones ambientales y trabaja junto con el Risk & Incident Backend para identificar valores que excedan los umbrales establecidos.
-El Risk & Incident Backend genera incidencias automáticamente cuando se detectan condiciones ambientales fuera de los parámetros permitidos y comunica estos eventos al Notification Backend.
-El Mitigation Backend gestiona las acciones necesarias para resolver las incidencias, mientras que el Evidence Backend permite registrar evidencias que demuestren el cumplimiento de dichas acciones.
-El Project Management Backend, Environmental Monitoring Backend, Risk & Incident Backend, Mitigation Backend, Evidence Backend y Reports Backend acceden a la Database para leer y escribir la información correspondiente a sus responsabilidades.
-El Geolocation Backend se integra con el Servicio de Mapas y Geolocalización para obtener información geográfica y representar proyectos, puntos de monitoreo e incidencias.
-El Weather Backend se comunica con el Servicio Meteorológico para obtener información climática utilizada como complemento para el monitoreo y análisis de riesgos.
-El Notification Backend se integra con el Servicio de Notificaciones para enviar alertas a los responsables de los proyectos.
-Todos los componentes backend pueden reutilizar las capacidades proporcionadas por el Shared Backend, favoreciendo la consistencia, reutilización de código y reducción de duplicidad.
+* La **SPA** consume los servicios expuestos por cada módulo backend a través de la **API Application**, utilizando endpoints REST específicos por contexto.
+* Los dispositivos físicos **IoT Sensor Node** transmiten lecturas en tiempo real directamente hacia el **Telemetry Backend** mediante protocolos de comunicación como MQTT o HTTPS.
+* Cada módulo backend accede a la **Database** para leer y escribir la información correspondiente a su contexto (por ejemplo, Telemetry Backend a tablas de mediciones, Incident Backend a tablas de tickets y evidencias, etc.).
+* Algunos módulos se integran con sistemas externos: **Subscription Backend** con el sistema de pagos (Stripe / Niubiz), **Project Backend** y **Asset Management Backend** con la API de mapas (Google Maps API), e **IAM Backend** y **Alert Engine Backend** con el servicio de notificaciones (SendGrid / Twilio).
+* Todos los módulos backend reutilizan capacidades comunes provistas por el **Shared Backend**, lo que favorsce la consistencia, la reutilización y la reducción de duplicación de código.
 
-De esta manera, el Component Diagram complementa los diagramas de clases y de base de datos de EcoRoad, mostrando cómo la API Application se divide en componentes coherentes con las funcionalidades principales del dominio y cómo estos colaboran entre sí para implementar el monitoreo ambiental, la detección de riesgos, la gestión de incidencias y las acciones de mitigación dentro de los proyectos viales.
+En conclusión, esta vista de componentes permite transparentar la organización interna del backend de **EcoRoad**, evidenciando la separación modular de responsabilidades según cada *Bounded Context*. Al estructurar de forma desacoplada la ingesta telemétrica, la evaluación de umbrales ECA y la gestión de incidencias, este diagrama sirve como puente entre la visión de contenedores de alto nivel y el diseño detallado de clases y persistencia del sistema.
+<div align="center"><img src="../assets/images/chapter4/ComponentDiagram.png" alt="Incident & Remediation Management Context"></div>
+<br>
 
 
 
@@ -826,7 +717,7 @@ Se centra en la definición de diagramas de clases, la interacción entre objeto
 ### Bounded Context 6 - Alerting and Risk Evaluation:
 ![Database Diagram - EcoRoad](/assets/images/chapter4/DBDiagram6.png)
 ### Bounded Context 7 - Incident and Remediation Management:
-![Database Diagram - EcoRoad](/assets/images/chapter4/DBDiagram6.jpeg)
+![Database Diagram - EcoRoad](/assets/images/chapter4/DBDiagram7.jpeg)
 ### Bounded Context 8 - Compliance and Reporting:
 ![Database Diagram - EcoRoad](/assets/images/chapter4/DBDiagram8.jpeg)
 
