@@ -27,9 +27,9 @@ Docente<br>
 | U20241D483  | Taza Curay , Eduardo Miguel          | 
 | U202212897  | Roman Lopez , Miguel Angel Junior    |
 
-**Período 202610**
+**Período 202620**
 
-**Julio 2026**
+**Septiembre 2026**
 
 </div>
 
