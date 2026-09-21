@@ -239,41 +239,53 @@ https://aplicaciones-web-1ASI0730-2620-8130.github.io/EcoRoad-LandingPage/
 | Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | fix: improve footer layout | Mejora de la estructura y presentación del footer, incluyendo módulos, marco regulatorio, información de contacto y enlaces adicionales. | 18/09/26|
 | Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: improve responsive design | Adaptación de la Landing Page para su correcta visualización en computadoras, tablets y dispositivos móviles. | 19/09/26 |
 | Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: add language selector | Incorporación del selector de idioma inglés/español para mejorar la accesibilidad e internacionalización de la Landing Page. | 19/09/26 |
+
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 <a id="5-2-1-5-execution-evidence-for-sprint-review"></a>
 
+Durante el presente Sprint se logró implementar y desplegar una primera versión funcional de la Landing Page de EcoRoad, orientada a presentar la propuesta de valor de la solución, sus principales funcionalidades, beneficios y planes de suscripción.
+
+La Landing Page fue desarrollada utilizando HTML, CSS y JavaScript, incorporando una estructura responsive que permite su correcta visualización tanto en computadoras como en dispositivos móviles. Asimismo, se implementaron diferentes componentes interactivos que permiten mejorar la experiencia de navegación del usuario.
+
+Como parte del Sprint, la solución fue publicada mediante GitHub Pages, permitiendo acceder a la Landing Page desde un entorno web público y validar su correcto funcionamiento.
+
+#### Resumen de logros
+
+- **Implementación de la Landing Page:** Se desarrolló una primera versión funcional de EcoRoad, presentando de manera clara su propuesta de valor orientada al monitoreo y gestión ambiental en proyectos de infraestructura vial.
+
+- **Presentación de soluciones y beneficios:** Se incorporaron secciones que muestran las principales soluciones de monitoreo ambiental, así como beneficios relacionados con reducción de riesgos, automatización de auditorías y trazabilidad georreferenciada.
+
+- **Presentación de funcionalidades y modelo SaaS:** Se implementaron secciones para mostrar funcionalidades como dashboards georreferenciados, alertas ambientales, trazabilidad de evidencias y generación de reportes, además de los planes de suscripción de la plataforma.
+
+- **Secciones de equipo y contacto:** Se añadieron las secciones de presentación del equipo y Call to Action, permitiendo al usuario conocer a los integrantes del proyecto y acceder a opciones de contacto o solicitud de demostración.
+
+- **Diseño responsive e internacionalización:** La Landing Page fue adaptada para computadoras, tablets y smartphones, e incorpora un selector de idioma que permite alternar el contenido principal entre inglés y español.
+
+- **Despliegue mediante GitHub Pages:** La solución fue publicada en un entorno web público, permitiendo validar su funcionamiento y acceder a la Landing Page desde distintos dispositivos.
 
 
-**Resumen de Logros:**
 
-- 
-
-- 
-
-- 
-
-- 
+Video de Demostración y Navegación: [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241d483_upc_edu_pe/IQAkn3u2kvFiTqMHYbNb0IjtAX7jKxhOE-uMBPIxo2_Q5Ys?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Aga9p0)
 
 
-
-Video de Demostración y Navegación: 
-
-
-Screenshots de la Implementación:
+Screenshots de la Implementación: <img src="..//assets/images/chapter5/Landing page .png">
 
 
 
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 <a id="5-2-1-6-services-documentation-evidence-for-sprint-review"></a>
 
+Durante este sprint se llevó a cabo el desarrollo e implementación de la Landing Page de EcoRoad, la cual funciona como punto principal de presentación de la solución y permite mostrar la propuesta de valor, funcionalidades, beneficios, planes de suscripción y características principales de la plataforma.
 
+En este Sprint no se desarrollaron endpoints REST ni servicios backend propios, debido a que el alcance estuvo enfocado en la implementación de una Landing Page utilizando HTML, CSS y JavaScript. Sin embargo, se documenta la URL pública donde se encuentra desplegada la solución y el repositorio que contiene el código fuente desarrollado.
+
+La Landing Page fue desplegada mediante GitHub Pages, permitiendo validar su correcta ejecución y acceder a ella desde diferentes dispositivos.
 
 **Descripción del logro:**
 
-- 
+- Desarrollo e implementación de la Landing Page de EcoRoad, incluyendo las secciones principales de presentación, soluciones, beneficios, funcionalidades, planes SaaS, equipo y Call to Action.
 
-- 
-
+- Implementación de diseño responsive, selector de idioma inglés/español y despliegue público mediante GitHub Pages.
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tr>
@@ -283,12 +295,21 @@ Screenshots de la Implementación:
     <th>URL / Endpoint</th>
     <th>Link de repositorio</th>
   </tr>
+
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Landing Page</td>
+    <td>Vista inicial y navegación de EcoRoad</td>
+    <td>GET</td>
+    <td>
+      <a href="https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/">
+        EcoRoad Landing Page
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage">
+        EcoRoad-LandingPage Repository
+      </a>
+    </td>
   </tr>
 </table>
 
