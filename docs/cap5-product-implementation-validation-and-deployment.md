@@ -156,7 +156,9 @@ Cualquier push a la rama `main` actualiza automáticamente el sitio desplegado.
 
 #### 5.2.1.1. Sprint Planning 1
 
-El Sprint 1 tiene como objetivo principal la implementación y despliegue de la primera versión funcional del Landing Page de EcoRoad, que permita presentar la propuesta de valor a los segmentos objetivo (empresas constructoras viales y firmas supervisoras ambientales) y redirigirlos hacia la futura plataforma web de monitoreo y gestión de incidentes.
+
+
+## Imágen de evidencia:
 
 | Sprint # | Sprint 1 |
 | :--- | :--- |
@@ -197,8 +199,11 @@ Para el Sprint 1, los aspectos de trabajo se organizan en torno a las secciones 
 
 El objetivo principal de este Sprint es implementar y desplegar la primera versión del Landing Page de Ecoroad, cubriendo las secciones de presentación de valor, funcionalidades, planes de suscripción, testimonios y formulario de contacto, con CTAs diferenciados para cada segmento objetivo.
 
-A continuación, se presenta el tablero de control del Sprint 1:
 
+
+Imágen de envidencia: <img src="../assets/images/trello.jpeg">
+
+[Tablero de Trello: Organización del Sprint - EcoRoad](https://trello.com/invite/b/6ab0928cab1e6c824069d8ae/ATTI8217aefaf5493c7dc99f935bc7566209F12E82AE/sprint-ecoroad)
 
 | US / TS / Task ID | Título | Descripción de Tarea | Estimación (Horas) | Integrante Asignado | Estado |
 | :--- | :--- | :--- | :---: | :--- | :---: |
@@ -323,15 +328,21 @@ La Landing Page fue desplegada mediante GitHub Pages, permitiendo validar su cor
 
 
 
-- 
+La finalización de este Sprint es el resultado de un esfuerzo coordinado para transformar los requerimientos de Vantage PMO en componentes de software funcionales. El equipo adoptó un flujo de trabajo ágil y riguroso, caracterizado por los siguientes puntos clave:
 
-- 
+La carga de trabajo se distribuyó estratégicamente, permitiendo que cada desarrollador liderara áreas críticas según su especialidad, desde la lógica de internacionalización hasta la optimización del diseño responsivo y multimedia.
 
-- 
+La evolución del proyecto se documentó a través de un historial de cambios continuo y granular. La unión de los módulos se realizó mediante procesos de Pull Request hacia la rama de integración, asegurando que cada nueva funcionalidad cumpliera con los estándares del proyecto antes de ser consolidada.
 
-- 
+Mantuvimos un canal de comunicación técnica constante para gestionar la integración de APIs y estilos, logrando resolver discrepancias de diseño o lógica de manera inmediata y colaborativa.
 
-- 
+El éxito de la entrega se fundamentó en la aplicación de buenas prácticas de desarrollo, asegurando un código limpio, mantenible y alineado con los objetivos de negocio de la plataforma.
+
+Este enfoque metodológico no solo permitió cumplir con el Sprint Goal, sino que garantizó una contribución equilibrada y de alto impacto por parte de todos los miembros del equipo en la construcción de la Landing Page.
+
+Métricas de Actividad en el Repositorio
+
+Como evidencia del dinamismo y la colaboración técnica, se adjuntan los indicadores de actividad (commits, merges y contribuciones) extraídos de GitHub:
 
 
 **Métricas de Actividad en el Repositorio**
@@ -339,17 +350,19 @@ La Landing Page fue desplegada mediante GitHub Pages, permitiendo validar su cor
 
 ### Analíticos de GitHub — Report
 
+![commits-report](/assets/images/commits-report.jpeg)
 
 #### Analíticos de GitHub — Landing Page
+![commits-report](/assets/images/commits-landing.jpeg)
 
 
 | Integrante | Usuario GitHub | Commits |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Eduardo Martín Guillen Chavez| Eduardox30-wq| 9 |
+| Pancorbo Amorós, Italo Raul   |pancorboitalo-design | 66|
+|Román López, Miguel Ángel Junior |MiguelRomn | 0|
+| Taza Curay, Eduardo Miguel| Edutaza10 | 11|
+| Andy Alfredo Hipolito Salcedo Muñoz| Andy777sdw| 11|
 
 
 
