@@ -1,7 +1,6 @@
 <div align="center">
 
-<img src="assets/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
-
+![Estructura de carpeta readm3](/assets/images/readm3/UPC_logo_transparente.png)
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
 **Carrera de Ingeniería de Software**
@@ -13,11 +12,11 @@ NRC<br>
 **Informe del Trabajo Final**<br>
 Docente<br>
 **Villafuerte Bazan, Oscar Ivan**<br>
-Equipo<br>
-
-
-Proyecto<br>
-****
+<br>
+    <strong>Nombre del Startup:</strong> Caiman
+    <br><br>
+    <strong>Nombre del Producto:</strong> EcoRoad
+    <br><br>
 
 <br>**Integrantes**
 | Código      | Apellidos y Nombres                  |
@@ -25,12 +24,12 @@ Proyecto<br>
 | U202418029  | Pancorbo Amorós , Italo Raul         |
 | U202421413  | Guillen Chavez , Eduardo Martín      |
 | U20241E417  | Salcedo Muñoz , Andy Alfredo Hipolito|
-| U202        | Taza Curay , Eduardo Miguel          | 
-| U202        | Roman Lopez , Miguel Angel Junior    |
+| U20241D483  | Taza Curay , Eduardo Miguel          | 
+| U202212897  | Roman Lopez , Miguel Angel Junior    |
 
-**Período 202610**
+**Período 202620**
 
-**Julio 2026**
+**Septiembre 2026**
 
 </div>
 
@@ -42,7 +41,7 @@ Proyecto<br>
 
 | Versión | Fecha | Autores | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| **AV1** | | | |
+| **AV1** | 20/9|  Pancorbo Amorós , Italo Raul <br> Guillen Chavez , Eduardo Martín <br> Salcedo Muñoz , Andy Alfredo Hipolito <br> Taza Curay , Eduardo Miguel <br> Roman Lopez , Miguel Angel Junior  |Para la entrega AV1 se consolidó la estructura del informe técnico, incluyendo carátula, registro de versiones, tabla de contenidos y la definición de Student Outcomes. <br><br>Capítulo I — Introducción: Se redactó el Startup Profile y el Solution Profile (EcoRoad), detallando la propuesta de valor para la gestión y construcción de proyectos viales. <br><br>Capítulo II — Requirements Elicitation & Analysis: Se realizó el análisis de competidores y el registro de entrevistas a profundidad. Se desarrolló el Needfinding (User Personas, Task Matrix, Journey Mapping), así como el Big Picture EventStorming para identificar los eventos clave del dominio y el Ubiquitous Language basado en los Bounded Contexts definidos.<br><br>Capítulo III — Requirements Specification: Se elaboró el Product Backlog priorizando las User Stories críticas. Se aplicó la metodología de Impact Mapping para alinear las funcionalidades con los objetivos estratégicos del negocio.<br><br>Capítulo IV — Product Design: Se definieron los lineamientos de estilo general y web, junto con la arquitectura de la información del sistema. Se documentó el diseño de las interfaces de usuario a través de wireframes y mock-ups para la Landing Page y la Web Application, abarcando tanto las vistas de escritorio como las adaptaciones móviles. Además, se estableció la arquitectura de software basada en Domain-Driven Design mediante los diagramas del modelo C4 (Contexto, Contenedor y Componentes), y se detalló el diseño técnico incorporando los diagramas de clases y de base de datos para los ocho Bounded Contexts del proyecto. <br><br> Capítulo V — Product Implementation: Se documentó la gestión de configuración de software, estándares de versionamiento (GitFlow) y convenciones de código. Se incluyó la evidencia del Sprint 1, detallando el Sprint Planning, Sprint Backlog (enfocado en US001, US002, US003 y US004), líderes de aspecto, métricas de colaboración y las evidencias del despliegue inicial de la Landing Page en GitHub Pages.  |
 | **TB1** | | | |
 | **AV2** | | | |
 | **TB2** | | | |
@@ -145,38 +144,7 @@ Proyecto<br>
     - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5-2-1-6-services-documentation-evidence-for-sprint-review)
     - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5-2-1-7-software-deployment-evidence-for-sprint-review)
     - [5.2.1.8. Team Collaboration Insights during Sprint](#5-2-1-8-team-collaboration-insights-during-sprint)
-  - [5.2.2. Sprint 2](#5-2-2-sprint-2)
-    - [5.2.2.1. Sprint Planning 2](#5-2-2-1-sprint-planning-2)
-    - [5.2.2.2. Aspect Leaders and Collaborators](#5-2-2-2-aspect-leaders-and-collaborators)
-    - [5.2.2.3. Sprint Backlog 2](#5-2-2-3-sprint-backlog-2)
-    - [5.2.2.4. Development Evidence for Sprint Review](#5-2-2-4-development-evidence-for-sprint-review)
-    - [5.2.2.5. Execution Evidence for Sprint Review](#5-2-2-5-execution-evidence-for-sprint-review)
-    - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5-2-2-6-services-documentation-evidence-for-sprint-review)
-    - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5-2-2-7-software-deployment-evidence-for-sprint-review)
-    - [5.2.2.8. Team Collaboration Insights during Sprint](#5-2-2-8-team-collaboration-insights-during-sprint)
-  - [5.2.3. Sprint 3](#5-2-3-sprint-3)
-    - [5.2.3.1. Sprint Planning 3](#5-2-3-1-sprint-planning-3)
-    - [5.2.3.2. Aspect Leaders and Collaborators](#5-2-3-2-aspect-leaders-and-collaborators)
-    - [5.2.3.3. Sprint Backlog 3](#5-2-3-3-sprint-backlog-3)
-    - [5.2.3.4. Development Evidence for Sprint Review](#5-2-3-4-development-evidence-for-sprint-review)
-    - [5.2.3.5. Execution Evidence for Sprint Review](#5-2-3-5-execution-evidence-for-sprint-review)
-    - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5-2-3-6-services-documentation-evidence-for-sprint-review)
-    - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5-2-3-7-software-deployment-evidence-for-sprint-review)
-    - [5.2.3.8. Team Collaboration Insights during Sprint](#5-2-3-8-team-collaboration-insights-during-sprint)
-  - [5.2.4. Sprint 4](#5-2-4-sprint-4)
-    - [5.2.4.1. Sprint Planning 4](#5-2-4-1-sprint-planning-4)
-    - [5.2.4.2. Aspect Leaders and Collaborators](#5-2-4-2-aspect-leaders-and-collaborators)
-    - [5.2.4.3. Sprint Backlog 4](#5-2-4-3-sprint-backlog-4)
-    - [5.2.4.4. Development Evidence for Sprint Review](#5-2-4-4-development-evidence-for-sprint-review)
-    - [5.2.4.5. Execution Evidence for Sprint Review](#5-2-4-5-execution-evidence-for-sprint-review)
-    - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5-2-4-6-services-documentation-evidence-for-sprint-review)
-    - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5-2-4-7-software-deployment-evidence-for-sprint-review)
-    - [5.2.4.8. Team Collaboration Insights during Sprint](#5-2-4-8-team-collaboration-insights-during-sprint)
-- [5.3. Validation Interviews](#53-validation-interviews)
-  - [5.3.1. Diseño de Entrevistas.](#531-diseño-de-entrevistas)
-  - [5.3.2. Registro de Entrevistas.](#532-registro-de-entrevistas)
-  - [5.3.3. Evaluaciones según heurísticas.](#533-evaluaciones-según-heurísticas)
-- [5.4. Video About-the-Product.](#54-video-about-the-product)
+  
 
 ---
 
@@ -195,11 +163,18 @@ Proyecto<br>
 
 # ABET – EAC - Student Outcome 5
 
-**Criterio:** *La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
+
+Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros 
+juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, 
+establecen objetivos, planifican tareas y cumplen objetivos.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de 
+conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro 
+del ABET – EAC - Student Outcome 5
 
 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :---- | :---- | :---- |
-| **Trabaja en equipo para proporcionar liderazgo en forma conjunta.** | | |
-| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.** | | |
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta.** | Eduardo Martín Guillen Chavez AV1: Lideró la definición arquitectónica desarrollando el Big Picture Event Storming, los diagramas C4 y la Domain Driving Architecture. Además, orientó la visión del producto colaborando en el needfinding, la task matrix y el Ubiquitous Language, participando también en el video del equipo.Pancorbo Amorós, Italo Raul AV1: Ejerció el rol de Team Leader gestionando la organización de ramas y merges del repositorio. Guió el diseño técnico mediante el desarrollo de diagramas ERD y de clase, y coordinó esfuerzos colaborando en el Capítulo 1, Capítulo V, las User Stories (US), el Ubiquitous Language, además de realizar 1 entrevista y participar en el video.Román López, Miguel Ángel Junior AV1: Lideró la ejecución técnica y visual inicial colaborando estrechamente con el desarrollo de los Mockups y wireframes, y responsabilizándose por el despliegue de la landing page.Taza Curay, Eduardo Miguel AV1: Apoyó en la dirección del diseño de interfaces colaborando en el Figma y en el repositorio de la landing page. Aportó a la investigación y documentación desarrollando 2 entrevistas, colaborando en el Capítulo V y participando en el video.Andy Alfredo Hipolito Salcedo Muñoz AV1: Dirigió la investigación de mercado mediante el desarrollo de competidores y análisis competitivo. Lideró la redacción del Capítulo 1 y Capítulo 3, desarrolló 1 entrevista y colaboró en la task matrix, además de participar en el video.| AV1: Durante el primer avance (AV1), el equipo Kaimán demostró un claro liderazgo compartido para el desarrollo del producto EcoRoad. Cada miembro asumió el liderazgo en áreas clave según sus fortalezas: arquitectura de software, gestión de repositorio, diseño de interfaces (Figma/Mockups) y análisis de mercado/competencia. La correcta organización de ramas bajo la guía del Team Leader y la toma de decisiones conjuntas en artefactos críticos como el Event Storming y el Ubiquitous Language reflejan un esfuerzo coordinado donde todos aportaron al direccionamiento del proyecto y cumplieron sus responsabilidades a tiempo y con calificación perfecta.|
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.** |Eduardo Martín Guillen Chavez AV1: Fomentó la integración de los requisitos del usuario con la arquitectura técnica cumpliendo con sus tareas de needfinding y diagramas en los plazos establecidos. Su participación en el video evidenció su compromiso con las dinámicas integradoras del grupo.Pancorbo Amorós, Italo Raul AV1: Planificó el entorno de trabajo colaborativo al establecer el flujo de control de versiones (ramas y merges) para el equipo. Cumplió los objetivos técnicos y documentales asignados, facilitando un entorno donde se pudieron integrar las entrevistas y las User Stories de manera fluida.Román López, Miguel Ángel Junior AV1: Estableció y cumplió sus metas operativas logrando el despliegue funcional de la landing page. Creó un entorno de trabajo conjunto al colaborar directamente en los wireframes y mockups necesarios para el avance del grupo.Taza Curay, Eduardo Miguel AV1: Apoyó activamente a sus compañeros colaborando en repositorios compartidos y herramientas de diseño cooperativo como Figma. Cumplió su meta de recopilación de datos al realizar 2 entrevistas a tiempo y colaboró en la redacción del Capítulo V.Andy Alfredo Hipolito Salcedo Muñoz AV1: Planificó y cumplió oportunamente con la entrega documental estructurando los Capítulos 1 y 3. Mantuvo una actitud colaborativa apoyando en la task matrix, realizando su entrevista correspondiente y uniéndose a sus compañeros en la grabación del video | AV1: El equipo logró consolidar un entorno inclusivo y orientado al cumplimiento de metas, evidenciado en la calificación máxima obtenida por todos los integrantes debido a la entrega puntual de sus asignaciones. La planificación de tareas fue efectiva, permitiendo que responsabilidades complejas —como el despliegue web, la elaboración de diagramas C4 y el desarrollo documental— se integraran exitosamente mediante una correcta gestión de repositorio. La activa participación de todo el equipo en las entrevistas, el diseño colaborativo en Figma y la grabación conjunta del video demuestran un fuerte compromiso con el trabajo en equipo y los objetivos del AV1|
