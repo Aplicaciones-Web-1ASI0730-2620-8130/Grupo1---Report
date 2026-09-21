@@ -217,63 +217,28 @@ A continuación, se presenta el tablero de control del Sprint 1:
 
 ---
 
-##### 5.2.1.4. Development Evidence for Sprint Review
-<a id="5-2-1-4-development-evidence-for-sprint-review"></a>
+### 5.2.1.4. Development Evidence for Sprint Review
 
+En esta sección se presentan las evidencias correspondientes al desarrollo realizado durante el Sprint 1 del proyecto EcoRoad. Durante este sprint, el equipo se enfocó principalmente en la implementación de la Landing Page, considerando la estructura visual, navegación, presentación de la propuesta de valor, beneficios, funcionalidades, planes de suscripción, equipo de trabajo y elementos de contacto.
 
+Asimismo, se implementaron mejoras relacionadas con la adaptación de la interfaz para diferentes dispositivos, la incorporación de recursos gráficos y la publicación de la Landing Page mediante GitHub Pages.
 
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th>Repository</th>
-    <th>Branch</th>
-    <th>Commit Id</th>
-    <th>Commit Message</th>
-    <th>Commit Message Body</th>
-    <th>Commited on (Date)</th>
-  </tr>
+El desarrollo se encuentra registrado en el repositorio oficial del equipo mediante commits que permiten evidenciar los principales avances realizados durante el sprint.
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+**Repository:**  
+https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage
 
+**Deployed Landing Page:**  
+https://aplicaciones-web-1ASI0730-2620-8130.github.io/EcoRoad-LandingPage/
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| --- | --- | --- | --- | --- | --- |
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: implement EcoRoad landing page | Implementación inicial de la Landing Page de EcoRoad, incluyendo su estructura principal, navegación y secciones informativas. | 17/09/26 |
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: add benefits and visual resources | Incorporación de imágenes, beneficios y recursos gráficos relacionados con el monitoreo y la gestión ambiental de proyectos viales. | 17/09/26 |
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: add team and call to action sections | Incorporación de la sección del equipo de EcoRoad y del Call to Action para solicitar demostraciones o contactar con especialistas. | 18/09/26 |
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | fix: improve footer layout | Mejora de la estructura y presentación del footer, incluyendo módulos, marco regulatorio, información de contacto y enlaces adicionales. | 18/09/26|
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: improve responsive design | Adaptación de la Landing Page para su correcta visualización en computadoras, tablets y dispositivos móviles. | 19/09/26 |
+| Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | main | [Commit ID] | feat: add language selector | Incorporación del selector de idioma inglés/español para mejorar la accesibilidad e internacionalización de la Landing Page. | 19/09/26 |
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 <a id="5-2-1-5-execution-evidence-for-sprint-review"></a>
 
