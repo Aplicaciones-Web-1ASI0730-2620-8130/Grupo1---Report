@@ -222,36 +222,7 @@ Imágen de envidencia: <img src="../assets/images/trello.jpeg">
 
 ---
 
-### 5.2.2. Sprint 2
 
-#### 5.2.2.1. Sprint Planning 2
-
-| Campo | Detalle |
-| :--- | :--- |
-| **Sprint #** | Sprint 2 |
-| **Date** | 2026-10-8 |
-| **Time** | 08:00 PM |
-| **Location** | Reunión virtual mediante Discord |
-| **Prepared By** | Pancorbo Amorós, Italo Raul |
-| **Attendees** | Eduardo Miguel Taza Curay / Miguel Angel Junior Roman Lopez / Eduardo Martín Guillen Chavez / Andy Alfredo Hipolito Salcedo Muñoz / Pancorbo Amorós, Italo Raul |
-| **Sprint 1 Review Summary** | Durante el Sprint 1 se entregó satisfactoriamente la Landing Page completa y responsiva de Ecoroad desplegada en GitHub Pages, junto con la documentación técnica inicial correspondiente a los Capítulos I al V del informe. |
-| **Sprint 1 Retrospective Summary** | El equipo mantuvo una sólida coordinación durante el desarrollo de EcoRoad. Se identificó la necesidad de estandarizar las convenciones de arquitectura en Vue.js, definir una estructura uniforme para componentes, views, services y recursos compartidos, organizar correctamente la API simulada y sus relaciones de datos, y unificar el flujo de trabajo en Git Flow mediante nombres de ramas estandarizados por funcionalidad del proyecto. |
-| **Sprint 2 Goal** | Desarrollar, integrar y desplegar la primera versión funcional (v1.0) de la aplicación Web Frontend de EcoRoad en Vue.js, implementando las interfaces y funcionalidades principales de los Bounded Contexts de Commercial and Subscription Management, Identity and Access Management (IAM), Project and Road Site Management, Monitoring Asset and Deployment, Environmental Monitoring, Alerting and Risk Evaluation, Incident and Remediation Management y Compliance and Reporting. |
-| **Sprint 2 Velocity** | Por definir según las User Stories seleccionadas para el Sprint 2 |
-| **Sum of Story Points** | Por definir según las User Stories seleccionadas para el Sprint 2 |
-
----
-
-
-#### 5.2.2.2. Aspect Leaders and Collaborators
-
-| Integrante | Rol / Bounded Contexts Asignados | Responsabilidades Principales en Sprint 2 |
-| :--- | :--- | :--- |
-| **Taza Curay, Eduardo Miguel** | Frontend Developer / Bounded Context Leader | Liderazgo de **Project and Road Site Management** y co-liderazgo de **Monitoring Asset and Deployment**. Desarrollo de las interfaces de registro y administración de proyectos viales, gestión de tramos y frentes de trabajo, así como la visualización de sensores IoT asociados a cada proyecto. |
-| **Roman Lopez, Miguel Angel Junior** | Frontend Developer / Bounded Context Leader | Liderazgo de **Identity and Access Management (IAM)** y **Commercial and Subscription Management**. Desarrollo de las interfaces de inicio de sesión, autenticación de usuarios, gestión de roles y permisos, visualización de planes de suscripción y administración de cuentas corporativas. |
-| **Guillen Chavez, Eduardo Martín** | Frontend Developer / Bounded Context Leader | Liderazgo de **Environmental Monitoring** y **Alerting and Risk Evaluation**. Desarrollo del dashboard de monitoreo ambiental, visualización de mediciones de sensores IoT, indicadores ambientales, evaluación de niveles de riesgo y presentación de alertas críticas según los umbrales normativos. |
-| **Hipolito Salcedo Muñoz, Andy Alfredo** | UX/UI Lead / Bounded Context Leader | Liderazgo de **Incident and Remediation Management** y co-liderazgo de **Monitoring Asset and Deployment**. Desarrollo del tablero de incidencias ambientales, asignación de responsables, seguimiento de acciones correctivas, registro de evidencias fotográficas y actualización del estado de las incidencias. |
-| **Pancorbo Amorós, Italo Raul** | Team Lead / Bounded Context Leader | Liderazgo general del equipo y coordinación del desarrollo del Sprint 2. Liderazgo de **Compliance and Reporting** y co-liderazgo de **Project and Road Site Management**. Supervisión de la integración de los módulos, seguimiento de las tareas y gestión de ramas en GitHub. Desarrollo de las interfaces de consulta del historial ambiental, visualización de indicadores de cumplimiento y generación de reportes ambientales en PDF. |
 
 ---
 ### 5.2.1.4. Development Evidence for Sprint Review
@@ -397,5 +368,47 @@ Como evidencia del dinamismo y la colaboración técnica, se adjuntan los indica
 | Andy Alfredo Hipolito Salcedo Muñoz| Andy777sdw| 11|
 
 
-
 </div>
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Date** | 2026-10-8 |
+| **Time** | 08:00 PM |
+| **Location** | Reunión virtual mediante Discord |
+| **Prepared By** | Pancorbo Amorós, Italo Raul |
+| **Attendees** | Eduardo Miguel Taza Curay / Miguel Angel Junior Roman Lopez / Eduardo Martín Guillen Chavez / Andy Alfredo Hipolito Salcedo Muñoz / Pancorbo Amorós, Italo Raul |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 se entregó satisfactoriamente la Landing Page completa y responsiva de Ecoroad desplegada en GitHub Pages, junto con la documentación técnica inicial correspondiente a los Capítulos I al V del informe. |
+| **Sprint 1 Retrospective Summary** | El equipo mantuvo una sólida coordinación durante el desarrollo de EcoRoad. Se identificó la necesidad de estandarizar las convenciones de arquitectura en Vue.js, definir una estructura uniforme para componentes, views, services y recursos compartidos, organizar correctamente la API simulada y sus relaciones de datos, y unificar el flujo de trabajo en Git Flow mediante nombres de ramas estandarizados por funcionalidad del proyecto. |
+| **Sprint 2 Goal** | Desarrollar, integrar y desplegar la primera versión funcional (v1.0) de la aplicación Web Frontend de EcoRoad en Vue.js, implementando las interfaces y funcionalidades principales de los Bounded Contexts de Commercial and Subscription Management, Identity and Access Management (IAM), Project and Road Site Management, Monitoring Asset and Deployment, Environmental Monitoring, Alerting and Risk Evaluation, Incident and Remediation Management y Compliance and Reporting. |
+| **Sprint 2 Velocity** | Por definir según las User Stories seleccionadas para el Sprint 2 |
+| **Sum of Story Points** | Por definir según las User Stories seleccionadas para el Sprint 2 |
+
+---
+
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+| Integrante | Rol / Bounded Contexts Asignados | Responsabilidades Principales en Sprint 2 |
+| :--- | :--- | :--- |
+| **Taza Curay, Eduardo Miguel** | Frontend Developer / Bounded Context Leader | Liderazgo de **Project and Road Site Management** y co-liderazgo de **Monitoring Asset and Deployment**. Desarrollo de las interfaces de registro y administración de proyectos viales, gestión de tramos y frentes de trabajo, así como la visualización de sensores IoT asociados a cada proyecto. |
+| **Roman Lopez, Miguel Angel Junior** | Frontend Developer / Bounded Context Leader | Liderazgo de **Identity and Access Management (IAM)** y **Commercial and Subscription Management**. Desarrollo de las interfaces de inicio de sesión, autenticación de usuarios, gestión de roles y permisos, visualización de planes de suscripción y administración de cuentas corporativas. |
+| **Guillen Chavez, Eduardo Martín** | Frontend Developer / Bounded Context Leader | Liderazgo de **Environmental Monitoring** y **Alerting and Risk Evaluation**. Desarrollo del dashboard de monitoreo ambiental, visualización de mediciones de sensores IoT, indicadores ambientales, evaluación de niveles de riesgo y presentación de alertas críticas según los umbrales normativos. |
+| **Hipolito Salcedo Muñoz, Andy Alfredo** | UX/UI Lead / Bounded Context Leader | Liderazgo de **Incident and Remediation Management** y co-liderazgo de **Monitoring Asset and Deployment**. Desarrollo del tablero de incidencias ambientales, asignación de responsables, seguimiento de acciones correctivas, registro de evidencias fotográficas y actualización del estado de las incidencias. |
+| **Pancorbo Amorós, Italo Raul** | Team Lead / Bounded Context Leader | Liderazgo general del equipo y coordinación del desarrollo del Sprint 2. Liderazgo de **Compliance and Reporting** y co-liderazgo de **Project and Road Site Management**. Supervisión de la integración de los módulos, seguimiento de las tareas y gestión de ramas en GitHub. Desarrollo de las interfaces de consulta del historial ambiental, visualización de indicadores de cumplimiento y generación de reportes ambientales en PDF. |
+
+#### #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+<a id="5-2-2-7-software-deployment-evidence-for-sprint-review"></a>
+
+
+![deploy-evidence](/assets/images/DeployEvidence1.jpeg)
+
+![deploy-evidence](/assets/images/DeployEvidence2.jpeg)
+
+![deploy-evidence](/assets/images/DeployEvidence3.jpeg)
+
+
