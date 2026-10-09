@@ -401,7 +401,55 @@ Como evidencia del dinamismo y la colaboración técnica, se adjuntan los indica
 | **Hipolito Salcedo Muñoz, Andy Alfredo** | UX/UI Lead / Bounded Context Leader | Liderazgo de **Incident and Remediation Management** y co-liderazgo de **Monitoring Asset and Deployment**. Desarrollo del tablero de incidencias ambientales, asignación de responsables, seguimiento de acciones correctivas, registro de evidencias fotográficas y actualización del estado de las incidencias. |
 | **Pancorbo Amorós, Italo Raul** | Team Lead / Bounded Context Leader | Liderazgo general del equipo y coordinación del desarrollo del Sprint 2. Liderazgo de **Compliance and Reporting** y co-liderazgo de **Project and Road Site Management**. Supervisión de la integración de los módulos, seguimiento de las tareas y gestión de ramas en GitHub. Desarrollo de las interfaces de consulta del historial ambiental, visualización de indicadores de cumplimiento y generación de reportes ambientales en PDF. |
 
-#### #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+#### 5.2.2.3. Sprint Backlog 2
+
+El siguiente Sprint Backlog presenta las historias de usuario y tareas planificadas para el Sprint 2, orientado a la implementación del frontend en VUE, la integración con el backend, la mejora de la experiencia de usuario y la consistencia visual de la landing page.
+
+| Sprint # | Sprint 2 | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| **US01** | Autenticación de Usuarios | T001 | Maquetación de vista Login/Auth | Crear la interfaz de inicio de sesión responsiva en Vue.js con soporte para credenciales de usuario. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US01** | Autenticación de Usuarios | T002 | Manejo de sesión y almacenamiento local | Implementar la gestión de estado de autenticación (tokens/sesión) y validación de campos obligatorios. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US01** | Autenticación de Usuarios | T003 | Redirección por roles | Configurar el enrutamiento según el perfil del usuario autenticado (Gerente, Ingeniero, Inspector). | 2h | Roman Lopez, Miguel Angel Junior | Done |
+| **US25** | Registro de Colaboradores y Permisos | T004 | Formulario de registro de colaboradores | Implementar la interfaz para ingresar datos del nuevo colaborador y seleccionar su nivel de acceso. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US25** | Registro de Colaboradores y Permisos | T005 | Gestión y modificación de permisos | Desarrollar el componente de tabla con opciones para actualizar los permisos asignados de forma inmediata. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US26** | Restricción de Acceso | T006 | Navigation Guards en Vue Router | Implementar guardias de navegación para bloquear rutas no autorizadas según el rol asignado. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US26** | Restricción de Acceso | T007 | Renderizado condicional en UI | Deshabilitar u ocultar botones y acciones de escritura para usuarios con permiso "Solo Lectura". | 2h | Roman Lopez, Miguel Angel Junior | Done |
+| **US06** | Comparación de Planes de Suscripción | T008 | Vista interactiva de planes SaaS | Maquetar la tabla comparativa de planes (Starter, Professional, Enterprise) con selector de pago mensual/anual. | 3h | Roman Lopez, Miguel Angel Junior | Done |
+| **US30** | Creación de Proyecto Vial | T009 | Formulario de alta de obra vial | Diseñar la interfaz para registrar proyectos viales definiendo ubicación, tramos y frentes de trabajo. | 4h | Taza Curay, Eduardo Miguel | Done |
+| **US30** | Creación de Proyecto Vial | T010 | Validaciones de formulario de proyecto | Implementar alertas de campos faltantes y validación de coordenadas de tramos viales. | 3h | Taza Curay, Eduardo Miguel | Done |
+| **US11** | Visualización General de Proyectos | T011 | Vista de portafolio de proyectos | Maquetar el listado general con estado ambiental, sensores activos, alertas e incidencias pendientes por proyecto. | 4h | Taza Curay, Eduardo Miguel | Done |
+| **US12** | Consulta de Resumen de Proyecto | T012 | Modal de resumen ejecutivo | Implementar la vista modal con indicadores consolidados del proyecto seleccionado. | 3h | Taza Curay, Eduardo Miguel | Done |
+| **US32** | Búsqueda Global de Proyectos e Incidencias | T013 | Barra de búsqueda centralizada | Desarrollar el buscador global con filtros por código de carretera, frente de trabajo o palabra clave. | 3h | Taza Curay, Eduardo Miguel | Done |
+| **US33** | Asociación de Sensores IoT | T014 | Formulario de alta de puntos IoT | Implementar la vista para vincular sensores IoT geolocalizados a tramos viales específicos. | 4h | Taza Curay, Eduardo Miguel | Done |
+| **US10** | Consulta de Estado de Sensores IoT | T015 | Listado e indicadores de sensores | Diseñar la vista con estado operativo, ubicación y tipo de parámetro medido por cada sensor. | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US10** | Consulta de Estado de Sensores IoT | T016 | Detección de sensores sin comunicación | Añadir alertas visuales cuando un sensor no reporte datos dentro del intervalo esperado. | 2h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US34** | Edición de Ubicación y Umbrales IoT | T017 | Modal de edición de parámetros IoT | Crear la interfaz para ajustar ubicación geográfica y umbrales normativos de alerta del sensor. | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US09** | Monitoreo de Mediciones en Tiempo Real | T018 | Widgets de telemetría en tiempo real | Implementar tarjetas interactivas que muestren el valor vigente e indicador de última actualización. | 4h | Guillen Chavez, Eduardo Martín | Done |
+| **US13** | Dashboard Ambiental de Proyecto | T019 | Layout del Dashboard centralizado | Diseñar el panel de control ambiental organizando tramos y puntos de monitoreo. | 5h | Guillen Chavez, Eduardo Martín | Done |
+| **US13** | Dashboard Ambiental de Proyecto | T020 | Gráficos interactivos de indicadores | Integrar gráficos de tendencias para parámetros de aire, ruido, agua y vibraciones. | 4h | Guillen Chavez, Eduardo Martín | Done |
+| **US14** | Evolución Histórica de Indicadores | T021 | Filtro por rango de fechas | Implementar controles de selección de fechas y visualización de la serie histórica registrada. | 3h | Guillen Chavez, Eduardo Martín | Done |
+| **US15** | Nivel de Riesgo de Indicadores | T022 | Semaforización de riesgo ambiental | Desarrollar componentes visuales para clasificar mediciones en estado Óptimo, Advertencia o Crítico. | 3h | Guillen Chavez, Eduardo Martín | Done |
+| **US16** | Consulta de Alertas Generadas | T023 | Bandeja de alertas del proyecto | Implementar la vista detallada de alertas con valor registrado, tramo, sensor y timestamp. | 3h | Guillen Chavez, Eduardo Martín | Done |
+| **US17** | Notificación de Alertas Críticas | T024 | Centro de notificaciones en la UI | Desarrollar banners y avisos automáticos para informar inmediatamente al Gerente de Proyecto sobre estados críticos. | 3h | Guillen Chavez, Eduardo Martín | Done |
+| **US18** | Registro de Incidencia Ambiental | T025 | Tablero de incidencias | Crear el formulario para registro manual e ingreso automático de incidencias en estado "Pendiente". | 4h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US19** | Asignación de Responsable | T026 | Modal de asignación de personal | Diseñar la interfaz para asignar responsable a una incidencia y cambiar su estado a "En proceso". | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US20** | Registro de Acción Correctiva | T027 | Formulario de acciones correctivas | Implementar la vista para registrar la respuesta en campo y actualizar la incidencia a "Atendida". | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US21** | Actualización de Estado de Incidencia | T028 | Flujo de cierre de incidencias | Desarrollar la validación que exige evidencia previa antes de permitir el estado "Cerrada". | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US22** | Registro de Evidencia de Campo | T029 | Carga de evidencias fotográficas | Diseñar el módulo para adjuntar fotografías, descripción, fecha, hora y ubicación de la acción. | 4h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US36** | Comunicación en Incidencias | T030 | Módulo de comentarios e historial | Implementar el timeline de notas y observaciones internas para coordinar equipos en obra. | 3h | Hipolito Salcedo Muñoz, Andy Alfredo | Done |
+| **US23** | Historial Ambiental de Proyecto | T031 | Vista cronológica del proyecto | Maquetar el historial consolidado con mediciones, alertas, incidencias y evidencias de un periodo. | 4h | Pancorbo Amorós, Italo Raul | Done |
+| **US24** | Generación de Reporte Ambiental | T032 | Módulo de configuración de reportes | Diseñar la vista de selección de rango de fechas y generación del documento de reporte. | 3h | Pancorbo Amorós, Italo Raul | Done |
+| **US24** | Generación de Reporte Ambiental | T033 | Previsualización y descarga PDF | Implementar la integración para previsualizar y exportar el informe consolidado oficial. | 4h | Pancorbo Amorós, Italo Raul | Done |
+| **US38** | Panel Consolidado de Salud | T034 | Dashboard multi-proyecto | Diseñar el tablero consolidado con el nivel de riesgo global de todas las carreteras en cartera. | 4h | Pancorbo Amorós, Italo Raul | Done |
+| **US39** | Visualización de KPIs Ambientales | T035 | Tarjetas analíticas de rendimiento | Implementar indicadores clave (% incidencias cerradas, tiempo de atención de alertas, sensores activos). | 3h | Pancorbo Amorós, Italo Raul | Done |
+| **US40** | Control de Versiones de Documentos | T036 | Módulo de gestión documental | Crear la interfaz para subir y gestionar versiones históricas de archivos normativos (PMA, DIA, EIA). | 3h | Pancorbo Amorós, Italo Raul | Done |
+
+
+
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 <a id="5-2-2-7-software-deployment-evidence-for-sprint-review"></a>
 
 
