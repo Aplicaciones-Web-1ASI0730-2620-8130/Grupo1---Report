@@ -445,7 +445,9 @@ En el Sprint 2 se logró desplegar la primera versión de la Frontend Web Applic
 
 ![EvidenciaFront](/assets/images/EvidenciaWeb4.jpeg)
 
-> **[Pendiente: insertar el enlace al video de navegación del Sprint 2 (upc-pre-202620-1asi0730-8130-Caiman-productnavigation-sprint-2).]**
+Video de evidencia:
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241d483_upc_edu_pe/IQBKnDlvgrUBTrm0ubp8ziwsAXeVyuD1lsqVZ1qMBecqAkw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rMrp5C
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 <a id="5-2-2-6-services-documentation-evidence-for-sprint-review"></a>
