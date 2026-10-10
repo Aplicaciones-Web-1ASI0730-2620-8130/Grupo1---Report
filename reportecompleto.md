@@ -2132,6 +2132,10 @@ Durante el Sprint 2 el equipo implementó la primera versión de la Frontend Web
 
 **Repositorio Landing Page:** https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage
 
+**Landing Page:**https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/
+
+**Aplicación Web:**https://ecoroad-frontend-ddli-peach.vercel.app/iam/login?redirect=%2Fprojects
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | --- | --- | --- | --- | --- | --- |
 | Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd | develop | cb4a256 | Initial commit | Creación del repositorio de la Web Application. | 08/10/2026 |
