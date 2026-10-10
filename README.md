@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src="assets/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
-![Estructura de carpeta readm3](/assets/images/readm3/UPC_logo_transparente.png)
+
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
 **Carrera de Ingeniería de Software**
@@ -160,9 +160,8 @@ Docente<br>
 ## [Conclusiones](#conclusiones)
 
 - [Conclusiones y recomendaciones](#conclusiones)
-- [Video About-the-Team](#recomendaciones)
 
----
+
 
 ## [Bibliografía](#bibliografia)
 
