@@ -531,3 +531,4 @@ Durante el Sprint 2 cada integrante implementó al menos un bounded context de l
 | Taza Curay, Eduardo Miguel | Edutaza10 | Compliance & Reporting | 2 |
 
 ![insights front](/assets/images/InsightsFront.jpeg)
+
