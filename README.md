@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="assets/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
+![Estructura de carpeta readm3](/assets/images/readm3/UPC_logo_transparente.png)
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
 **Carrera de Ingeniería de Software**
@@ -27,9 +28,9 @@ Docente<br>
 | U20241D483  | Taza Curay , Eduardo Miguel          | 
 | U202212897  | Roman Lopez , Miguel Angel Junior    |
 
-**Período 202610**
+**Período 202620**
 
-**Julio 2026**
+**Septiembre 2026**
 
 </div>
 
