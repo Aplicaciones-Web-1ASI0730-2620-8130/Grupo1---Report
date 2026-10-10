@@ -437,7 +437,13 @@ En el Sprint 2 se logró desplegar la primera versión de la Frontend Web Applic
 | Incident and Remediation Management | Tablero de incidencias con asignación, acciones, evidencias, resolución y cierre | `/incidents` |
 | Compliance and Reporting | Configuración, vista previa e historial de reportes | `/compliance/...` |
 
-> **[Pendiente: insertar screenshots de las principales vistas de la Web Application.]**
+![EvidenciaFront](/assets/images/EvidenciaWeb1.jpeg)
+
+![EvidenciaFront](/assets/images/EvidenciaWeb2.jpeg)
+
+![EvidenciaFront](/assets/images/EvidenciaWeb3.jpeg)
+
+![EvidenciaFront](/assets/images/EvidenciaWeb4.jpeg)
 
 > **[Pendiente: insertar el enlace al video de navegación del Sprint 2 (upc-pre-202620-1asi0730-8130-Caiman-productnavigation-sprint-2).]**
 
@@ -522,4 +528,4 @@ Durante el Sprint 2 cada integrante implementó al menos un bounded context de l
 | Salcedo Muñoz, Andy Alfredo Hipolito | Andy777sdw | Identity and Access Management | 2 |
 | Taza Curay, Eduardo Miguel | Edutaza10 | Compliance & Reporting | 2 |
 
-> **[Pendiente: insertar captura de Insights > Contributors del repositorio EcoRoad-FrontEnd.]**
+![insights front](/assets/images/InsightsFront.jpeg)
