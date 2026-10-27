@@ -511,7 +511,7 @@ Durante el Sprint 2 se realizó el primer despliegue de la Frontend Web Applicat
 
 ![deploy-evidence-2](/assets/images/DeployEvidence2.jpeg)
 
-3. **Verificación del despliegue:** Vercel muestra el despliegue en estado *Ready* desde la rama `develop`, publicado en https://ecoroad-frontend-ddli-peach.vercel.app/
+3. **Verificación del despliegue:** Vercel muestra el despliegue en estado *Ready* desde la rama `main`, publicado en https://ecoroad-frontend-ddli-peach.vercel.app/
 
 ![deploy-evidence-3](/assets/images/DeployEvidence3.jpeg)
 
