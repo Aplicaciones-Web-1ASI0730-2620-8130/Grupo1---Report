@@ -290,7 +290,7 @@ Durante el Sprint 1 el despliegue se centró en la publicación del Landing Page
 3. **Configuración de GitHub Pages:** en **Settings > Pages** se seleccionó como origen la rama `main` y la carpeta `/ (root)`.
 4. **Verificación del despliegue:** se comprobó el acceso al sitio publicado en https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/ desde navegadores de escritorio y móviles.
 
-> **[Pendiente: insertar captura de Settings > Pages del repositorio EcoRoad-LandingPage y captura del sitio publicado.]**
+
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 <a id="5-2-1-8-team-collaboration-insights-during-sprint"></a>
@@ -356,7 +356,7 @@ Para el Sprint 2, los aspectos de trabajo corresponden a los ocho bounded contex
 
 El objetivo principal de este Sprint es implementar y desplegar la primera versión de la Frontend Web Application de EcoRoad con Vue 3 y PrimeVue, consumiendo una Fake API que simula los futuros Web Services, y actualizar el Landing Page para redirigir a la aplicación desplegada.
 
-> **[Pendiente: insertar captura del tablero del Sprint 2 en Trello y su URL pública.]**
+
 
 | Sprint # | Sprint 2 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
