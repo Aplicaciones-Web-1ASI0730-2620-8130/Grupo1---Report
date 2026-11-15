@@ -30,7 +30,7 @@ Docente<br>
 
 **Período 202620**
 
-**Septiembre 2026**
+**Noviembre 2026**
 
 </div>
 
@@ -173,10 +173,10 @@ Docente<br>
 
 ---
 
-## [Conclusiones](#conclusiones)
+## [Conclusiones](#conclusiones-y-recomendaciones)
 
-- [Conclusiones y recomendaciones](#conclusiones)
-- [Video About-the-Team](#recomendaciones)
+- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Video About-the-Team](#video-about-the-team)
 
 ---
 
@@ -185,16 +185,6 @@ Docente<br>
 ---
 
 ## [Anexos](#anexos)
-
-
-| Anexo | Evidencia | Enlace |
-| :--- | :--- | :--- |
-| A1 | Tablero y estado de las 13 tareas del Sprint 3 | [Trello — Sprint 3 EcoRoad](https://trello.com/invite/b/6af96cc3b31b2f3ac6f7858d/ATTI06b3af4493183313e4c1b7fd9cdafe8cD3C2DA79/sprint-3-ecoroad) |
-| A2 | Landing Page publicada | [EcoRoad en GitHub Pages](https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/) |
-| A3 | Aplicación web integrada | [EcoRoad en Railway](https://ecoroad-frontend-production.up.railway.app/) |
-| A4 | Documentación de servicios | [EcoRoad API en Scalar](https://ecoroad-back-end-production.up.railway.app/scalar) |
-| A5 | Presentación del producto | [Video About-the-Product](https://1drv.ms/u/c/113B281D1AF386CE/IQDXJvOAgkOKTq1vVjRrzu_YAdsxD2o1nmj0KN3a8zEGrZE?e=CgGgNs) |
-| A6 | Material del equipo para el video About-the-Team | [OneDrive compartido por el equipo](https://1drv.ms/u/c/113B281D1AF386CE/IQDIA62u6t2kR66h-7Q64BZfAUKamVKIwUIPtTvyU2wQ8io?e=v8ttgn) |
 
 # ABET – EAC - Student Outcome 5
 
@@ -220,7 +210,7 @@ EcoRoad cuenta con una versión integrada publicada: landing en GitHub Pages y a
 
 ## Video About-the-Team
 
-[Material About-the-Team compartido por el equipo en OneDrive](https://1drv.ms/u/c/113B281D1AF386CE/IQDIA62u6t2kR66h-7Q64BZfAUKamVKIwUIPtTvyU2wQ8io?e=v8ttgn). Antes de la entrega, verificar que el enlace corresponda a la versión final y que incluya escenas de trabajo real, narración y testimonios ante cámara de los cinco integrantes.
+[Video About-the-Team compartido por el equipo en OneDrive](https://1drv.ms/v/c/113B281D1AF386CE/IQB5KqFx_XRURaeJLGk7sAr1AX5Oh7KdfaC7RzaxM6KVjc8?e=Oswkob).
 
 ## Bibliografía
 
@@ -233,4 +223,16 @@ EcoRoad cuenta con una versión integrada publicada: landing en GitHub Pages y a
 - Railway. (s. f.). *Deployments*. Railway Docs. https://docs.railway.com/deployments
 - Vite. (s. f.). *Getting started*. https://vite.dev/guide/
 - Vue.js. (s. f.). *Introduction*. https://vuejs.org/guide/introduction
+
+## Anexos de AV2 — Sprint 3
+<a id="anexos"></a>
+
+| Anexo | Evidencia | Enlace |
+| :--- | :--- | :--- |
+| A1 | Tablero y estado de las 13 tareas del Sprint 3 | [Trello — Sprint 3 EcoRoad](https://trello.com/invite/b/6af96cc3b31b2f3ac6f7858d/ATTI06b3af4493183313e4c1b7fd9cdafe8cD3C2DA79/sprint-3-ecoroad) |
+| A2 | Landing Page publicada | [EcoRoad en GitHub Pages](https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/) |
+| A3 | Aplicación web integrada | [EcoRoad en Railway](https://ecoroad-frontend-production.up.railway.app/) |
+| A4 | Documentación de servicios | [EcoRoad API en Scalar](https://ecoroad-back-end-production.up.railway.app/scalar) |
+| A5 | Presentación del producto | [Video About-the-Product](https://1drv.ms/u/c/113B281D1AF386CE/IQDXJvOAgkOKTq1vVjRrzu_YAdsxD2o1nmj0KN3a8zEGrZE?e=CgGgNs) |
+| A6 | Presentación del equipo | [Video About-the-Team](https://1drv.ms/v/c/113B281D1AF386CE/IQB5KqFx_XRURaeJLGk7sAr1AX5Oh7KdfaC7RzaxM6KVjc8?e=Oswkob) |
 
