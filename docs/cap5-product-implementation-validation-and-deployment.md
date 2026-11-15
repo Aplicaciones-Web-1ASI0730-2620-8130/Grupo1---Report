@@ -570,11 +570,11 @@ Al igual que en el capítulo de referencia, la tabla cruza integrantes con aspec
 | Guillen Chavez, Eduardo Martín | *Eduardox30-wq* | | L | | L | | | C | | C | | C |
 | Pancorbo Amorós, Italo Raul | *pancorboitalo-design / italopancor* | C | L | C | L | C | C | C | C | C | L | L |
 | Taza Curay, Eduardo Miguel | *Edutaza10* | | | | | | | | | L | | |
-| Salcedo Muñoz, Andy Alfredo Hipolito | *Andy (Andy777sdw)* | | | | | | | L | | | | |
+| Salcedo Muñoz, Andy Alfredo Hipolito | *Andy777sdw* (perfil: AndyChensi; firma Git: Andy) | | | | | | | L | | | | |
 
 *L = líder técnico según commits; C = colaborador en integración o corrección según commits.*
 
-Las dos `L` de Commercial y Projects distinguen la implementación en rama de Italo de la integración posterior de Eduardo (`ead7ae1`, `08beacd`, `8566fb7`, `10b2615`). En Alerting se registran la implementación de Andy (`dea462d`, `2d56059`), trabajo inicial de Italo (`786238b`) e integración de Eduardo (`649bdeb`). En Compliance, Taza desarrolló el contexto en su rama (`5374cb5`, `7dbdd54`) y Eduardo lo integró (`e882b34`). Miguel aportó también correcciones de tooling del frontend (`a2740af`). La `C` de Eduardo en Deployment corresponde a Scalar (`e6f4f9b`); no demuestra que configuró Railway. Los nombres `Andy` e `italopancor` son autorías de Git vinculadas aquí con los integrantes por el contexto de los repositorios; revisar la identidad de autor en GitHub antes de usar los números como evaluación individual.
+Las dos `L` de Commercial y Projects distinguen la implementación en rama de Italo de la integración posterior de Eduardo (`ead7ae1`, `08beacd`, `8566fb7`, `10b2615`). En Alerting se registran la implementación de Andy (`dea462d`, `2d56059`), trabajo inicial de Italo (`786238b`) e integración de Eduardo (`649bdeb`). En Compliance, Taza desarrolló el contexto en su rama (`5374cb5`, `7dbdd54`) y Eduardo lo integró (`e882b34`). Miguel aportó también correcciones de tooling del frontend (`a2740af`). La `C` de Eduardo en Deployment corresponde a Scalar (`e6f4f9b`); no demuestra que configuró Railway. La captura de perfil facilitada por el equipo identifica a Andy con el usuario de GitHub `Andy777sdw` y el nombre visible `AndyChensi`; la firma `Andy` se agrupa bajo ese usuario. La firma `italopancor` se vincula con Italo por el contexto de los repositorios. Los recuentos de commits no representan una evaluación de desempeño individual.
 
 #### 5.2.3.3. Sprint Backlog 3
 <a id="5-2-3-3-sprint-backlog-3"></a>
@@ -675,14 +675,14 @@ El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su cor
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 <a id="5-2-3-8-team-collaboration-insights-during-sprint"></a>
 
-Para el recuento se consultaron las ramas locales y de seguimiento remoto de los cuatro repositorios (`git log --branches --remotes`) y se contaron hashes únicos, sin commits de merge, entre el **13/10/2026 y el 14/11/2026**, inclusive, según la fecha de commit. Se excluyeron referencias de *stash*. Las distintas firmas `italopancor`, `italopan` y `pancorboitalo-design` se agruparon por el mismo correo de autor. La firma `Andy` del backend y del informe se presenta junto a Salcedo Muñoz por correspondencia con el trabajo de Alerting, pendiente de ratificación de identidad en GitHub. Los números son actividad de Git en el periodo, no horas trabajadas ni una medida de calidad; el informe incluye también cambios ajenos al capítulo 5.
+Para el recuento se consultaron las ramas locales y de seguimiento remoto de los cuatro repositorios (`git log --branches --remotes`) y se contaron hashes únicos, sin commits de merge, entre el **13/10/2026 y el 14/11/2026**, inclusive, según la fecha de commit. Se excluyeron referencias de *stash*. Las distintas firmas `italopancor`, `italopan` y `pancorboitalo-design` se agruparon por el mismo correo de autor. Según la captura de perfil facilitada por el equipo, el usuario de GitHub de Andy es `Andy777sdw` (nombre visible `AndyChensi`); la firma `Andy` del backend y del informe se agrupa con Salcedo Muñoz. Los números son actividad de Git en el periodo, no horas trabajadas ni una medida de calidad; el informe incluye también cambios ajenos al capítulo 5.
 
 | Integrante / autoría agrupada | Backend | Frontend | Landing Page | Report | Total |
 |:---|---:|---:|---:|---:|---:|
 | Roman Lopez, Miguel Angel Junior (`MiguelRomn`) | 177 | 7 | 0 | 0 | 184 |
 | Pancorbo Amorós, Italo Raul (`italopancor`, `italopan`, `pancorboitalo-design`) | 28 | 12 | 2 | 9 | 51 |
 | Guillen Chavez, Eduardo Martín (`Eduardox30-wq`) | 14 | 0 | 0 | 0 | 14 |
-| Salcedo Muñoz, Andy Alfredo Hipolito (`Andy`) | 8 | 0 | 0 | 2 | 10 |
+| Salcedo Muñoz, Andy Alfredo Hipolito (`Andy777sdw`; firma `Andy`) | 8 | 0 | 0 | 2 | 10 |
 | Taza Curay, Eduardo Miguel (`Edutaza10`) | 6 | 0 | 0 | 0 | 6 |
 | **Total de commits únicos sin merges** | **233** | **19** | **2** | **11** | **265** |
 
