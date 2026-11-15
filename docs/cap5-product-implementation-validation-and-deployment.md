@@ -790,9 +790,6 @@ Repetir esta ficha por participante, sin sustituir sus respuestas por una interp
 | Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
 | Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
 
-### 5.3.2. Registro de Entrevistas
-<a id="5-3-2-registro-de-entrevistas"></a>
-
 #### Entrevista 1 – Empresas constructoras
 
 ![Entrevista 1 – Empresas constructoras](../assets/images/entrevista1-empresasContructoras.jpeg)
@@ -863,6 +860,23 @@ En las repreguntas del segmento indicó que ver las alertas agrupadas por tramo 
 | P13 | 4 de 5; no 5 por el salto entre alertas e incidentes. |
 | Repreguntas | Agrupar alertas por tramo decide el frente prioritario; acción correctiva requiere responsable, plazo, recursos y criticidad; tablero tipo semáforo para varios proyectos. |
 
+
+#### Entrevista 3 – Empresas de mantenimiento vial (segmento 2)
+
+| Campo | Registro verificable |
+|:---|:---|
+| **Código y perfil** | **E03 – Segmento 2: empresas de mantenimiento vial.** El nombre completo, cargo y organización del participante están pendientes de confirmación. En la videollamada se ve un nombre abreviado («Keler Martín…»), insuficiente para identificarlo con certeza. |
+| **Fecha, duración y modalidad** | Fecha de realización por confirmar. El archivo recibido dura **4 min 03 s** (242,83 s). Entrevista virtual por Google Meet, con pantalla compartida. |
+| **Entrevistador y consentimiento** | La ventana de Meet identifica a **Italo Pancorbo** como quien presenta la pantalla. Debe confirmarse si condujo todas las preguntas y si el participante autorizó grabación, uso académico y citas textuales. |
+| **Tareas y recorrido observados** | La grabación muestra la landing de EcoRoad y una demostración de la aplicación: detalle del proyecto vial Santa Rosa–Yangas con dos tramos, módulo de incidencias y módulo de reportes ambientales. Esto acredita exposición a las pantallas, pero no permite afirmar que el participante haya completado tareas por sí solo. |
+| **Necesidades y problemas previos** | Pendiente de transcribir las respuestas del participante. |
+| **Hallazgos durante el recorrido** | Se ve el proyecto `VIA-SRY-01`, los tramos Chorrillos–Surco y Santa Rosa–Yangas, una incidencia PM10 en progreso y la vista de reportes con dos mediciones, una alerta activa, un incidente y cero evidencias de campo para el rango visible. Estos son datos de la demostración, no opiniones del entrevistado. |
+| **Valor percibido, barreras y facilidad de uso** | Pendientes de transcribir y contrastar con lo que realmente dijo el participante. No se asigna calificación sin escuchar una respuesta explícita. |
+| **Necesidades propias del segmento 2** | Pendiente verificar si se abordaron las preguntas de mantenimiento vial: organización por tramo o contrato, priorización de cuadrillas, traslado y calibración de sensores, reincidencias, reportes por periodo y avisos de emergencias. |
+| **Citas autorizadas** | Pendientes de transcripción literal y autorización. |
+| **Evidencia** | [Grabación de la entrevista del segmento 2](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu). Archivo local recibido: `Validation_Interview_Seg2.mp4`. |
+
+**Alcance de esta revisión.** Se verificaron los metadatos y fotogramas de la grabación. El archivo incluye audio, pero no subtítulos ni una transcripción adjunta; por ello, las respuestas, las citas y los juicios de usabilidad quedan abiertos hasta revisar el audio. La fecha de modificación del archivo no se usa como fecha de la entrevista.
 
 #### Síntesis y decisiones de producto
 
