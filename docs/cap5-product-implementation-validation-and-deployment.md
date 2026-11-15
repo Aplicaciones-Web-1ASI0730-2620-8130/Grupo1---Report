@@ -30,7 +30,7 @@ Para la concepción visual de la Landing Page y de la Web Application, el equipo
 * **Wireframes, Mock-ups y Prototypes:** Figma — https://www.figma.com/
 
 #### Software Development
-La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web Application se implementa con Vue 3, Vue Router y la biblioteca de componentes PrimeVue, utilizando Vite como herramienta de construcción y Node.js como entorno de ejecución para las tareas de desarrollo y para la Fake API utilizada durante el Sprint 2. Los Web Services se implementarán con ASP.NET Core y Entity Framework Core en C#.
+La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web Application se implementó con Vue 3, Vue Router y PrimeVue; Vite se utiliza para construirla y Node.js para las tareas de desarrollo. Durante el Sprint 2 se utilizó una Fake API en Node.js. En el Sprint 3 se integró la aplicación con Web Services reales implementados en C# con ASP.NET Core, Entity Framework Core y MySQL.
 
 * **IDEs y editores:** Visual Studio Code — https://code.visualstudio.com/ ; WebStorm — https://www.jetbrains.com/webstorm/ ; JetBrains Rider (para C#) — https://www.jetbrains.com/rider/
 * **Gestor de IDEs:** JetBrains Toolbox — https://www.jetbrains.com/toolbox-app/
@@ -40,16 +40,17 @@ La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web App
 * **Control de versiones:** Git — https://git-scm.com/downloads
 
 #### Software Documentation
-El informe del proyecto se redacta en archivos Markdown (.md) dentro del repositorio del informe en GitHub, siguiendo el flujo de trabajo GitFlow. La documentación de los Web Services se elaborará con OpenAPI Specification vía Swagger.
+El informe del proyecto se redacta en archivos Markdown (.md) dentro del repositorio del informe en GitHub. En el Sprint 3 los Web Services publicaron un documento OpenAPI y una referencia interactiva con Scalar.
 
 * **Informe:** Markdown en GitHub — https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/Grupo1---Report
-* **Documentación de Web Services:** Swagger / OpenAPI — https://swagger.io/
+* **Documentación de Web Services:** OpenAPI y Scalar — https://ecoroad-back-end-production.up.railway.app/scalar
 
 #### Software Deployment
-La Landing Page se publica en GitHub Pages y la Frontend Web Application en Vercel, ambas con despliegue continuo desde su repositorio de GitHub.
+La Landing Page se publica en GitHub Pages. La primera versión de la Web Application se publicó en Vercel durante el Sprint 2; la versión integrada del Sprint 3 se publica en Railway junto con el backend ASP.NET Core y MySQL.
 
 * **Landing Page:** GitHub Pages — https://pages.github.com/
-* **Frontend Web Application:** Vercel — https://vercel.com/
+* **Primera versión del frontend (Sprint 2):** Vercel — https://vercel.com/
+* **Versión integrada (Sprint 3):** Railway — https://railway.com/
 
 ### 5.1.2. Source Code Management
 <a id="5-1-2-source-code-management"></a>
@@ -60,12 +61,12 @@ El equipo gestiona el código fuente mediante **GitHub** como plataforma de cont
 | :--- | :--- | :--- |
 | Project Report | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/Grupo1---Report | — |
 | Landing Page | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/ |
-| Frontend Web Application | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd | https://ecoroad-frontend-ddli-peach.vercel.app/ |
-| Web Services | Se creará en el Sprint 3 | Se desplegará en el Sprint 3 |
+| Frontend Web Application | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd | https://ecoroad-frontend-production.up.railway.app/ |
+| Web Services | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-Back-End | https://ecoroad-back-end-production.up.railway.app/scalar |
 
 #### GitFlow Workflow
 
-El equipo implementa **GitFlow** como modelo de ramificación para gestionar el ciclo de vida del código. Las ramas definidas son:
+El equipo documentó **GitFlow** como modelo de ramificación para el trabajo inicial. El historial de los repositorios también registra commits directos y Pull Requests de integración en etapas posteriores; por ello, la siguiente lista describe el flujo previsto y no una regla cumplida por todos los cambios:
 
 - **`main`**: rama principal que contiene la versión estable publicada. Solo recibe merges desde `release` o `hotfix`.
 - **`develop`**: rama de integración donde se consolidan los features completados antes de pasar a producción.
@@ -83,10 +84,7 @@ Para el nombramiento de versiones se aplica **Semantic Versioning 2.0.0** con el
 - `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
 - `PATCH`: correcciones de errores compatibles con versiones anteriores.
 
-| Producto | Sprint 1 | Sprint 2 |
-| :--- | :--- | :--- |
-| Landing Page | `v1.0.0` | `v1.1.0` (enlace del call-to-action de inicio de sesión hacia la Web Application) |
-| Frontend Web Application | — | `v1.0.0` |
+Las versiones `v1.0.0` y `v1.1.0` mencionadas en la planificación describen hitos previstos. Antes de declararlas versiones publicadas en este informe se deben comprobar las etiquetas correspondientes en Git. El despliegue del Sprint 3 se identifica aquí por sus commits y direcciones, sin asignarle un número de versión no verificado.
 
 #### Conventional Commits
 
@@ -132,7 +130,7 @@ El equipo adopta las siguientes guías de estilo y convenciones de codificación
 
 #### C# & ASP.NET Core (Web Services)
 - Se aplican las **C# Coding Conventions** de Microsoft: `PascalCase` para clases, métodos y propiedades públicas; `camelCase` para parámetros y variables locales; prefijo `I` para interfaces.
-- Se aplican las **Microsoft ASP.NET Core Coding Guidelines**: controladores con sufijo `Controller`, rutas REST en minúsculas y en plural (por ejemplo `/api/v1/projects`) e inyección de dependencias por constructor.
+- Se emplean controladores con sufijo `Controller`, rutas bajo `/api/` (por ejemplo `/api/projects`) e inyección de dependencias. Los contratos reales se consultan en la documentación OpenAPI publicada.
 
 #### Gherkin (Acceptance Criteria)
 - Se aplican las **Gherkin Conventions for Readable Specifications**: un solo nivel de indentación para `Given/When/Then`, escenarios redactados en tercera persona y en tiempo presente, sin referencias a detalles de interfaz.
@@ -140,13 +138,13 @@ El equipo adopta las siguientes guías de estilo y convenciones de codificación
 ### 5.1.4. Software Deployment Configuration
 <a id="5-1-4-software-deployment-configuration"></a>
 
-En esta sección se describe la configuración de despliegue de los productos digitales publicados hasta el Sprint 2.
+En esta sección se describe la configuración de despliegue de los productos digitales hasta el Sprint 3. Se conserva el despliegue de Vercel como antecedente histórico del Sprint 2.
 
 #### Landing Page — GitHub Pages
 
 El Landing Page de EcoRoad se despliega como sitio web estático mediante **GitHub Pages**, directamente desde su repositorio.
 
-1. Asegurarse de que la rama `main` contiene los archivos del Landing Page (`index.html`, carpetas `css/`, `js/`, `assets/`).
+1. Asegurarse de que la rama `main` contiene `index.html` y la carpeta `assets/` del Landing Page.
 2. Ingresar al repositorio en GitHub y navegar a **Settings > Pages**.
 3. En la sección **Source**, seleccionar la rama `main` y la carpeta `/ (root)`.
 4. Hacer clic en **Save**. GitHub Pages genera automáticamente la URL de despliegue.
@@ -156,7 +154,7 @@ Cualquier push a la rama `main` actualiza automáticamente el sitio desplegado.
 
 #### Frontend Web Application — Vercel
 
-La Web Application de EcoRoad (Vue 3 + Vite) se despliega en **Vercel**, conectado al repositorio `EcoRoad-FrontEnd`.
+La primera versión de la Web Application de EcoRoad (Vue 3 + Vite) se desplegó en **Vercel**, conectado al repositorio `EcoRoad-FrontEnd`. Esta configuración corresponde al Sprint 2 y no a la versión integrada actual.
 
 1. Ingresar a https://vercel.com/ con la cuenta de GitHub del equipo y seleccionar **Add New > Project**.
 2. Importar el repositorio `Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd`.
@@ -164,6 +162,10 @@ La Web Application de EcoRoad (Vue 3 + Vite) se despliega en **Vercel**, conecta
 4. El archivo `vercel.json` del repositorio define las reglas de *rewrite*: las rutas `/api/*` se dirigen a la función serverless `api/index.js`, que expone la Fake API, y el resto de rutas se dirige a `index.html` para que Vue Router resuelva la navegación de la SPA.
 5. Hacer clic en **Deploy**. Vercel construye la aplicación y publica la URL https://ecoroad-frontend-ddli-peach.vercel.app/
 6. Cada push a la rama configurada genera un nuevo despliegue de forma automática.
+
+#### Versión integrada — Railway
+
+En el Sprint 3 se publicaron servicios separados para el frontend Vue, el backend ASP.NET Core y MySQL en el entorno `production` de Railway. El backend se construye con el `Dockerfile` del repositorio y recibe la conexión a la base de datos mediante `ConnectionStrings__DefaultConnection`, cuyo valor no se incluye en el informe. El frontend público utiliza el backend real. La Landing Page en GitHub Pages apunta a `https://ecoroad-frontend-production.up.railway.app` mediante `assets/app-config.js`. La evidencia visual y las direcciones de los servicios se presentan en 5.2.3.7.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 <a id="5-2-landing-page-services-applications-implementation"></a>
@@ -290,7 +292,7 @@ Durante el Sprint 1 el despliegue se centró en la publicación del Landing Page
 3. **Configuración de GitHub Pages:** en **Settings > Pages** se seleccionó como origen la rama `main` y la carpeta `/ (root)`.
 4. **Verificación del despliegue:** se comprobó el acceso al sitio publicado en https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/ desde navegadores de escritorio y móviles.
 
-> **[Pendiente: insertar captura de Settings > Pages del repositorio EcoRoad-LandingPage y captura del sitio publicado.]**
+
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 <a id="5-2-1-8-team-collaboration-insights-during-sprint"></a>
@@ -356,7 +358,7 @@ Para el Sprint 2, los aspectos de trabajo corresponden a los ocho bounded contex
 
 El objetivo principal de este Sprint es implementar y desplegar la primera versión de la Frontend Web Application de EcoRoad con Vue 3 y PrimeVue, consumiendo una Fake API que simula los futuros Web Services, y actualizar el Landing Page para redirigir a la aplicación desplegada.
 
-> **[Pendiente: insertar captura del tablero del Sprint 2 en Trello y su URL pública.]**
+
 
 | Sprint # | Sprint 2 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
@@ -511,7 +513,7 @@ Durante el Sprint 2 se realizó el primer despliegue de la Frontend Web Applicat
 
 ![deploy-evidence-2](/assets/images/DeployEvidence2.jpeg)
 
-3. **Verificación del despliegue:** Vercel muestra el despliegue en estado *Ready* desde la rama `develop`, publicado en https://ecoroad-frontend-ddli-peach.vercel.app/
+3. **Verificación del despliegue:** Vercel muestra el despliegue en estado *Ready* desde la rama `main`, publicado en https://ecoroad-frontend-ddli-peach.vercel.app/
 
 ![deploy-evidence-3](/assets/images/DeployEvidence3.jpeg)
 
@@ -531,3 +533,408 @@ Durante el Sprint 2 cada integrante implementó al menos un bounded context de l
 | Taza Curay, Eduardo Miguel | Edutaza10 | Compliance & Reporting | 2 |
 
 ![insights front](/assets/images/InsightsFront.jpeg)
+
+### 5.2.3. Sprint 3
+<a id="5-2-3-sprint-3"></a>
+
+#### 5.2.3.1. Sprint Planning 3
+<a id="5-2-3-1-sprint-planning-3"></a>
+
+El Sprint 3 se orientó a reemplazar la API simulada del Sprint 2 por servicios reales, persistir la información en MySQL y publicar una versión integrada de EcoRoad. El objetivo verificable fue recorrer desde la Landing Page el registro de empresa, el inicio de sesión y la gestión de un proyecto vial con monitoreo, alertas, incidencias y reportes, conservando los datos entre sesiones.
+
+| Sprint # | Sprint 3 |
+|:---|:---|
+| **Sprint Planning Background** | Reunión informada por el organizador y reconstrucción técnica a partir de los repositorios. |
+| Date | 13/10/2026 |
+| Time | 08:00 PM |
+| Location | Reunión virtual por Discord |
+| Prepared By | Pancorbo Amorós, Italo Raul |
+| Attendees | Taza Curay, Eduardo Miguel / Roman Lopez, Miguel Angel Junior / Guillen Chavez, Eduardo Martín / Salcedo Muñoz, Andy Alfredo Hipolito / Pancorbo Amorós, Italo Raul |
+| Sprint 2 Review Summary | Se entregó una aplicación Vue con los ocho bounded contexts conectados a una Fake API en Vercel y una Landing Page enlazada al inicio de sesión. |
+| Sprint 2 Retrospective Summary | `[pendiente de acta; no se atribuyen acuerdos no documentados]` |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Completar las actividades asignadas al backend para los ocho bounded contexts, integrar la Web Application con ASP.NET Core y MySQL, publicar la solución y comprobar el flujo de una empresa de demostración. |
+| Criterio de revisión | Recorrido Landing Page → registro o inicio de sesión → proyecto y tramo → monitoreo, alertas e incidencias → reporte; verificación de endpoints en Scalar y despliegues en Railway. |
+| Sprint 3 Velocity / Sum of Story Points | `[pendiente del tablero; no se calculan Story Points a partir de commits]` |
+
+Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y contratos HTTP simulados. El trabajo del Sprint 3 incluyó persistencia real, adaptación de contratos entre frontend y backend, despliegue de los servicios y verificación del flujo público. Según el organizador, todas las actividades asignadas al backend se completaron. Las estimaciones y el acuerdo de retrospectiva siguen pendientes del tablero o acta.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+<a id="5-2-3-2-aspect-leaders-and-collaborators"></a>
+
+Al igual que en el capítulo de referencia, la tabla cruza integrantes con aspectos y utiliza `L` y `C`. Para EcoRoad, las letras **se infieren de los commits**: `L` indica la implementación principal y `C` una integración o corrección comprobable. La tabla no pretende documentar cargos acordados en una reunión.
+
+| Team Member | GitHub Username | Backend Base | Commercial | IAM | Projects | Assets | Monitoring | Alerting | Incidents | Compliance | Frontend Integration | Deployment & Landing |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Roman Lopez, Miguel Angel Junior | *MiguelRomn* | L | | L | | L | L | | L | | C | |
+| Guillen Chavez, Eduardo Martín | *Eduardox30-wq* | | L | | L | | | C | | C | | C |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design / italopancor* | C | L | C | L | C | C | C | C | C | L | L |
+| Taza Curay, Eduardo Miguel | *Edutaza10* | | | | | | | | | L | | |
+| Salcedo Muñoz, Andy Alfredo Hipolito | *Andy777sdw* (perfil: AndyChensi; firma Git: Andy) | | | | | | | L | | | | |
+
+*L = líder técnico según commits; C = colaborador en integración o corrección según commits.*
+
+Las dos `L` de Commercial y Projects distinguen la implementación en rama de Italo de la integración posterior de Eduardo (`ead7ae1`, `08beacd`, `8566fb7`, `10b2615`). En Alerting se registran la implementación de Andy (`dea462d`, `2d56059`), trabajo inicial de Italo (`786238b`) e integración de Eduardo (`649bdeb`). En Compliance, Taza desarrolló el contexto en su rama (`5374cb5`, `7dbdd54`) y Eduardo lo integró (`e882b34`). Miguel aportó también correcciones de tooling del frontend (`a2740af`). La `C` de Eduardo en Deployment corresponde a Scalar (`e6f4f9b`); no demuestra que configuró Railway. La captura de perfil facilitada por el equipo identifica a Andy con el usuario de GitHub `Andy777sdw` y el nombre visible `AndyChensi`; la firma `Andy` se agrupa bajo ese usuario. La firma `italopancor` se vincula con Italo por el contexto de los repositorios. Los recuentos de commits no representan una evaluación de desempeño individual.
+
+#### 5.2.3.3. Sprint Backlog 3
+<a id="5-2-3-3-sprint-backlog-3"></a>
+
+El backlog vincula las tareas terminadas con las historias de usuario de EcoRoad del capítulo 3. Los códigos `T3-*` organizan esta sección del informe y no se presentan como identificadores de Trello. En la captura del tablero facilitada por el organizador se observan **13 tarjetas en Done** y ninguna en To do, In Process o To Review; los títulos visibles corresponden a las tareas de la tabla. Las horas de cada tarea quedan por cotejar con las tarjetas, pues la captura no muestra estimaciones y los Story Points de las historias no equivalen a horas. El organizador confirmó que las actividades asignadas al backend se completaron. El estado «Verificado en UI» añade evidencia visual de la aplicación publicada; «Completado» se sustenta en los commits y el código integrado. Una historia relacionada con una tarea no implica que todos sus escenarios de aceptación hayan sido validados.
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| US43 | CRUD de Proyectos Viales vía API | T3-01 | Base de servicios y persistencia | Preparar la solución .NET, los contextos de datos, repositorios y conexión MySQL que sostienen la API; commits `9bf11f6`, `4f90b64`, `5a52832`. | Por estimar | Roman Lopez, Miguel Angel Junior | Completado |
+| US01 / US25 / US26 / US41 / US49 | Autenticación de Usuarios; Registro de Colaboradores y Asignación de Permisos; Restricción de Acceso según Permisos Asignados; Emisión de Tokens JWT y Permisos por Nivel de Acceso; Cifrado de Contraseñas | T3-02 | API de identidad y acceso | Implementar registro, sesiones, colaboradores, permisos y persistencia del contexto; commits `f996f76`, `a233b60`, `b45ee78`. | Por estimar | Roman Lopez, Miguel Angel Junior | Completado |
+| US10 / US33 / US34 | Consulta de Estado y Ubicación de Sensores IoT; Asociación de Sensores IoT a Puntos de Monitoreo; Edición de Ubicación y Umbrales de un Sensor IoT | T3-03 | API de activos y sensores | Implementar puntos, sensores, asignación, calibración y activación; commits `abf4721`, `5f8f413`. | Por estimar | Roman Lopez, Miguel Angel Junior | Completado |
+| US09 / US13 / US14 / US15 / US51 | Monitoreo de Mediciones en Tiempo Real; Consulta del Dashboard Ambiental de un Proyecto; Consulta de Evolución Histórica de un Indicador; Consulta del Nivel de Riesgo de un Indicador; Configuración de Umbrales por Normativa Aplicable | T3-04 | API de monitoreo ambiental | Registrar mediciones, configurar perfiles de umbral y consultar dashboard e historial; corrección de persistencia MySQL `d627226`. | Por estimar | Roman Lopez, Miguel Angel Junior; Pancorbo Amorós, Italo Raul | Completado |
+| US18 / US19 / US20 / US21 / US22 / US36 | Registro de Incidencia Ambiental; Asignación de Responsable de Incidencia; Registro de Acción Correctiva; Actualización de Estado de Incidencia; Registro de Evidencia de Campo; Comunicación y Trazabilidad en Incidencia | T3-05 | API de incidencias y remediación | Implementar apertura, asignación, acciones correctivas, evidencias, resolución y cierre; commits `c0a7e0d`, `2012d74`, `d32e7ff`, `7871af1`. | Por estimar | Roman Lopez, Miguel Angel Junior | Completado |
+| US06 / US35 / US52 | Comparación de Planes de Suscripción; Gestión de Suscripción y Alquiler de Dispositivos IoT; Validación de Cuotas por Plan de Suscripción | T3-06 | API de cuenta empresarial y suscripción | Implementar el registro de empresa y el ciclo de suscripción, incluida su persistencia; desarrollo inicial `ead7ae1`, `c561342` e integración `8566fb7`, `8068edc`. | Por estimar | Pancorbo Amorós, Italo Raul; Guillen Chavez, Eduardo Martín | Verificado en UI |
+| US11 / US12 / US30 / US43 | Visualización General de Proyectos; Consulta de Resumen de un Proyecto; Creación de Proyecto Vial; CRUD de Proyectos Viales vía API | T3-07 | API de proyectos y tramos | Implementar alta y consulta de proyectos, tramos y frentes, y compatibilidad del ID de empresa; commits `08beacd`, `d56d160`, `10b2615`, `1ea7d7b`, `95d452b`. | Por estimar | Pancorbo Amorós, Italo Raul; Guillen Chavez, Eduardo Martín | Verificado en UI |
+| US16 / US17 / US45 | Consulta de Alertas Generadas; Notificación de Alertas Críticas; Motor de Comparación de Umbrales Normativos | T3-08 | API de reglas y alertas | Implementar reglas, evaluación de riesgo, alertas y migración; desarrollo en ramas `dea462d`, `2d56059`, `786238b` e integración `649bdeb`, `a7c0f42`. | Por estimar | Salcedo Muñoz, Andy Alfredo Hipolito; Pancorbo Amorós, Italo Raul; Guillen Chavez, Eduardo Martín | Completado |
+| US24 / US53 / US54 | Generación de Reporte Ambiental; Generador de Estructura para Reportes de Auditoría; Endpoint de Exportación de Reportes en PDF | T3-09 | API de cumplimiento y reportes | Implementar tablas, solicitud de reporte y generación de PDF; desarrollo en rama `5374cb5`, `7dbdd54` e integración `e882b34`, `5d5acc1`. | Por estimar | Taza Curay, Eduardo Miguel; Guillen Chavez, Eduardo Martín | Completado |
+| US42 | Documentación Swagger/OpenAPI de la API | T3-10 | Documentación de la API | Publicar el documento OpenAPI y la referencia interactiva Scalar; commit `e6f4f9b` y captura en 5.2.3.6. | Por estimar | Guillen Chavez, Eduardo Martín | Verificado en UI |
+| US01 / US09 / US11 / US16 / US18 / US24 / US30 / US33 | Autenticación de Usuarios; Monitoreo de Mediciones en Tiempo Real; Visualización General de Proyectos; Consulta de Alertas Generadas; Registro de Incidencia Ambiental; Generación de Reporte Ambiental; Creación de Proyecto Vial; Asociación de Sensores IoT a Puntos de Monitoreo | T3-11 | Integración de la aplicación web | Conectar la interfaz a los repositorios HTTP reales de los contextos y comprobar rutas de lectura; commits `c30ae36`, `f212066`, `9880def`, `55d71fa`, `7505f65`, `b009ef4`, `edaf35b`. | Por estimar | Pancorbo Amorós, Italo Raul | Completado |
+| US43 | CRUD de Proyectos Viales vía API | T3-12 | Despliegue del backend | Preparar Dockerfile y publicar el servicio ASP.NET Core en Railway; commit `f8518d2` y captura en 5.2.3.7. | Por estimar | Pancorbo Amorós, Italo Raul (Dockerfile); configuración final de Railway por confirmar | Verificado en UI |
+| US01 | Autenticación de Usuarios | T3-13 | Enlace de la Landing Page | Dirigir el registro y el inicio de sesión desde la landing hacia el frontend actual; commits `2713388`, `b277b7e`. | Por estimar | Pancorbo Amorós, Italo Raul | Completado |
+
+**Sprint Board de EcoRoad:** [Sprint 3 en Trello](https://trello.com/invite/b/6af96cc3b31b2f3ac6f7858d/ATTI06b3af4493183313e4c1b7fd9cdafe8cD3C2DA79/sprint-3-ecoroad). La distribución de tarjetas se tomó de la captura proporcionada; el detalle interno de cada tarjeta y sus horas no se pudo consultar desde el informe.
+
+La captura del tablero muestra las 13 tarjetas en **Done** y las listas **To do**, **In Process** y **To Review** con cero tarjetas. La columna Done tiene desplazamiento interno, por lo que no se ven los títulos de todas las tarjetas a la vez.
+
+![Sprint 3: tablero de Trello de EcoRoad con 13 tarjetas en Done](/assets/images/chapter5/Sprint3-Trello-Board.png)
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+<a id="5-2-3-4-development-evidence-for-sprint-review"></a>
+
+El backend usa ASP.NET Core sobre .NET 10 y Entity Framework Core con MySQL. Sus contextos de identidad, comercial, proyectos, activos, monitoreo, alertas, incidencias y cumplimiento exponen controladores REST. Las migraciones crean las tablas necesarias; `Program.cs` aplica las migraciones pendientes al iniciar. Los datos de ejemplo automáticos se cargan únicamente en el entorno `Development`, por lo que las cuentas y proyectos de producción deben registrarse o migrarse expresamente.
+
+En el frontend, la integración sustituyó el consumo de datos simulados por repositorios HTTP para los mismos contextos. Se corrigieron diferencias de contratos y se añadió `npm run smoke:real` para comprobar rutas de lectura sin escribir datos. La Landing Page ahora dirige el acceso a la aplicación publicada en Railway, incluso durante la prueba local de la landing.
+
+| Repositorio | Commit | Aporte |
+|:---|:---|:---|
+| Backend | `c0a7e0d`, `2012d74`, `d32e7ff` | Endpoints de incidencias, acciones correctivas y evidencias |
+| Backend | `10b2615`, `bf1b706` | Gestión de proyectos y migración de sus tablas |
+| Backend, rama de proyectos | `08beacd`, `d56d160` | Implementación inicial del dominio y API de proyectos |
+| Backend, rama de comercial | `ead7ae1`, `c561342` | Modelo y API inicial de suscripciones |
+| Backend, rama de alertas | `dea462d`, `2d56059`, `786238b` | Agregados y API iniciales de alertas desarrollados en ramas de trabajo |
+| Backend | `649bdeb`, `a7c0f42` | Evaluación de alertas y migración |
+| Backend, rama de cumplimiento | `5374cb5`, `7dbdd54` | Entidades y API iniciales de reportes |
+| Backend | `e882b34`, `5d5acc1` | Reportes ambientales y migración |
+| Backend | `e6f4f9b` | Referencia interactiva Scalar |
+| Backend | `f8518d2` | Configuración Docker para Railway |
+| Frontend | `c30ae36`, `f212066`, `9880def` | Integración de identidad, comercial, proyectos, activos y monitoreo |
+| Frontend | `55d71fa`, `7505f65`, `b009ef4` | Integración de alertas, incidencias y reportes |
+| Frontend | `28dfb3f`, `edaf35b` | Captura y evaluación de monitoreo; comprobación de API real |
+| Landing Page | `2713388`, `b277b7e` | Enlaces de registro y acceso al frontend de Railway |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+<a id="5-2-3-5-execution-evidence-for-sprint-review"></a>
+
+Se comprobó manualmente el flujo publicado: desde la Landing Page se llega al registro o al inicio de sesión; se creó una cuenta empresarial de demostración con un correo bajo `ecoroad.example`, se inició sesión y se registró el proyecto **Mejoramiento del corredor vial Santa Rosa–Yangas** con tramo y frente de trabajo. En la aplicación se configuraron un perfil de umbral para PM10 y una regla diurna, se registró una lectura de demostración y se recorrieron las vistas de sensores y puntos, alertas, incidencias, colaboradores y reportes. En la vista de reportes se observó una solicitud vinculada al proyecto. Estas comprobaciones reflejan el recorrido observado; no equivalen a una prueba automatizada de extremo a extremo ni acreditan mediciones ambientales reales.
+
+La siguiente captura muestra la vista de proyectos en el frontend publicado, con la sesión de demostración y el proyecto `VIA-SRY-01` recuperado del backend. Constituye evidencia visual de lectura de datos persistidos, aunque por sí sola no demuestra una nueva autenticación ni el resto del flujo.
+
+![Sprint 3: proyecto vial de demostración listado desde el backend en Railway](/assets/images/chapter5/Sprint3-Project-List.png)
+
+En el detalle del mismo proyecto se observan dos tramos activos, sus progresivas PK y las acciones para agregar, editar o eliminar tramos. La segunda captura muestra el formulario de edición abierto para **Santa Rosa–Yangas**, con los campos de nombre, PK inicial y PK final. Esta evidencia confirma que la interfaz permite llegar a la edición; no muestra una modificación guardada.
+
+![Sprint 3: detalle del proyecto VIA-SRY-01 con dos tramos activos](/assets/images/chapter5/Sprint3-Project-Sections.png)
+
+![Sprint 3: formulario de edición del tramo Santa Rosa–Yangas](/assets/images/chapter5/Sprint3-Section-Edit-Form.png)
+
+Para la revisión formal aún se requieren capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias. El enlace al tablero de Trello ya figura en 5.2.3.3; falta cotejar las estimaciones y los identificadores de sus tarjetas.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+<a id="5-2-3-6-services-documentation-evidence-for-sprint-review"></a>
+
+El backend publica el documento OpenAPI en `/openapi/v1.json` y la referencia interactiva Scalar en `/scalar`. Los controladores del código constituyen la fuente para comprobar métodos, cuerpos y respuestas de los servicios reales. A diferencia de los contratos provisionales del Sprint 2, las rutas implementadas incluyen `POST /api/company-accounts`, `POST /api/iam/sessions`, `GET/POST /api/projects`, `GET/POST /api/assets/sensors`, `GET/POST /api/monitoring/measurements`, `GET /api/alerts`, `GET/POST /api/incidents` y `POST /api/compliance-reports`. También existen operaciones específicas para tramos, calibración, umbrales, evaluación de alertas, acciones correctivas, evidencias y generación del documento PDF.
+
+La URL pública de consulta es https://ecoroad-back-end-production.up.railway.app/scalar. La página inicial de Scalar identifica la API EcoRoad y permite descargar el documento OpenAPI; la vista de operaciones muestra las rutas de cuentas empresariales y suscripciones con métodos y parámetros. Las capturas evidencian la publicación de la documentación, no la ejecución exitosa de esos endpoints.
+
+![Sprint 3: vista inicial de la documentación EcoRoad API en Scalar](/assets/images/chapter5/Sprint3-Scalar-Overview.png)
+
+![Sprint 3: operaciones de cuentas empresariales documentadas en Scalar](/assets/images/chapter5/Sprint3-Scalar-Endpoints.png)
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+<a id="5-2-3-7-software-deployment-evidence-for-sprint-review"></a>
+
+La versión integrada utiliza tres servicios en Railway: frontend Vue, backend ASP.NET Core y MySQL. El backend se construye con el `Dockerfile` del repositorio y se conecta a la base de datos mediante configuración de entorno. La Landing Page permanece en GitHub Pages y su configuración `assets/app-config.js` apunta al frontend actual. Las direcciones observadas durante la revisión son:
+
+- Landing Page: https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/
+- Web Application: https://ecoroad-frontend-production.up.railway.app/
+- API y documentación: https://ecoroad-back-end-production.up.railway.app/scalar
+
+La vista general de Railway muestra los servicios FrontEnd, BackEnd y MySQL en estado *Online*. El detalle del frontend muestra un despliegue activo y exitoso asociado a un commit de GitHub. En el backend se observa la presencia de `ConnectionStrings__DefaultConnection` con su valor oculto; esto acredita la configuración de la variable, sin exponer la cadena ni demostrar por sí solo una consulta a MySQL.
+
+![Sprint 3: servicios frontend, backend y MySQL en línea en Railway](/assets/images/chapter5/Sprint3-Railway-Services.png)
+
+![Sprint 3: despliegue exitoso del frontend en Railway](/assets/images/chapter5/Sprint3-Frontend-Deployment.png)
+
+![Sprint 3: variable de conexión MySQL configurada en el backend, con valor oculto](/assets/images/chapter5/Sprint3-Backend-Database-Variable.png)
+
+El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su corrección para pruebas locales en `b277b7e`. La captura de GitHub Pages muestra el último despliegue de `main` en estado correcto y marcado como activo. Esto confirma la publicación de la landing actualizada; la prueba del flujo de acceso se documenta en 5.2.3.5.
+
+![Sprint 3: despliegue finalizado y activo de la Landing Page en GitHub Pages](/assets/images/chapter5/Sprint3-Landing-Deployment.png)
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+<a id="5-2-3-8-team-collaboration-insights-during-sprint"></a>
+
+Para el recuento se consultaron las ramas locales y de seguimiento remoto de los cuatro repositorios (`git log --branches --remotes`) y se contaron hashes únicos, sin commits de merge, entre el **13/10/2026 y el 14/11/2026**, inclusive, según la fecha de commit. Se excluyeron referencias de *stash*. Las distintas firmas `italopancor`, `italopan` y `pancorboitalo-design` se agruparon por el mismo correo de autor. Según la captura de perfil facilitada por el equipo, el usuario de GitHub de Andy es `Andy777sdw` (nombre visible `AndyChensi`); la firma `Andy` del backend y del informe se agrupa con Salcedo Muñoz. Los números son actividad de Git en el periodo, no horas trabajadas ni una medida de calidad; el informe incluye también cambios ajenos al capítulo 5.
+
+| Integrante / autoría agrupada | Backend | Frontend | Landing Page | Report | Total |
+|:---|---:|---:|---:|---:|---:|
+| Roman Lopez, Miguel Angel Junior (`MiguelRomn`) | 177 | 7 | 0 | 0 | 184 |
+| Pancorbo Amorós, Italo Raul (`italopancor`, `italopan`, `pancorboitalo-design`) | 28 | 12 | 2 | 9 | 51 |
+| Guillen Chavez, Eduardo Martín (`Eduardox30-wq`) | 14 | 0 | 0 | 0 | 14 |
+| Salcedo Muñoz, Andy Alfredo Hipolito (`Andy777sdw`; firma `Andy`) | 8 | 0 | 0 | 2 | 10 |
+| Taza Curay, Eduardo Miguel (`Edutaza10`) | 6 | 0 | 0 | 0 | 6 |
+| **Total de commits únicos sin merges** | **233** | **19** | **2** | **11** | **265** |
+
+El backend concentró la mayor parte de los commits granulares: Miguel creó la base compartida e implementó IAM, activos, monitoreo e incidencias; Italo desarrolló en ramas iniciales proyectos, comercial y parte de alertas; Andy desarrolló la rama de alertas; Taza desarrolló la rama de cumplimiento; Eduardo integró comercial, proyectos, alertas y cumplimiento en la plataforma. En el frontend, Italo realizó las conexiones a la API real y Miguel aportó ajustes de acceso, navegación, pruebas y herramientas de calidad. La Landing Page recibió dos cambios para enlazarla a Railway. En el informe hubo actualizaciones de Italo y Andy. Algunos commits de ramas iniciales representan trabajo que luego fue sustituido o reimplementado durante la integración; el recuento no debe leerse como 265 entregables finales.
+
+La integración reveló diferencias entre identificadores de empresa, representación de tramos, datos disponibles y rutas de operación. Las correcciones quedaron trazadas en `1ea7d7b`, `95d452b` y `4264b4c`. El aprendizaje técnico observable fue que la ejecución local o con Fake API no garantizaba el comportamiento en producción: hubo que verificar persistencia MySQL, contratos HTTP reales y redirecciones entre la Landing Page y la aplicación. Los acuerdos de retrospectiva del equipo permanecen pendientes de su acta.
+
+## 5.3. Validation Interviews
+<a id="5-3-validation-interviews"></a>
+
+Esta sección documenta el diseño de las entrevistas de validación de la versión integrada de EcoRoad y los registros disponibles. Las preguntas son una guía semiestructurada: el entrevistador puede pedir ejemplos y profundizar en las respuestas. Las respuestas y conclusiones se atribuyen a participantes solo cuando constan en su registro o evidencia.
+
+### 5.3.1. Diseño de Entrevistas
+<a id="5-3-1-diseno-de-entrevistas"></a>
+
+**Objetivo:** evaluar si EcoRoad ayuda a registrar proyectos viales, organizar el monitoreo ambiental, interpretar alertas, atender incidencias y preparar evidencia para reportes. También se busca identificar dificultades de uso y funciones faltantes antes de proponer mejoras.
+
+**Segmentos a entrevistar por separado:**
+
+- **Empresas constructoras viales:** responsable de obra, gerente de proyecto, ingeniero o supervisor ambiental involucrado en la ejecución de nuevos frentes.
+- **Empresas de mantenimiento vial:** responsable de conservación, supervisor de tramos, gerente de contratos, ingeniero o consultor ambiental que atienda varios puntos o intervenciones recurrentes.
+
+Aplicar las preguntas comunes a ambos segmentos y después únicamente el bloque específico que corresponda. Registrar además el cargo concreto del participante para interpretar sus respuestas; el cargo no sustituye al segmento de su organización.
+
+**Datos por completar antes de entrevistar:** número y criterio de selección de participantes; fechas; modalidad; duración; entrevistador; vínculo del participante con el proceso; método de consentimiento y autorización para grabar o citar. Usar códigos como `E01` en el informe y registrar datos personales solo cuando sea necesario y exista autorización.
+
+#### Protocolo de entrevista
+
+1. Explicar que se evalúa el producto, que no hay respuestas correctas y que la participación es voluntaria. Solicitar consentimiento para tomar notas y, por separado, para grabar.
+2. Preguntar por la práctica actual del participante antes de mostrar EcoRoad.
+3. Compartir la Landing Page y la aplicación publicada. Usar una cuenta de demostración autorizada y datos ficticios; no pedir al participante que introduzca credenciales personales.
+4. Plantear tareas concretas y observar qué pasos intenta realizar, dónde se detiene y qué espera ver. Evitar guiarlo hasta que haya terminado cada tarea.
+5. Formular las preguntas de cierre, registrar citas textuales breves con permiso y confirmar que el resumen representa su opinión.
+
+**Tareas comunes sugeridas para la prueba:** llegar desde la Landing Page al registro o inicio de sesión; encontrar un proyecto y su tramo; localizar un punto o sensor; interpretar una lectura PM10 y una alerta; revisar una incidencia y su acción correctiva; encontrar las fuentes de un reporte ambiental. Para constructoras, pedir que identifique un frente de obra y a quién asignaría la atención de una alerta. Para mantenimiento vial, pedir que localice un tramo o intervención de conservación y explique cómo priorizaría varios puntos con problemas simultáneos. Si alguna tarea requiere modificar datos de producción, usar un registro de demostración acordado y anotarlo en el acta.
+
+#### Preguntas comunes para ambos segmentos
+
+**Contexto del participante**
+
+1. ¿Cuál es tu función en un proyecto vial y qué decisiones ambientales tomas o apoyas?
+2. ¿Cómo registran hoy proyectos, tramos, puntos de monitoreo, mediciones e incidencias? ¿Qué herramientas utilizan?
+3. ¿Qué información necesitas consultar con más frecuencia y cuánto tarda normalmente en estar disponible?
+
+**Durante la prueba de EcoRoad**
+
+4. Al ver la Landing Page, ¿qué entiendes que ofrece EcoRoad y a quién está dirigido? ¿Qué esperarías al pulsar el botón de registro?
+5. ¿Te resultó claro cómo encontrar el proyecto, sus tramos y frentes de trabajo? ¿Qué dato te faltó para identificar el lugar correcto?
+6. ¿Cómo interpretarías el valor de una medición, los umbrales y el estado de una alerta? ¿Qué harías después de verla?
+7. ¿Qué información necesitarías para asignar, documentar y cerrar una incidencia de forma responsable?
+8. ¿El reporte mostrado reúne la información que necesitarías para una revisión interna o una auditoría? ¿Qué evidencia o dato falta?
+9. ¿En qué momento dudaste, tuviste que retroceder o necesitaste ayuda? Describe qué esperabas que ocurriera.
+
+**Cierre**
+
+10. ¿Qué parte del flujo te ahorraría trabajo en una situación real y cuál no utilizarías todavía? ¿Por qué?
+11. ¿Qué riesgo o limitación te impediría usar EcoRoad con datos de un proyecto real?
+12. Si pudieras cambiar una sola cosa antes de volver a probarlo, ¿cuál sería?
+13. En una escala de 1 a 5, ¿qué tan fácil fue completar las tareas? ¿Qué explica esa calificación?
+
+#### Preguntas específicas: empresas constructoras viales
+
+Aplicar este bloque después de las preguntas comunes a participantes que ejecutan obras nuevas o ampliaciones.
+
+14. Cuando se abren o desplazan frentes de construcción, ¿cómo deciden dónde colocar o reubicar los puntos de monitoreo? Muéstranos cómo lo representarías mediante proyectos, tramos y frentes en EcoRoad.
+15. Si una medición supera el umbral mientras se ejecuta movimiento de tierras, ¿quién debe recibir la alerta, quién puede detener o ajustar la actividad y qué información necesita para decidir?
+16. ¿Cómo asignan hoy responsables y plazos para acciones correctivas entre contratista, supervisión ambiental y dirección de obra? ¿Qué parte de ese seguimiento podrías hacer en la pantalla de incidencias y qué falta?
+17. Para sustentar una inspección durante la construcción, ¿qué fotos, ubicaciones, fechas, mediciones y aprobaciones deben quedar vinculadas al incidente o al frente?
+18. Si gestionas varios proyectos o frentes activos a la vez, ¿qué criterio usarías para priorizar cuál revisar primero? ¿La vista actual de EcoRoad te permite hacerlo?
+19. ¿Qué dato del reporte ambiental necesitarías presentar a la supervisión o a la entidad contratante que todavía no aparece en el PDF de demostración?
+
+#### Preguntas específicas: empresas de mantenimiento vial
+
+Aplicar este bloque después de las preguntas comunes a participantes que conservan, rehabilitan o intervienen tramos existentes.
+
+20. ¿Cómo organizan las intervenciones recurrentes a lo largo de varios kilómetros o contratos: por carretera, tramo, progresiva, cuadrilla o fecha? ¿Cómo lo representarías en EcoRoad?
+21. Cuando surgen alertas en varios puntos alejados entre sí, ¿cómo priorizan la visita de la cuadrilla? ¿Qué datos de ubicación, gravedad y última lectura faltan en la vista actual?
+22. Al mover un sensor de un tramo a otro, ¿qué historial de ubicación, calibración y mediciones necesitan conservar para que las lecturas sigan siendo comparables?
+23. Si una incidencia reaparece después de una reparación o limpieza, ¿cómo la relacionan con intervenciones anteriores y cómo verificarían que la medida correctiva funcionó?
+24. ¿Qué información necesitan consolidar por periodo y por contrato para reportar el mantenimiento ambiental a la entidad responsable? ¿Qué parte pueden obtener hoy del reporte de EcoRoad?
+25. En una jornada con tareas planificadas y emergencias, ¿qué aviso o resumen permitiría al supervisor distinguir un problema nuevo de uno ya atendido?
+
+En ambos segmentos se puede profundizar en trazabilidad de mediciones, criterios de umbral y evidencias de campo según el cargo. No sugerir que la aplicación certifica cumplimiento normativo: el PDF actual resume identificadores y cantidades y no incorpora firma criptográfica verificada.
+
+### 5.3.2. Registro de Entrevistas
+<a id="5-3-2-registro-de-entrevistas"></a>
+
+Repetir esta ficha por participante, sin sustituir sus respuestas por una interpretación del equipo:
+
+| Campo | Registro |
+|:---|:---|
+| Código, segmento y perfil | `[E01; constructora o mantenimiento vial; cargo y tipo de organización]` |
+| Fecha, duración y modalidad | `[pendiente]` |
+| Entrevistador y consentimiento | `[pendiente; indicar si autorizó notas, grabación y cita]` |
+| Tareas completadas / con ayuda / no completadas | `[pendiente; anotar el motivo observado]` |
+| Necesidades y problemas previos | `[pendiente; preguntas 1–3]` |
+| Hallazgos durante el recorrido | `[pendiente; preguntas 4–9, tarea del segmento y observaciones]` |
+| Valor percibido y barreras | `[pendiente; preguntas 10–12]` |
+| Facilidad de uso y explicación | `[pendiente; respuesta a la pregunta 13]` |
+| Necesidades propias del segmento | `[pendiente; preguntas 14–19 para constructoras o 20–25 para mantenimiento vial]` |
+| Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
+| Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
+
+#### Entrevista 1 – Empresas constructoras
+
+![Entrevista 1 – Empresas constructoras](../assets/images/entrevista1-empresasContructoras.jpeg)
+
+*Figura 1. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas constructoras. Fuente: elaboración propia (2026).*
+
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E01 – Guillermo Guillén.** Participante de la validación de EcoRoad para el segmento de empresas constructoras. Cargo y organización por confirmar. |
+| **Fecha, duración y modalidad** | 14/11/2026 (según la grabación). Duración aproximada: 15 minutos y 35 segundos. Modalidad virtual mediante Google Meet. |
+| **Entrevistador y consentimiento** | En la grabación aparece Eduardo Tezza Curay; está pendiente confirmar si fue el entrevistador. No se ha verificado la autorización para notas, grabación y citas textuales. |
+| **Tareas completadas / con ayuda / no completadas** | Se recorrieron los módulos de proyectos, monitoreo ambiental, historial de indicadores, sensores, alertas, reportes y colaboradores. No se pudo verificar qué tareas completó Guillermo de forma autónoma o con ayuda. |
+| **Necesidades y problemas previos** | El guion abordó la priorización de frentes de trabajo, la asignación de acciones correctivas y la supervisión de múltiples proyectos. Las respuestas específicas del participante están pendientes de transcripción. |
+| **Hallazgos durante el recorrido** | Se observaron las funcionalidades de monitoreo, sensores, alertas ambientales y reportes. El historial de indicadores no mostró lecturas para los filtros seleccionados y la sección de reportes no presentó informes generados. |
+| **Valor percibido y barreras** | El guion evaluó la utilidad de las alertas, los indicadores ambientales y la supervisión de proyectos. La valoración real de Guillermo está pendiente de transcripción. |
+| **Facilidad de uso y explicación** | Se presentó la navegación por los módulos principales. La opinión del entrevistado sobre la facilidad de uso requiere confirmación. |
+| **Citas autorizadas** | Pendiente de verificar las declaraciones textuales y la autorización para utilizarlas. |
+| **Evidencia** | [Ver grabación de la entrevista a Guillermo Guillén](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241d483_upc_edu_pe/IQCqPKYld0igT5AlgPayxBqbAayMrjuZTmtbagiBsJAQD4Y?e=gyO5HQ) |
+
+#### Entrevista 2 – Empresas constructoras
+
+![Entrevista 2 – Empresas constructoras](../assets/images/entrevista2-empresasConstructoras.png)
+
+*Figura 2. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas constructoras. Fuente: elaboración propia (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E02 – Viktor Gabriel Herrera.** Ingeniero de campo de una empresa constructora (segmento de empresas constructoras). Apoya a la jefatura de SSOMA en el seguimiento de tramos viales. Código sujeto a confirmación con el equipo. |
+| **Nombres, apellidos, edad y distrito** | Viktor Gabriel Herrera. 29 años. Distrito: Chorrillos. |
+| **Fecha, duración y modalidad** | 15/11/2026. Duración aproximada: 12 minutos y 24 segundos. La entrevista comienza en el minuto 00:00 del video. Modalidad virtual mediante videollamada. |
+| **Entrevistador y consentimiento** | En la grabación aparece Miguel Román López como entrevistador. Consentimiento para notas, grabación y cita textual: Confirmado. |
+| **Tareas completadas / con ayuda / no completadas** | Según sus respuestas, ubicó el proyecto `VIA-SRY-01` y sus tramos directamente. Interpretó las mediciones PM10 y el estado de la alerta. Dudó al pasar de la alerta al incidente generado y tuvo que usar el menú lateral para llegar a la sección de incidencias. Revisó el reporte en PDF. Lo anterior es lo declarado por el entrevistado; está pendiente verificarlo contra el video. |
+| **Necesidades y problemas previos** | Registra mediciones e incidencias en hojas de Excel compartidas en Drive y grupos de WhatsApp. Cruzar las fotos con la tabla de mediciones es lo más tedioso y a veces se pierden mensajes o se pisan versiones. Obtener el consolidado diario tarda entre 4 horas y un día. |
+| **Hallazgos durante el recorrido** | Entendió con rapidez la propuesta de la Landing Page. Echó en falta un filtro por progresivas. Esperaba que el código de la alerta llevara directo al incidente. Necesitaría ver si una medición viene de un equipo portátil o de una estación fija, y el código de calibración. |
+| **Valor percibido y barreras** | Ahorraría tiempo con la centralización de mediciones por tramo y el resumen en PDF con un clic. No usaría todavía el cierre de incidentes si no permite adjuntar varias fotos o actas firmadas. Menciona como limitaciones la conectividad en tramos sin señal y quién puede editar o borrar una medición ya subida. |
+| **Facilidad de uso y explicación** | 4 de 5. Valora la interfaz limpia y los términos propios de proyectos viales. No da 5 por el salto entre el módulo de alertas y el de incidentes. |
+| **Evidencia** | [Ver grabación de la entrevista a Viktor Gabriel Herrera](https://1drv.ms/v/c/6a55f7e464b104a9/IQCT08RctrLwT70FONFq_iwdAVCdN1m54ZUK0qMihwGpTIE?e=N2cq6Q). Inicio en 00:00 y duración de 12:24. |
+
+**Perfil objetivo y subjetivo.** Es ingeniero de campo, coordina a unos 12 operarios y 3 capataces de frente, y sus decisiones ambientales incluyen programar el riego de vías con cisternas, reubicar acopios de material excedente y responder a las no conformidades ambientales de la supervisora. Trabaja con Excel, Drive y WhatsApp, y usa progresivas o kilómetros y coordenadas UTM como referencia. Dispositivos, navegador, marcas, influencias y rasgos de personalidad: Android y Windows. Una persona tranquila y responsable.
+
+**Resumen de la entrevista.** Viktor Gabriel Herrera trabaja en una empresa constructora y hoy gestiona la información ambiental de los tramos con hojas de Excel y mensajes de WhatsApp. Describe que los técnicos envían fotos con coordenadas, que un asistente las consolida por la noche y que armar el consolidado del día puede tardar entre 4 horas y un día. Para sus decisiones necesita saber qué puntos de polvo (PM10) o ruido están cerca del límite en los frentes activos y qué incidentes siguen abiertos.
+
+Al ver la Landing Page entendió que EcoRoad es una plataforma web para controlar el impacto ambiental y los frentes de obras viales, dirigida a ingenieros residentes, especialistas SSOMA y supervisores, y esperaba que el registro le permitiera crear una cuenta con su correo de empresa y elegir su rol o asociarse a un consorcio. Encontró el proyecto `VIA-SRY-01` del corredor Santa Rosa-Yangas sin dificultad y comprendió la división por tramos y frentes, aunque buscó un filtro por progresivas.
+
+Sobre el monitoreo, considera que el indicador PM10 y los colores de estado permiten ver qué se disparó sin revisar fila por fila, y entiende el valor medido y el umbral superado. Para confiar plenamente en el dato pediría una etiqueta que indique si proviene de un equipo manual o de una estación fija y el código de calibración. Ante una alerta en rojo, su primera acción sería llamar al capataz del frente para enviar el camión cisterna.
+
+En incidentes, vio el estado y la acción correctiva asociada. Para asignar y cerrar una incidencia en la práctica pediría el nombre y cargo del responsable, una fecha límite y un campo obligatorio para subir la foto del "después" con fecha y hora antes de marcarla como resuelta. Respecto al reporte, lo considera ordenado para reuniones de avance con gerencia o el cliente, y antes de descargarlo revisaría las fechas del corte y las coordenadas UTM. Indica que para una auditoría formal ante OEFA o MTC no bastaría por sí solo, porque allí se exigen certificados de laboratorio y cadenas de custodia firmadas.
+
+Dudó al pasar de la alerta al incidente: esperaba que el código de la alerta abriera el detalle del incidente y tuvo que ir al menú lateral. Por eso su única mejora sería un enlace directo desde cada alerta hacia su incidente y su frente en el mapa o croquis. Calcula que el resumen en PDF con un clic le ahorraría al menos un par de horas cada viernes. Como barreras señala la falta de conectividad en tramos de sierra o quebradas, que exigiría guardar datos sin conexión, y la necesidad de controlar quién edita o borra mediciones. Calificó la facilidad de uso con 4 de 5.
+
+En las repreguntas del segmento indicó que ver las alertas agrupadas por tramo le permite decidir a qué frente enviar primero la cuadrilla de mitigación. Para asignar una acción correctiva necesita responsable, plazo máximo, recursos requeridos y nivel de criticidad. Si gestionara varios proyectos, le sería indispensable un tablero tipo semáforo que compare cuántas alertas críticas o incidentes vencidos tiene cada consorcio.
+
+| N.º | Respuesta registrada (resumen) |
+|:---|:---|
+| P1 | Ingeniero de campo; apoya a SSOMA; coordina 12 operarios y 3 capataces; programa riego con cisternas, reubica acopios y atiende no conformidades. |
+| P2 | Excel en Drive, WhatsApp, fotos con coordenadas; pasan a una matriz por progresiva. Tedioso: cruzar fotos con mediciones y versiones pisadas. |
+| P3 | Puntos de PM10 o ruido cercanos al límite e incidentes abiertos; el consolidado tarda de 4 horas a un día. |
+| P4 | Plataforma web para controlar impacto ambiental y frentes; espera crear cuenta con correo de empresa y elegir rol o consorcio. |
+| P5 | Ubicó `VIA-SRY-01` sin dificultad; echó en falta un filtro por progresivas. |
+| P6 | Los colores y PM10 ayudan; pediría etiqueta manual o estación fija y código de calibración; ante alerta roja llamaría al capataz. |
+| P7 | Pediría responsable con cargo, fecha límite y foto del "después" con fecha y hora obligatoria. |
+| P8 | Sirve para reuniones internas y cliente; para auditoría OEFA o MTC faltan certificados de laboratorio y cadenas de custodia. |
+| P9 | Dudó al pasar de la alerta al incidente; esperaba un enlace directo. |
+| P10 | Ahorraría un par de horas cada viernes; no usaría aún el cierre sin adjuntar varias fotos o actas. |
+| P11 | Conectividad en sierra y quebradas; permisos para editar o borrar mediciones. |
+| P12 | Enlace directo de cada alerta a su incidente y a su frente en el mapa o croquis. |
+| P13 | 4 de 5; no 5 por el salto entre alertas e incidentes. |
+| Repreguntas | Agrupar alertas por tramo decide el frente prioritario; acción correctiva requiere responsable, plazo, recursos y criticidad; tablero tipo semáforo para varios proyectos. |
+
+
+#### Entrevista 3 – Empresas de mantenimiento vial (segmento 2)
+
+![Captura de la entrevista 3 del segmento de mantenimiento vial](../assets/images/entrevista3-mantenimiento-vial.png)
+
+*Figura 3. Captura de la videollamada de validación con Keler Panduro mientras se presenta la landing de EcoRoad. Fuente: grabación proporcionada por el equipo (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E03 – Keler Panduro.** Participante del segmento de empresas de mantenimiento vial. Cargo y organización por confirmar. |
+| **Fecha, duración y modalidad** | Fecha de realización por confirmar. El archivo dura **4 min 03 s** (242,83 s). Entrevista virtual por Google Meet, con pantalla compartida. |
+| **Entrevistador y consentimiento** | La ventana de Meet identifica a **Italo Pancorbo** como presentador. El guion incluye una solicitud de autorización para notas y grabación, pero la respuesta escrita está marcada como «ejemplo»; falta confirmar en el audio el consentimiento y quién formuló todas las preguntas. |
+| **Recorrido observado** | La grabación muestra la landing y la aplicación: detalle del proyecto Santa Rosa–Yangas con dos tramos, incidencias y reportes. Esto acredita la presentación de las pantallas, no la realización autónoma de tareas por Keler. |
+| **Datos visibles durante la demostración** | Proyecto `VIA-SRY-01`; tramos Chorrillos–Surco y Santa Rosa–Yangas; una incidencia PM10 en progreso; reporte para el rango visible con dos mediciones, una alerta activa, un incidente y cero evidencias de campo. Son datos de la interfaz, no respuestas del entrevistado. |
+| **Necesidades, valor percibido y facilidad de uso** | El guion propone indagar estos aspectos, pero sus respuestas modelo no se atribuyen a Keler hasta contrastarlas con el audio. La calificación de **3/5** del ejemplo no se registra como resultado de la entrevista. |
+| **Citas autorizadas** | Pendientes de transcripción literal y confirmación de autorización. |
+| **Evidencia** | [Grabación de la entrevista del segmento 2](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu). Captura incluida en la Figura 3. |
+
+
+#### Entrevista 4 – Empresas de mantenimiento vial (segmento 2)
+
+![Entrevista 4 – Empresas de mantenimiento vial](../assets/images/entrevista4-mantenimiento-vial.png)
+
+*Figura 4. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas de mantenimiento vial. Fuente: elaboración propia (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E04 – Diego Davalos.** Supervisor Ambiental / Jefe de Frente (Segmento de Mantenimiento y Rehabilitación Vial). |
+| **Nombres, apellidos, edad y distrito** | Diego Davalos. 26 años. Distrito: Surco. |
+| **Fecha, duración y modalidad** | 15/11/2026. Duración exacta: 7 minutos. Modalidad virtual mediante videollamada. |
+| **Entrevistador y consentimiento** | Entrevistador: Eduardo Martin Guillen Chavez. Consentimiento para notas, grabación y cita textual: Confirmado. |
+| **Tareas completadas / con ayuda / no completadas** | Logró ubicar el proyecto de Rehabilitación y el tramo correspondiente de forma directa. Interpretó correctamente la medición en rojo (PM10 elevado) como una alerta que requiere acción inmediata (regar la vía). En la sección de incidencias, localizó el caso y evaluó la acción correctiva, notando la ausencia de evidencia fotográfica. Dudó brevemente al buscar la opción para generar el reporte ambiental mensual antes de encontrar el botón de exportar/reportes. (Todo completado de forma independiente). |
+| **Necesidades y problemas previos** | Actualmente registra las incidencias y alertas casi exclusivamente por grupos de WhatsApp ("el supervisor toma una foto, la manda al grupo y de ahí alguien en oficina lo pasa a un Excel"). El principal problema reportado ("lo que más tiempo quita") es consolidar la información a fin de mes, cruzando el historial de mensajes de WhatsApp con las fotos y el Excel para armar los reportes. |
+| **Hallazgos durante el recorrido** | Comprendió perfectamente la visualización de sensores por tramo y el significado de los umbrales superados. La navegación general le pareció intuitiva. Señaló una carencia crítica en el módulo de incidencias: no se pueden visualizar ni subir fotos ("el antes y el después") directamente desde el celular al reporte del incidente. |
+| **Valor percibido y barreras** | Ahorro de tiempo: Destaca como muy valioso el monitoreo de sensores en tiempo real (no tener que esperar al reporte del prevencionista al final del día). No usaría todavía: El cierre de incidencias, ya que sin la capacidad de adjuntar fotos de respaldo, de todos modos tendría que seguir usando WhatsApp. Barreras: La necesidad de subir evidencias fotográficas desde el móvil es indispensable para reemplazar sus herramientas actuales. |
+| **Facilidad de uso y explicación** | 4 de 5. Calificación justificada por la claridad de los menús y la interfaz intuitiva. El punto descontado se debe a la breve duda al buscar la sección de reportes. |
+| **Evidencia** | [Ver grabación de la entrevista a Diego Davalos](https://www.youtube.com/watch?v=zJD4fD1AMGo). Duración de 7 minutos. |
+
+**Temas del guion facilitado por el equipo.** Se pregunta por la función y las necesidades de información ambiental del participante; la identificación de intervenciones mediante tramos y progresivas; la interpretación de una medición PM10 y su alerta; la ubicación, última lectura y estado de atención de un punto; la trazabilidad del traslado y calibración del sensor; la relación entre alerta, incidencia, acciones correctivas y reincidencias; el detalle requerido en el reporte por fecha, tramo y progresiva; las dudas durante el recorrido, la función más útil, una barrera para usar datos reales y una calificación de facilidad de uso. El cierre pide confirmar si el resumen del entrevistador refleja la opinión del participante.
+
+**Respuestas modelo del guion, pendientes de contraste con la grabación.** El texto recibido sugiere como posibles necesidades mostrar contrato y fecha de intervención; ubicación, hora de lectura y atención del punto; fechas de traslado y calibración; vínculo de la incidencia con la alerta e intervenciones anteriores; evidencia de eficacia de la acción; y reportes con mediciones y evidencias por periodo y progresiva. También propone revisar la relación entre alertas e incidencias. Estas formulaciones sirven como pauta de análisis, pero **no constituyen hallazgos atribuidos a Keler Panduro**.
+
+**Pendiente para cerrar el registro:** transcribir las respuestas efectivas, confirmar fecha, cargo, organización, consentimiento, tareas realizadas sin ayuda y calificación real. El archivo incluye audio, pero no subtítulos ni transcripción adjunta. La fecha de modificación del archivo no se usa como fecha de entrevista.
+
+#### Síntesis y decisiones de producto
+
+Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. Indicar cuántos participantes mencionaron cada punto y distinguir lo observado durante una tarea de lo declarado en una respuesta. Evitar porcentajes con muestras pequeñas o no representativas.
+
+| Hallazgo | Evidencia y participantes | Impacto en el flujo | Cambio propuesto | Prioridad / estado |
+|:---|:---|:---|:---|:---|
+| `[pendiente]` | `[códigos E01…, cita u observación]` | `[pendiente]` | `[pendiente]` | `[pendiente]` |
+
+**Conclusión de validación:** `[pendiente de entrevistas y análisis; describir qué hipótesis se apoyan, cuáles no y qué se probará después]`.
+
+### 5.3.3. Evaluaciones según heurísticas
+<a id="5-3-3-evaluaciones-segun-heuristicas"></a>
+
+**Método y alcance.** Evaluación heurística preliminar de escritorio realizada el 15/11/2026 sobre las capturas del Sprint 3 y la grabación de la entrevista E03. Se examinaron la landing, el detalle de proyecto y tramos, la vista de incidencias y la solicitud de reportes. Se aplican las heurísticas de Nielsen pertinentes a lo que muestran esas evidencias; no se presenta como una prueba de usuario ni como una revisión exhaustiva de las diez heurísticas. Las respuestas modelo del guion de E03 no se usan como hallazgos. Escala de gravedad: 0 = sin problema observado; 1 = cosmético; 2 = dificultad menor; 3 = dificultad importante; 4 = impide una tarea crítica. La gravedad es provisional hasta reproducir cada flujo en la aplicación.
+
+| ID | Pantalla y tarea | Heurística | Hallazgo y evidencia | Gravedad | Mejora propuesta | Estado |
+|:---|:---|:---|:---|:---:|:---|:---|
+| H01 | Landing: comprender la propuesta y entrar a EcoRoad | Consistencia y estándares | En la [captura de E03](../assets/images/entrevista3-mantenimiento-vial.png) la propuesta y los botones principales aparecen en inglés mientras la interfaz muestra la opción `ES`. Puede dificultar la comprensión inicial de usuarios hispanohablantes. La captura no demuestra qué ocurre al cambiar el idioma. | 2 | Verificar el selector y ofrecer el contenido principal de la landing en español cuando se elija `ES`. | Mejora propuesta; probar cambio de idioma. |
+| H02 | Detalle del proyecto: identificar un tramo por progresiva | Correspondencia entre el sistema y el mundo real | El [detalle de tramos](/assets/images/chapter5/Sprint3-Project-Sections.png) utiliza `PK 00+000`, `PK 08+500`, etc., sin explicación visible de la sigla ni del formato. El dato es propio del dominio vial, pero puede ser ambiguo para colaboradores nuevos. | 2 | Añadir una ayuda breve: «PK = punto kilométrico; 08+500 equivale al kilómetro 8,5», junto al campo y en el detalle. | Mejora propuesta; probar comprensión con usuarios. |
+| H03 | Incidencias: distinguir el estado del expediente y de su atención | Visibilidad del estado del sistema | En la grabación de E03, la incidencia aparece en la columna «En progreso» y su tarjeta muestra además «En observación». Son dos etiquetas de estado visibles para el mismo caso, sin una relación explicada en la vista capturada. | 2 | Etiquetar por separado el estado del expediente y el estado de la alerta o evaluación, con una leyenda breve. | Mejora propuesta; comprobar significado exacto de ambos estados en la aplicación. |
+| H04 | Reportes: decidir si el resultado sirve para una entrega formal | Ayuda para reconocer límites del sistema | La [vista de reportes de E03](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu) muestra conteos por proyecto y periodo, incluidos **cero** registros de evidencias de campo. La interfaz sí avisa que el PDF no certifica cumplimiento normativo; falta comprobar si el documento exportado permite rastrear mediciones y evidencias por tramo y progresiva. | 2 | Mostrar un desglose previo por tramo y fecha y advertir cuando el periodo no tiene evidencias; validar el contenido del PDF exportado. | Alcance confirmado en la vista; contenido del PDF pendiente de revisión. |
+
+**Aspectos favorables observados.** El detalle de proyecto agrupa los tramos y muestra sus progresivas y estado en una sola vista. El [formulario de edición](/assets/images/chapter5/Sprint3-Section-Edit-Form.png) presenta «Cancelar» y «Guardar tramo», lo que hace visible la salida sin guardar. La vista de reportes delimita el periodo consultado y advierte explícitamente que el PDF no equivale a una certificación normativa.
+
+**Verificación posterior.** Reproducir H01–H04 en la versión desplegada, comprobar el enlace entre alerta e incidencia, validar las ayudas de los formularios, revisar el PDF exportado y repetir la evaluación tras las correcciones. Las opiniones de E02 y las respuestas reales pendientes de E03 pueden orientar prioridades, pero deben distinguirse de los problemas observados en esta revisión.
+
+## 5.4. Video About-the-Product
+<a id="5-4-video-about-the-product"></a>
+
+El video de presentación de EcoRoad está disponible en el siguiente enlace. La captura proporcionada muestra el inicio de la grabación con la Landing Page desplegada en GitHub Pages. Para describir el resto del recorrido funcional en el informe se debe contrastar el contenido completo del video; esta imagen por sí sola no demuestra las pantallas posteriores.
+
+**Video About-the-Product:** [Ver grabación de EcoRoad en OneDrive](https://1drv.ms/u/c/113B281D1AF386CE/IQDXJvOAgkOKTq1vVjRrzu_YAdsxD2o1nmj0KN3a8zEGrZE?e=CgGgNs)
+
+![Inicio del video About-the-Product de EcoRoad: Landing Page y presentador](/assets/images/chapter5/EcoRoad-About-the-Product-Video.png)
