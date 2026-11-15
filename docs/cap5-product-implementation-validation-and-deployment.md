@@ -753,6 +753,29 @@ Repetir esta ficha por participante, sin sustituir sus respuestas por una interp
 | Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
 | Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
 
+### 5.3.2. Registro de Entrevistas
+<a id="5-3-2-registro-de-entrevistas"></a>
+
+#### Entrevista 1 – Empresas constructoras
+
+![Entrevista 1 – Empresas constructoras](../assets/images/entrevista1-empresasContructoras.jpeg)
+
+*Figura 1. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas constructoras. Fuente: elaboración propia (2026).*
+
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E01 – Guillermo Guillén.** Participante de la validación de EcoRoad para el segmento de empresas constructoras. Cargo y organización por confirmar. |
+| **Fecha, duración y modalidad** | 14/11/2026 (según la grabación). Duración aproximada: 15 minutos y 35 segundos. Modalidad virtual mediante Google Meet. |
+| **Entrevistador y consentimiento** | En la grabación aparece Eduardo Tezza Curay; está pendiente confirmar si fue el entrevistador. No se ha verificado la autorización para notas, grabación y citas textuales. |
+| **Tareas completadas / con ayuda / no completadas** | Se recorrieron los módulos de proyectos, monitoreo ambiental, historial de indicadores, sensores, alertas, reportes y colaboradores. No se pudo verificar qué tareas completó Guillermo de forma autónoma o con ayuda. |
+| **Necesidades y problemas previos** | El guion abordó la priorización de frentes de trabajo, la asignación de acciones correctivas y la supervisión de múltiples proyectos. Las respuestas específicas del participante están pendientes de transcripción. |
+| **Hallazgos durante el recorrido** | Se observaron las funcionalidades de monitoreo, sensores, alertas ambientales y reportes. El historial de indicadores no mostró lecturas para los filtros seleccionados y la sección de reportes no presentó informes generados. |
+| **Valor percibido y barreras** | El guion evaluó la utilidad de las alertas, los indicadores ambientales y la supervisión de proyectos. La valoración real de Guillermo está pendiente de transcripción. |
+| **Facilidad de uso y explicación** | Se presentó la navegación por los módulos principales. La opinión del entrevistado sobre la facilidad de uso requiere confirmación. |
+| **Citas autorizadas** | Pendiente de verificar las declaraciones textuales y la autorización para utilizarlas. |
+| **Evidencia** | [Ver grabación de la entrevista a Guillermo Guillén](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241d483_upc_edu_pe/IQCqPKYld0igT5AlgPayxBqbAayMrjuZTmtbagiBsJAQD4Y?e=gyO5HQ) |
+
 #### Síntesis y decisiones de producto
 
 Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. Indicar cuántos participantes mencionaron cada punto y distinguir lo observado durante una tarea de lo declarado en una respuesta. Evitar porcentajes con muestras pequeñas o no representativas.
