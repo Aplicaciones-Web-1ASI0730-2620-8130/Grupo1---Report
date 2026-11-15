@@ -863,20 +863,26 @@ En las repreguntas del segmento indicó que ver las alertas agrupadas por tramo 
 
 #### Entrevista 3 – Empresas de mantenimiento vial (segmento 2)
 
-| Campo | Registro verificable |
-|:---|:---|
-| **Código y perfil** | **E03 – Segmento 2: empresas de mantenimiento vial.** El nombre completo, cargo y organización del participante están pendientes de confirmación. En la videollamada se ve un nombre abreviado («Keler Martín…»), insuficiente para identificarlo con certeza. |
-| **Fecha, duración y modalidad** | Fecha de realización por confirmar. El archivo recibido dura **4 min 03 s** (242,83 s). Entrevista virtual por Google Meet, con pantalla compartida. |
-| **Entrevistador y consentimiento** | La ventana de Meet identifica a **Italo Pancorbo** como quien presenta la pantalla. Debe confirmarse si condujo todas las preguntas y si el participante autorizó grabación, uso académico y citas textuales. |
-| **Tareas y recorrido observados** | La grabación muestra la landing de EcoRoad y una demostración de la aplicación: detalle del proyecto vial Santa Rosa–Yangas con dos tramos, módulo de incidencias y módulo de reportes ambientales. Esto acredita exposición a las pantallas, pero no permite afirmar que el participante haya completado tareas por sí solo. |
-| **Necesidades y problemas previos** | Pendiente de transcribir las respuestas del participante. |
-| **Hallazgos durante el recorrido** | Se ve el proyecto `VIA-SRY-01`, los tramos Chorrillos–Surco y Santa Rosa–Yangas, una incidencia PM10 en progreso y la vista de reportes con dos mediciones, una alerta activa, un incidente y cero evidencias de campo para el rango visible. Estos son datos de la demostración, no opiniones del entrevistado. |
-| **Valor percibido, barreras y facilidad de uso** | Pendientes de transcribir y contrastar con lo que realmente dijo el participante. No se asigna calificación sin escuchar una respuesta explícita. |
-| **Necesidades propias del segmento 2** | Pendiente verificar si se abordaron las preguntas de mantenimiento vial: organización por tramo o contrato, priorización de cuadrillas, traslado y calibración de sensores, reincidencias, reportes por periodo y avisos de emergencias. |
-| **Citas autorizadas** | Pendientes de transcripción literal y autorización. |
-| **Evidencia** | [Grabación de la entrevista del segmento 2](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu). Archivo local recibido: `Validation_Interview_Seg2.mp4`. |
+![Captura de la entrevista 3 del segmento de mantenimiento vial](../assets/images/entrevista3-mantenimiento-vial.png)
 
-**Alcance de esta revisión.** Se verificaron los metadatos y fotogramas de la grabación. El archivo incluye audio, pero no subtítulos ni una transcripción adjunta; por ello, las respuestas, las citas y los juicios de usabilidad quedan abiertos hasta revisar el audio. La fecha de modificación del archivo no se usa como fecha de la entrevista.
+*Figura 3. Captura de la videollamada de validación con Keler Panduro mientras se presenta la landing de EcoRoad. Fuente: grabación proporcionada por el equipo (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E03 – Keler Panduro.** Participante del segmento de empresas de mantenimiento vial. Cargo y organización por confirmar. |
+| **Fecha, duración y modalidad** | Fecha de realización por confirmar. El archivo dura **4 min 03 s** (242,83 s). Entrevista virtual por Google Meet, con pantalla compartida. |
+| **Entrevistador y consentimiento** | La ventana de Meet identifica a **Italo Pancorbo** como presentador. El guion incluye una solicitud de autorización para notas y grabación, pero la respuesta escrita está marcada como «ejemplo»; falta confirmar en el audio el consentimiento y quién formuló todas las preguntas. |
+| **Recorrido observado** | La grabación muestra la landing y la aplicación: detalle del proyecto Santa Rosa–Yangas con dos tramos, incidencias y reportes. Esto acredita la presentación de las pantallas, no la realización autónoma de tareas por Keler. |
+| **Datos visibles durante la demostración** | Proyecto `VIA-SRY-01`; tramos Chorrillos–Surco y Santa Rosa–Yangas; una incidencia PM10 en progreso; reporte para el rango visible con dos mediciones, una alerta activa, un incidente y cero evidencias de campo. Son datos de la interfaz, no respuestas del entrevistado. |
+| **Necesidades, valor percibido y facilidad de uso** | El guion propone indagar estos aspectos, pero sus respuestas modelo no se atribuyen a Keler hasta contrastarlas con el audio. La calificación de **3/5** del ejemplo no se registra como resultado de la entrevista. |
+| **Citas autorizadas** | Pendientes de transcripción literal y confirmación de autorización. |
+| **Evidencia** | [Grabación de la entrevista del segmento 2](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu). Captura incluida en la Figura 3. |
+
+**Temas del guion facilitado por el equipo.** Se pregunta por la función y las necesidades de información ambiental del participante; la identificación de intervenciones mediante tramos y progresivas; la interpretación de una medición PM10 y su alerta; la ubicación, última lectura y estado de atención de un punto; la trazabilidad del traslado y calibración del sensor; la relación entre alerta, incidencia, acciones correctivas y reincidencias; el detalle requerido en el reporte por fecha, tramo y progresiva; las dudas durante el recorrido, la función más útil, una barrera para usar datos reales y una calificación de facilidad de uso. El cierre pide confirmar si el resumen del entrevistador refleja la opinión del participante.
+
+**Respuestas modelo del guion, pendientes de contraste con la grabación.** El texto recibido sugiere como posibles necesidades mostrar contrato y fecha de intervención; ubicación, hora de lectura y atención del punto; fechas de traslado y calibración; vínculo de la incidencia con la alerta e intervenciones anteriores; evidencia de eficacia de la acción; y reportes con mediciones y evidencias por periodo y progresiva. También propone revisar la relación entre alertas e incidencias. Estas formulaciones sirven como pauta de análisis, pero **no constituyen hallazgos atribuidos a Keler Panduro**.
+
+**Pendiente para cerrar el registro:** transcribir las respuestas efectivas, confirmar fecha, cargo, organización, consentimiento, tareas realizadas sin ayuda y calificación real. El archivo incluye audio, pero no subtítulos ni transcripción adjunta. La fecha de modificación del archivo no se usa como fecha de entrevista.
 
 #### Síntesis y decisiones de producto
 
