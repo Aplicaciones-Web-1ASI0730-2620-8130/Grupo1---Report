@@ -782,6 +782,58 @@ Repetir esta ficha por participante, sin sustituir sus respuestas por una interp
 | **Citas autorizadas** | Pendiente de verificar las declaraciones textuales y la autorización para utilizarlas. |
 | **Evidencia** | [Ver grabación de la entrevista a Guillermo Guillén](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241d483_upc_edu_pe/IQCqPKYld0igT5AlgPayxBqbAayMrjuZTmtbagiBsJAQD4Y?e=gyO5HQ) |
 
+#### Entrevista 2 – Empresas constructoras
+
+![Entrevista 2 – Empresas constructoras](../assets/images/entrevista2-empresasConstructoras.png)
+
+*Figura 2. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas constructoras. Fuente: elaboración propia (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E02 – Viktor Gabriel Herrera.** Ingeniero de campo de una empresa constructora (segmento de empresas constructoras). Apoya a la jefatura de SSOMA en el seguimiento de tramos viales. Código sujeto a confirmación con el equipo. |
+| **Nombres, apellidos, edad y distrito** | Viktor Gabriel Herrera. 29 años. Distrito: `[pendiente]`. |
+| **Fecha, duración y modalidad** | 15/11/2026 (confirmar). Duración aproximada: 12 minutos y 24 segundos. La entrevista comienza en el minuto 00:00 del video. Modalidad virtual mediante videollamada. |
+| **Entrevistador y consentimiento** | En la grabación aparece Miguel Román López como entrevistador. Consentimiento para notas, grabación y cita textual: `[pendiente de confirmar]`. |
+| **Tareas completadas / con ayuda / no completadas** | Según sus respuestas, ubicó el proyecto `VIA-SRY-01` y sus tramos directamente. Interpretó las mediciones PM10 y el estado de la alerta. Dudó al pasar de la alerta al incidente generado y tuvo que usar el menú lateral para llegar a la sección de incidencias. Revisó el reporte en PDF. Lo anterior es lo declarado por el entrevistado; está pendiente verificarlo contra el video. |
+| **Necesidades y problemas previos** | Registra mediciones e incidencias en hojas de Excel compartidas en Drive y grupos de WhatsApp. Cruzar las fotos con la tabla de mediciones es lo más tedioso y a veces se pierden mensajes o se pisan versiones. Obtener el consolidado diario tarda entre 4 horas y un día. |
+| **Hallazgos durante el recorrido** | Entendió con rapidez la propuesta de la Landing Page. Echó en falta un filtro por progresivas. Esperaba que el código de la alerta llevara directo al incidente. Necesitaría ver si una medición viene de un equipo portátil o de una estación fija, y el código de calibración. |
+| **Valor percibido y barreras** | Ahorraría tiempo con la centralización de mediciones por tramo y el resumen en PDF con un clic. No usaría todavía el cierre de incidentes si no permite adjuntar varias fotos o actas firmadas. Menciona como limitaciones la conectividad en tramos sin señal y quién puede editar o borrar una medición ya subida. |
+| **Facilidad de uso y explicación** | 4 de 5. Valora la interfaz limpia y los términos propios de proyectos viales. No da 5 por el salto entre el módulo de alertas y el de incidentes. |
+| **Citas autorizadas** | `[pendiente; confirmar autorización antes de citar textualmente]` |
+| **Evidencia** | [Ver grabación de la entrevista a Viktor Gabriel Herrera](https://1drv.ms/v/c/6a55f7e464b104a9/IQCT08RctrLwT70FONFq_iwdAVCdN1m54ZUK0qMihwGpTIE?e=N2cq6Q). Inicio en 00:00 y duración de 12:24. |
+
+**Perfil objetivo y subjetivo.** Es ingeniero de campo, coordina a unos 12 operarios y 3 capataces de frente, y sus decisiones ambientales incluyen programar el riego de vías con cisternas, reubicar acopios de material excedente y responder a las no conformidades ambientales de la supervisora. Trabaja con Excel, Drive y WhatsApp, y usa progresivas o kilómetros y coordenadas UTM como referencia. Dispositivos, navegador, marcas, influencias y rasgos de personalidad: `[pendiente; no se mencionan en las respuestas recibidas]`.
+
+**Resumen de la entrevista.** Viktor Gabriel Herrera trabaja en una empresa constructora y hoy gestiona la información ambiental de los tramos con hojas de Excel y mensajes de WhatsApp. Describe que los técnicos envían fotos con coordenadas, que un asistente las consolida por la noche y que armar el consolidado del día puede tardar entre 4 horas y un día. Para sus decisiones necesita saber qué puntos de polvo (PM10) o ruido están cerca del límite en los frentes activos y qué incidentes siguen abiertos.
+
+Al ver la Landing Page entendió que EcoRoad es una plataforma web para controlar el impacto ambiental y los frentes de obras viales, dirigida a ingenieros residentes, especialistas SSOMA y supervisores, y esperaba que el registro le permitiera crear una cuenta con su correo de empresa y elegir su rol o asociarse a un consorcio. Encontró el proyecto `VIA-SRY-01` del corredor Santa Rosa-Yangas sin dificultad y comprendió la división por tramos y frentes, aunque buscó un filtro por progresivas.
+
+Sobre el monitoreo, considera que el indicador PM10 y los colores de estado permiten ver qué se disparó sin revisar fila por fila, y entiende el valor medido y el umbral superado. Para confiar plenamente en el dato pediría una etiqueta que indique si proviene de un equipo manual o de una estación fija y el código de calibración. Ante una alerta en rojo, su primera acción sería llamar al capataz del frente para enviar el camión cisterna.
+
+En incidentes, vio el estado y la acción correctiva asociada. Para asignar y cerrar una incidencia en la práctica pediría el nombre y cargo del responsable, una fecha límite y un campo obligatorio para subir la foto del "después" con fecha y hora antes de marcarla como resuelta. Respecto al reporte, lo considera ordenado para reuniones de avance con gerencia o el cliente, y antes de descargarlo revisaría las fechas del corte y las coordenadas UTM. Indica que para una auditoría formal ante OEFA o MTC no bastaría por sí solo, porque allí se exigen certificados de laboratorio y cadenas de custodia firmadas.
+
+Dudó al pasar de la alerta al incidente: esperaba que el código de la alerta abriera el detalle del incidente y tuvo que ir al menú lateral. Por eso su única mejora sería un enlace directo desde cada alerta hacia su incidente y su frente en el mapa o croquis. Calcula que el resumen en PDF con un clic le ahorraría al menos un par de horas cada viernes. Como barreras señala la falta de conectividad en tramos de sierra o quebradas, que exigiría guardar datos sin conexión, y la necesidad de controlar quién edita o borra mediciones. Calificó la facilidad de uso con 4 de 5.
+
+En las repreguntas del segmento indicó que ver las alertas agrupadas por tramo le permite decidir a qué frente enviar primero la cuadrilla de mitigación. Para asignar una acción correctiva necesita responsable, plazo máximo, recursos requeridos y nivel de criticidad. Si gestionara varios proyectos, le sería indispensable un tablero tipo semáforo que compare cuántas alertas críticas o incidentes vencidos tiene cada consorcio.
+
+| N.º | Respuesta registrada (resumen) |
+|:---|:---|
+| P1 | Ingeniero de campo; apoya a SSOMA; coordina 12 operarios y 3 capataces; programa riego con cisternas, reubica acopios y atiende no conformidades. |
+| P2 | Excel en Drive, WhatsApp, fotos con coordenadas; pasan a una matriz por progresiva. Tedioso: cruzar fotos con mediciones y versiones pisadas. |
+| P3 | Puntos de PM10 o ruido cercanos al límite e incidentes abiertos; el consolidado tarda de 4 horas a un día. |
+| P4 | Plataforma web para controlar impacto ambiental y frentes; espera crear cuenta con correo de empresa y elegir rol o consorcio. |
+| P5 | Ubicó `VIA-SRY-01` sin dificultad; echó en falta un filtro por progresivas. |
+| P6 | Los colores y PM10 ayudan; pediría etiqueta manual o estación fija y código de calibración; ante alerta roja llamaría al capataz. |
+| P7 | Pediría responsable con cargo, fecha límite y foto del "después" con fecha y hora obligatoria. |
+| P8 | Sirve para reuniones internas y cliente; para auditoría OEFA o MTC faltan certificados de laboratorio y cadenas de custodia. |
+| P9 | Dudó al pasar de la alerta al incidente; esperaba un enlace directo. |
+| P10 | Ahorraría un par de horas cada viernes; no usaría aún el cierre sin adjuntar varias fotos o actas. |
+| P11 | Conectividad en sierra y quebradas; permisos para editar o borrar mediciones. |
+| P12 | Enlace directo de cada alerta a su incidente y a su frente en el mapa o croquis. |
+| P13 | 4 de 5; no 5 por el salto entre alertas e incidentes. |
+| Repreguntas | Agrupar alertas por tramo decide el frente prioritario; acción correctiva requiere responsable, plazo, recursos y criticidad; tablero tipo semáforo para varios proyectos. |
+
+
 #### Síntesis y decisiones de producto
 
 Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. Indicar cuántos participantes mencionaron cada punto y distinguir lo observado durante una tarea de lo declarado en una respuesta. Evitar porcentajes con muestras pequeñas o no representativas.
