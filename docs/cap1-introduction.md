@@ -1,4 +1,5 @@
 # Capítulo 1
+<a id="introduccion"></a>
 
 ## Introducción
 
@@ -13,6 +14,7 @@ De esta manera, el capítulo permite comprender la identidad y finalidad de EcoR
 
 
 ## 1.1 Startup Profile
+<a id="1-1-startup-profile"></a>
 <a id="1-1-Startup-Profile"></a>
 
 El perfil de la startup permite establecer las características fundamentales de EcoRoad y definir el enfoque que orienta el desarrollo de la propuesta. En esta sección se presenta la identidad de la plataforma, su propósito y 
@@ -29,6 +31,7 @@ facilitando la toma de decisiones y el seguimiento de las acciones realizadas fr
 
 
 ### 1.1.1 Descripción de la Startup
+<a id="1-1-1-descripcion-de-la-startup"></a>
 <a id="1-1-1-Descripción-de-la-Startup"></a>
 
 EcoRoad es una plataforma web SaaS diseñada para transformar la gestión ambiental en el sector de infraestructura vial. A diferencia de las soluciones tradicionales que solo visualizan datos, EcoRoad integra 

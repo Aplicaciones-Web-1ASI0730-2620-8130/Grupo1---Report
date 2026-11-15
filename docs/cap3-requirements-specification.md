@@ -1,6 +1,7 @@
 # Requirements Specification
 <a id="3-requirements-specification"></a>
 ## 3.1. User Stories
+<a id="3-1-user-stories"></a>
 
 | ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 | :--- | :--- | :--- | :--- | :--- |
@@ -71,6 +72,7 @@ En esta sección se presenta el desglose estratégico del modelo de negocio de E
 </p>
 
 ## 3.3. Product Backlog
+<a id="3-3-product-backlog"></a>
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
 | :--- | :--- | :--- | :--- | :--- |
