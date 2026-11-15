@@ -878,6 +878,26 @@ En las repreguntas del segmento indicó que ver las alertas agrupadas por tramo 
 | **Citas autorizadas** | Pendientes de transcripción literal y confirmación de autorización. |
 | **Evidencia** | [Grabación de la entrevista del segmento 2](https://1drv.ms/v/c/113B281D1AF386CE/IQB7xEz59ZSRS5gaw-FaNzh6AQLRUD_P2HKfBxUgr-4m6p8?e=7bTvMu). Captura incluida en la Figura 3. |
 
+
+#### Entrevista 4 – Empresas de mantenimiento vial (segmento 2)
+
+![Entrevista 4 – Empresas de mantenimiento vial](../assets/images/entrevista4-mantenimiento-vial.png)
+
+*Figura 4. Entrevista virtual realizada para la validación de EcoRoad en el segmento de empresas de mantenimiento vial. Fuente: elaboración propia (2026).*
+
+| Campo | Registro |
+|:---|:---|
+| **Código y perfil** | **E04 – Diego Davalos.** Supervisor Ambiental / Jefe de Frente (Segmento de Mantenimiento y Rehabilitación Vial). |
+| **Nombres, apellidos, edad y distrito** | Diego Davalos. 26 años. Distrito: Surco. |
+| **Fecha, duración y modalidad** | 15/11/2026. Duración exacta: 7 minutos. Modalidad virtual mediante videollamada. |
+| **Entrevistador y consentimiento** | Entrevistador: Eduardo Martin Guillen Chavez. Consentimiento para notas, grabación y cita textual: Confirmado. |
+| **Tareas completadas / con ayuda / no completadas** | Logró ubicar el proyecto de Rehabilitación y el tramo correspondiente de forma directa. Interpretó correctamente la medición en rojo (PM10 elevado) como una alerta que requiere acción inmediata (regar la vía). En la sección de incidencias, localizó el caso y evaluó la acción correctiva, notando la ausencia de evidencia fotográfica. Dudó brevemente al buscar la opción para generar el reporte ambiental mensual antes de encontrar el botón de exportar/reportes. (Todo completado de forma independiente). |
+| **Necesidades y problemas previos** | Actualmente registra las incidencias y alertas casi exclusivamente por grupos de WhatsApp ("el supervisor toma una foto, la manda al grupo y de ahí alguien en oficina lo pasa a un Excel"). El principal problema reportado ("lo que más tiempo quita") es consolidar la información a fin de mes, cruzando el historial de mensajes de WhatsApp con las fotos y el Excel para armar los reportes. |
+| **Hallazgos durante el recorrido** | Comprendió perfectamente la visualización de sensores por tramo y el significado de los umbrales superados. La navegación general le pareció intuitiva. Señaló una carencia crítica en el módulo de incidencias: no se pueden visualizar ni subir fotos ("el antes y el después") directamente desde el celular al reporte del incidente. |
+| **Valor percibido y barreras** | Ahorro de tiempo: Destaca como muy valioso el monitoreo de sensores en tiempo real (no tener que esperar al reporte del prevencionista al final del día). No usaría todavía: El cierre de incidencias, ya que sin la capacidad de adjuntar fotos de respaldo, de todos modos tendría que seguir usando WhatsApp. Barreras: La necesidad de subir evidencias fotográficas desde el móvil es indispensable para reemplazar sus herramientas actuales. |
+| **Facilidad de uso y explicación** | 4 de 5. Calificación justificada por la claridad de los menús y la interfaz intuitiva. El punto descontado se debe a la breve duda al buscar la sección de reportes. |
+| **Evidencia** | [Ver grabación de la entrevista a Diego Davalos](https://www.youtube.com/watch?v=zJD4fD1AMGo). Duración de 7 minutos. |
+
 **Temas del guion facilitado por el equipo.** Se pregunta por la función y las necesidades de información ambiental del participante; la identificación de intervenciones mediante tramos y progresivas; la interpretación de una medición PM10 y su alerta; la ubicación, última lectura y estado de atención de un punto; la trazabilidad del traslado y calibración del sensor; la relación entre alerta, incidencia, acciones correctivas y reincidencias; el detalle requerido en el reporte por fecha, tramo y progresiva; las dudas durante el recorrido, la función más útil, una barrera para usar datos reales y una calificación de facilidad de uso. El cierre pide confirmar si el resumen del entrevistador refleja la opinión del participante.
 
 **Respuestas modelo del guion, pendientes de contraste con la grabación.** El texto recibido sugiere como posibles necesidades mostrar contrato y fecha de intervención; ubicación, hora de lectura y atención del punto; fechas de traslado y calibración; vínculo de la incidencia con la alerta e intervenciones anteriores; evidencia de eficacia de la acción; y reportes con mediciones y evidencias por periodo y progresiva. También propone revisar la relación entre alertas e incidencias. Estas formulaciones sirven como pauta de análisis, pero **no constituyen hallazgos atribuidos a Keler Panduro**.
