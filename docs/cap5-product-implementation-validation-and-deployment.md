@@ -800,9 +800,8 @@ Como recorrido mínimo, evaluar el paso de la Landing Page al registro, la creac
 ## 5.4. Video About-the-Product
 <a id="5-4-video-about-the-product"></a>
 
-**Estado:** pendiente de producción y publicación. El video debe mostrar la versión integrada y publicada de EcoRoad, con un recorrido verificable desde la Landing Page hasta la aplicación: registro o acceso de demostración, proyecto y tramo, monitoreo y sensores, alerta e incidencia, y reporte ambiental. Usar datos ficticios y ocultar contraseñas, tokens y cadenas de conexión.
+El video de presentación de EcoRoad está disponible en el siguiente enlace. La captura proporcionada muestra el inicio de la grabación con la Landing Page desplegada en GitHub Pages. Para describir el resto del recorrido funcional en el informe se debe contrastar el contenido completo del video; esta imagen por sí sola no demuestra las pantallas posteriores.
 
-- **Enlace público del video:** `[pendiente]`
-- **Fecha de publicación y responsables:** `[pendiente]`
-- **Guion o minutaje por funcionalidad:** `[pendiente]`
-- **Evidencia de versión mostrada (URL o commit):** `[pendiente]`
+**Video About-the-Product:** [Ver grabación de EcoRoad en OneDrive](https://1drv.ms/u/c/113B281D1AF386CE/IQDXJvOAgkOKTq1vVjRrzu_YAdsxD2o1nmj0KN3a8zEGrZE?e=CgGgNs)
+
+![Inicio del video About-the-Product de EcoRoad: Landing Page y presentador](/assets/images/chapter5/EcoRoad-About-the-Product-Video.png)
