@@ -222,3 +222,15 @@ EcoRoad cuenta con una versión integrada publicada: landing en GitHub Pages y a
 
 [Material About-the-Team compartido por el equipo en OneDrive](https://1drv.ms/u/c/113B281D1AF386CE/IQDIA62u6t2kR66h-7Q64BZfAUKamVKIwUIPtTvyU2wQ8io?e=v8ttgn). Antes de la entrega, verificar que el enlace corresponda a la versión final y que incluya escenas de trabajo real, narración y testimonios ante cámara de los cinco integrantes.
 
+## Bibliografía
+
+- GitHub. (s. f.). *Getting started with GitHub Pages*. GitHub Docs. https://docs.github.com/en/pages/getting-started-with-github-pages
+- Microsoft. (s. f.). *Overview of ASP.NET Core*. Microsoft Learn. https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core
+- Microsoft. (s. f.). *Entity Framework Core*. Microsoft Learn. https://learn.microsoft.com/en-us/ef/core/
+- Nielsen, J. (1994; revisado en 2024). *10 usability heuristics for user interface design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+- OpenAPI Initiative. (s. f.). *OpenAPI Specification*. https://spec.openapis.org/oas/
+- Oracle. (s. f.). *MySQL 8.4 Reference Manual*. https://dev.mysql.com/doc/refman/8.4/en/
+- Railway. (s. f.). *Deployments*. Railway Docs. https://docs.railway.com/deployments
+- Vite. (s. f.). *Getting started*. https://vite.dev/guide/
+- Vue.js. (s. f.). *Introduction*. https://vuejs.org/guide/introduction
+
