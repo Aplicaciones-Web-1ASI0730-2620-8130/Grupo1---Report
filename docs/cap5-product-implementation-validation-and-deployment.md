@@ -693,17 +693,19 @@ La integración reveló diferencias entre identificadores de empresa, representa
 ## 5.3. Validation Interviews
 <a id="5-3-validation-interviews"></a>
 
-Esta sección queda preparada para documentar entrevistas de validación de la versión integrada de EcoRoad. Las preguntas son una guía semiestructurada: el entrevistador puede pedir ejemplos y profundizar en las respuestas. Ninguna entrevista ni conclusión se considera realizada hasta incorporar su registro y evidencia.
+Esta sección documenta el diseño de las entrevistas de validación de la versión integrada de EcoRoad y los registros disponibles. Las preguntas son una guía semiestructurada: el entrevistador puede pedir ejemplos y profundizar en las respuestas. Las respuestas y conclusiones se atribuyen a participantes solo cuando constan en su registro o evidencia.
 
 ### 5.3.1. Diseño de Entrevistas
 <a id="5-3-1-diseno-de-entrevistas"></a>
 
 **Objetivo:** evaluar si EcoRoad ayuda a registrar proyectos viales, organizar el monitoreo ambiental, interpretar alertas, atender incidencias y preparar evidencia para reportes. También se busca identificar dificultades de uso y funciones faltantes antes de proponer mejoras.
 
-**Perfiles a convocar:**
+**Segmentos a entrevistar por separado:**
 
-- Responsable de obra o de gestión de proyectos en una empresa constructora o de mantenimiento vial.
-- Ingeniero, supervisor o consultor ambiental que registre mediciones, revise alertas o prepare reportes.
+- **Empresas constructoras viales:** responsable de obra, gerente de proyecto, ingeniero o supervisor ambiental involucrado en la ejecución de nuevos frentes.
+- **Empresas de mantenimiento vial:** responsable de conservación, supervisor de tramos, gerente de contratos, ingeniero o consultor ambiental que atienda varios puntos o intervenciones recurrentes.
+
+Aplicar las preguntas comunes a ambos segmentos y después únicamente el bloque específico que corresponda. Registrar además el cargo concreto del participante para interpretar sus respuestas; el cargo no sustituye al segmento de su organización.
 
 **Datos por completar antes de entrevistar:** número y criterio de selección de participantes; fechas; modalidad; duración; entrevistador; vínculo del participante con el proceso; método de consentimiento y autorización para grabar o citar. Usar códigos como `E01` en el informe y registrar datos personales solo cuando sea necesario y exista autorización.
 
@@ -715,9 +717,9 @@ Esta sección queda preparada para documentar entrevistas de validación de la v
 4. Plantear tareas concretas y observar qué pasos intenta realizar, dónde se detiene y qué espera ver. Evitar guiarlo hasta que haya terminado cada tarea.
 5. Formular las preguntas de cierre, registrar citas textuales breves con permiso y confirmar que el resumen representa su opinión.
 
-**Tareas sugeridas para la prueba:** llegar desde la Landing Page al registro o inicio de sesión; encontrar el proyecto vial y su tramo; localizar un punto o sensor; interpretar una lectura PM10 y una alerta; revisar una incidencia y su acción correctiva; encontrar las fuentes de un reporte ambiental. Si alguna tarea requiere modificar datos de producción, usar un registro de demostración acordado y anotarlo en el acta.
+**Tareas comunes sugeridas para la prueba:** llegar desde la Landing Page al registro o inicio de sesión; encontrar un proyecto y su tramo; localizar un punto o sensor; interpretar una lectura PM10 y una alerta; revisar una incidencia y su acción correctiva; encontrar las fuentes de un reporte ambiental. Para constructoras, pedir que identifique un frente de obra y a quién asignaría la atención de una alerta. Para mantenimiento vial, pedir que localice un tramo o intervención de conservación y explique cómo priorizaría varios puntos con problemas simultáneos. Si alguna tarea requiere modificar datos de producción, usar un registro de demostración acordado y anotarlo en el acta.
 
-#### Guía de preguntas
+#### Preguntas comunes para ambos segmentos
 
 **Contexto del participante**
 
@@ -741,7 +743,29 @@ Esta sección queda preparada para documentar entrevistas de validación de la v
 12. Si pudieras cambiar una sola cosa antes de volver a probarlo, ¿cuál sería?
 13. En una escala de 1 a 5, ¿qué tan fácil fue completar las tareas? ¿Qué explica esa calificación?
 
-**Repreguntas opcionales por perfil:** a constructoras, consultar por varios proyectos, responsables y seguimiento de frentes; a supervisores ambientales, consultar por trazabilidad de mediciones, criterios de umbral, evidencias de campo y requisitos del reporte. No sugerir que la aplicación certifica cumplimiento normativo: el PDF actual resume identificadores y cantidades y no incorpora firma criptográfica verificada.
+#### Preguntas específicas: empresas constructoras viales
+
+Aplicar este bloque después de las preguntas comunes a participantes que ejecutan obras nuevas o ampliaciones.
+
+14. Cuando se abren o desplazan frentes de construcción, ¿cómo deciden dónde colocar o reubicar los puntos de monitoreo? Muéstranos cómo lo representarías mediante proyectos, tramos y frentes en EcoRoad.
+15. Si una medición supera el umbral mientras se ejecuta movimiento de tierras, ¿quién debe recibir la alerta, quién puede detener o ajustar la actividad y qué información necesita para decidir?
+16. ¿Cómo asignan hoy responsables y plazos para acciones correctivas entre contratista, supervisión ambiental y dirección de obra? ¿Qué parte de ese seguimiento podrías hacer en la pantalla de incidencias y qué falta?
+17. Para sustentar una inspección durante la construcción, ¿qué fotos, ubicaciones, fechas, mediciones y aprobaciones deben quedar vinculadas al incidente o al frente?
+18. Si gestionas varios proyectos o frentes activos a la vez, ¿qué criterio usarías para priorizar cuál revisar primero? ¿La vista actual de EcoRoad te permite hacerlo?
+19. ¿Qué dato del reporte ambiental necesitarías presentar a la supervisión o a la entidad contratante que todavía no aparece en el PDF de demostración?
+
+#### Preguntas específicas: empresas de mantenimiento vial
+
+Aplicar este bloque después de las preguntas comunes a participantes que conservan, rehabilitan o intervienen tramos existentes.
+
+20. ¿Cómo organizan las intervenciones recurrentes a lo largo de varios kilómetros o contratos: por carretera, tramo, progresiva, cuadrilla o fecha? ¿Cómo lo representarías en EcoRoad?
+21. Cuando surgen alertas en varios puntos alejados entre sí, ¿cómo priorizan la visita de la cuadrilla? ¿Qué datos de ubicación, gravedad y última lectura faltan en la vista actual?
+22. Al mover un sensor de un tramo a otro, ¿qué historial de ubicación, calibración y mediciones necesitan conservar para que las lecturas sigan siendo comparables?
+23. Si una incidencia reaparece después de una reparación o limpieza, ¿cómo la relacionan con intervenciones anteriores y cómo verificarían que la medida correctiva funcionó?
+24. ¿Qué información necesitan consolidar por periodo y por contrato para reportar el mantenimiento ambiental a la entidad responsable? ¿Qué parte pueden obtener hoy del reporte de EcoRoad?
+25. En una jornada con tareas planificadas y emergencias, ¿qué aviso o resumen permitiría al supervisor distinguir un problema nuevo de uno ya atendido?
+
+En ambos segmentos se puede profundizar en trazabilidad de mediciones, criterios de umbral y evidencias de campo según el cargo. No sugerir que la aplicación certifica cumplimiento normativo: el PDF actual resume identificadores y cantidades y no incorpora firma criptográfica verificada.
 
 ### 5.3.2. Registro de Entrevistas
 <a id="5-3-2-registro-de-entrevistas"></a>
@@ -750,14 +774,15 @@ Repetir esta ficha por participante, sin sustituir sus respuestas por una interp
 
 | Campo | Registro |
 |:---|:---|
-| Código y perfil | `[E01; rol y tipo de organización]` |
+| Código, segmento y perfil | `[E01; constructora o mantenimiento vial; cargo y tipo de organización]` |
 | Fecha, duración y modalidad | `[pendiente]` |
 | Entrevistador y consentimiento | `[pendiente; indicar si autorizó notas, grabación y cita]` |
 | Tareas completadas / con ayuda / no completadas | `[pendiente; anotar el motivo observado]` |
 | Necesidades y problemas previos | `[pendiente; preguntas 1–3]` |
-| Hallazgos durante el recorrido | `[pendiente; preguntas 4–9 y observaciones]` |
+| Hallazgos durante el recorrido | `[pendiente; preguntas 4–9, tarea del segmento y observaciones]` |
 | Valor percibido y barreras | `[pendiente; preguntas 10–12]` |
 | Facilidad de uso y explicación | `[pendiente; respuesta a la pregunta 13]` |
+| Necesidades propias del segmento | `[pendiente; preguntas 14–19 para constructoras o 20–25 para mantenimiento vial]` |
 | Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
 | Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
 
