@@ -579,7 +579,7 @@ Las dos `L` de Commercial y Projects distinguen la implementación en rama de It
 #### 5.2.3.3. Sprint Backlog 3
 <a id="5-2-3-3-sprint-backlog-3"></a>
 
-El backlog vincula las tareas terminadas con las historias de usuario de EcoRoad del capítulo 3. Los códigos `T3-*` organizan esta sección del informe y no se presentan como identificadores de Trello. Las horas de cada tarea quedan por cotejar con el tablero; los Story Points de las historias no equivalen a horas. El organizador confirmó que las actividades asignadas al backend se completaron. El estado «Verificado en UI» añade evidencia visual de la aplicación publicada; «Completado» se sustenta en los commits y el código integrado. Una historia relacionada con una tarea no implica que todos sus escenarios de aceptación hayan sido validados.
+El backlog vincula las tareas terminadas con las historias de usuario de EcoRoad del capítulo 3. Los códigos `T3-*` organizan esta sección del informe y no se presentan como identificadores de Trello. En la captura del tablero facilitada por el organizador se observan **13 tarjetas en Done** y ninguna en To do, In Process o To Review; los títulos visibles corresponden a las tareas de la tabla. Las horas de cada tarea quedan por cotejar con las tarjetas, pues la captura no muestra estimaciones y los Story Points de las historias no equivalen a horas. El organizador confirmó que las actividades asignadas al backend se completaron. El estado «Verificado en UI» añade evidencia visual de la aplicación publicada; «Completado» se sustenta en los commits y el código integrado. Una historia relacionada con una tarea no implica que todos sus escenarios de aceptación hayan sido validados.
 
 | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |:---|:---|:---|:---|:---|:---|:---|:---|
@@ -596,6 +596,8 @@ El backlog vincula las tareas terminadas con las historias de usuario de EcoRoad
 | US01 / US09 / US11 / US16 / US18 / US24 / US30 / US33 | Autenticación de Usuarios; Monitoreo de Mediciones en Tiempo Real; Visualización General de Proyectos; Consulta de Alertas Generadas; Registro de Incidencia Ambiental; Generación de Reporte Ambiental; Creación de Proyecto Vial; Asociación de Sensores IoT a Puntos de Monitoreo | T3-11 | Integración de la aplicación web | Conectar la interfaz a los repositorios HTTP reales de los contextos y comprobar rutas de lectura; commits `c30ae36`, `f212066`, `9880def`, `55d71fa`, `7505f65`, `b009ef4`, `edaf35b`. | Por estimar | Pancorbo Amorós, Italo Raul | Completado |
 | US43 | CRUD de Proyectos Viales vía API | T3-12 | Despliegue del backend | Preparar Dockerfile y publicar el servicio ASP.NET Core en Railway; commit `f8518d2` y captura en 5.2.3.7. | Por estimar | Pancorbo Amorós, Italo Raul (Dockerfile); configuración final de Railway por confirmar | Verificado en UI |
 | US01 | Autenticación de Usuarios | T3-13 | Enlace de la Landing Page | Dirigir el registro y el inicio de sesión desde la landing hacia el frontend actual; commits `2713388`, `b277b7e`. | Por estimar | Pancorbo Amorós, Italo Raul | Completado |
+
+**Sprint Board de EcoRoad:** [Sprint 3 en Trello](https://trello.com/invite/b/6af96cc3b31b2f3ac6f7858d/ATTI06b3af4493183313e4c1b7fd9cdafe8cD3C2DA79/sprint-3-ecoroad). La distribución de tarjetas se tomó de la captura proporcionada; el detalle interno de cada tarjeta y sus horas no se pudo consultar desde el informe.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 <a id="5-2-3-4-development-evidence-for-sprint-review"></a>
@@ -636,7 +638,7 @@ En el detalle del mismo proyecto se observan dos tramos activos, sus progresivas
 
 ![Sprint 3: formulario de edición del tramo Santa Rosa–Yangas](/assets/images/chapter5/Sprint3-Section-Edit-Form.png)
 
-Para la revisión formal aún se requieren capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias. El tablero de Trello con estimaciones e identificadores oficiales se incorporará cuando esté disponible.
+Para la revisión formal aún se requieren capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias. El enlace al tablero de Trello ya figura en 5.2.3.3; falta cotejar las estimaciones y los identificadores de sus tarjetas.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 <a id="5-2-3-6-services-documentation-evidence-for-sprint-review"></a>
