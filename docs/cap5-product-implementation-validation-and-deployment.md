@@ -559,17 +559,24 @@ Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y con
 #### 5.2.3.2. Aspect Leaders and Collaborators
 <a id="5-2-3-2-aspect-leaders-and-collaborators"></a>
 
-Esta matriz identifica responsables técnicos según la autoría de los commits del Sprint 3. `L` señala la implementación principal verificable de un aspecto y `C` una contribución de integración o corrección. No representa roles acordados en el Sprint Planning; esa asignación y las contribuciones no reflejadas en Git deben cotejarse con el tablero del equipo.
+La siguiente asignación **se infiere de los commits**: el líder técnico es quien implementó principalmente el aspecto y el colaborador figura cuando hay commits de integración o corrección en ese mismo flujo. Así se puede documentar el trabajo verificable sin atribuir decisiones de una reunión que no consta en Git.
 
-| Integrante | GitHub | Base, IAM, activos, monitoreo e incidencias | Comercial, proyectos, alertas y cumplimiento | Integración del frontend | Despliegue y Landing Page |
-|:---|:---|:---:|:---:|:---:|:---:|
-| Roman Lopez, Miguel Angel Junior | `MiguelRomn` | L | | | |
-| Guillen Chavez, Eduardo Martín | `Eduardox30-wq` | | L | | C |
-| Pancorbo Amorós, Italo Raul | `pancorboitalo-design` | C | C | L | L |
-| Taza Curay, Eduardo Miguel | `Edutaza10` | | | | |
-| Salcedo Muñoz, Andy Alfredo Hipolito | `Andy777sdw` | | | | |
+| Aspecto del Sprint 3 | Aspect Leader técnico | Colaborador técnico verificable | Commits representativos |
+|:---|:---|:---|:---|
+| Base del backend y persistencia MySQL | Roman Lopez, Miguel Angel Junior (`MiguelRomn`) | — | `9bf11f6`, `4f90b64` |
+| Identity and Access Management | Roman Lopez, Miguel Angel Junior | Pancorbo Amorós, Italo Raul (integración frontend) | `f996f76`, `c30ae36` |
+| Monitoring Asset and Deployment | Roman Lopez, Miguel Angel Junior | Pancorbo Amorós, Italo Raul (integración frontend) | `abf4721`, `9880def` |
+| Environmental Monitoring | Roman Lopez, Miguel Angel Junior | Pancorbo Amorós, Italo Raul (corrección MySQL e integración frontend) | `d627226`, `9880def`, `28dfb3f` |
+| Incident and Remediation Management | Roman Lopez, Miguel Angel Junior | Pancorbo Amorós, Italo Raul (integración frontend) | `c0a7e0d`, `7505f65` |
+| Commercial and Subscription Management | Guillen Chavez, Eduardo Martín (`Eduardox30-wq`) | Pancorbo Amorós, Italo Raul (integración frontend) | `8566fb7`, `c30ae36` |
+| Project and Road Site Management | Guillen Chavez, Eduardo Martín | Pancorbo Amorós, Italo Raul (contratos e integración frontend) | `10b2615`, `1ea7d7b`, `f212066` |
+| Alerting and Risk Evaluation | Guillen Chavez, Eduardo Martín | Pancorbo Amorós, Italo Raul (integración frontend) | `649bdeb`, `55d71fa` |
+| Compliance and Reporting | Guillen Chavez, Eduardo Martín | Pancorbo Amorós, Italo Raul (integración frontend) | `e882b34`, `b009ef4` |
+| Integración general de la Web Application | Pancorbo Amorós, Italo Raul (`pancorboitalo-design`) | Roman Lopez y Eduardo Guillen (servicios backend integrados) | `c30ae36`–`edaf35b` |
+| Documentación de API | Guillen Chavez, Eduardo Martín | — | `e6f4f9b` |
+| Docker del backend y enlace de Landing Page | Pancorbo Amorós, Italo Raul | — | `f8518d2`, `2713388`, `b277b7e` |
 
-Las celdas vacías indican que la autoría consultada no permite asignar un rol técnico en este Sprint; no significan ausencia en reuniones, revisión o pruebas. En particular, el despliegue mostrado en Railway no permite inferir por sí solo quién lo configuró desde la interfaz.
+Los repositorios consultados no muestran commits de Sprint 3 atribuibles a Taza Curay, Eduardo Miguel (`Edutaza10`) ni a Salcedo Muñoz, Andy Alfredo Hipolito (`Andy777sdw`); ello no descarta aportes en pruebas, revisión, coordinación o documentación externa. La configuración manual de Railway tampoco puede atribuirse únicamente a partir de sus capturas.
 
 #### 5.2.3.3. Sprint Backlog 3
 <a id="5-2-3-3-sprint-backlog-3"></a>
