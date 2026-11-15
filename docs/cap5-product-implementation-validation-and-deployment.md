@@ -544,17 +544,20 @@ El Sprint 3 se orientó a reemplazar la API simulada del Sprint 2 por servicios 
 
 | Sprint # | Sprint 3 |
 |:---|:---|
-| **Sprint Planning Background** | **Reconstrucción técnica a partir de repositorios; validar con el acta del equipo.** |
-| Date / Time / Location | `[pendiente de acta de Sprint Planning 3]` |
-| Prepared By / Attendees | `[pendiente de acta; no se deduce asistencia de los commits]` |
+| **Sprint Planning Background** | Reunión informada por el organizador y reconstrucción técnica a partir de los repositorios. |
+| Date | 13/10/2026 |
+| Time | 08:00 PM |
+| Location | Reunión virtual por Discord |
+| Prepared By | Pancorbo Amorós, Italo Raul |
+| Attendees | Taza Curay, Eduardo Miguel / Roman Lopez, Miguel Angel Junior / Guillen Chavez, Eduardo Martín / Salcedo Muñoz, Andy Alfredo Hipolito / Pancorbo Amorós, Italo Raul |
 | Sprint 2 Review Summary | Se entregó una aplicación Vue con los ocho bounded contexts conectados a una Fake API en Vercel y una Landing Page enlazada al inicio de sesión. |
 | Sprint 2 Retrospective Summary | `[pendiente de acta; no se atribuyen acuerdos no documentados]` |
 | **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | Integrar la Web Application con servicios ASP.NET Core y MySQL, publicar la solución y verificar que una empresa de demostración pueda acceder, gestionar un proyecto vial y consultar sus datos tras volver a iniciar sesión. |
+| Sprint 3 Goal | Completar las actividades asignadas al backend para los ocho bounded contexts, integrar la Web Application con ASP.NET Core y MySQL, publicar la solución y comprobar el flujo de una empresa de demostración. |
 | Criterio de revisión | Recorrido Landing Page → registro o inicio de sesión → proyecto y tramo → monitoreo, alertas e incidencias → reporte; verificación de endpoints en Scalar y despliegues en Railway. |
 | Sprint 3 Velocity / Sum of Story Points | `[pendiente del tablero; no se calculan Story Points a partir de commits]` |
 
-Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y contratos HTTP simulados. El trabajo del Sprint 3 incluyó persistencia real, adaptación de contratos entre frontend y backend, despliegue de los servicios y verificación del flujo público. La tabla siguiente documenta entregables observables; la aprobación formal del objetivo debe contrastarse con la Sprint Review.
+Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y contratos HTTP simulados. El trabajo del Sprint 3 incluyó persistencia real, adaptación de contratos entre frontend y backend, despliegue de los servicios y verificación del flujo público. Según el organizador, todas las actividades asignadas al backend se completaron. Las estimaciones y el acuerdo de retrospectiva siguen pendientes del tablero o acta.
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 <a id="5-2-3-2-aspect-leaders-and-collaborators"></a>
@@ -562,21 +565,21 @@ Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y con
 Al igual que en el capítulo de referencia, la tabla cruza integrantes con aspectos y utiliza `L` y `C`. Para EcoRoad, las letras **se infieren de los commits**: `L` indica la implementación principal y `C` una integración o corrección comprobable. La tabla no pretende documentar cargos acordados en una reunión.
 
 | Team Member | GitHub Username | Backend Base | Commercial | IAM | Projects | Assets | Monitoring | Alerting | Incidents | Compliance | Frontend Integration | Deployment & Landing |
-|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Roman Lopez, Miguel Angel Junior | *MiguelRomn* | L | | L | | L | L | | L | | | |
-| Guillen Chavez, Eduardo Martín | *Eduardox30-wq* | | L | | L | | | L | | L | | C |
-| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | C | C | C | C | C | C | C | C | C | L | L |
-| Taza Curay, Eduardo Miguel | *Edutaza10* | | | | | | | | | | | |
-| Salcedo Muñoz, Andy Alfredo Hipolito | *Andy777sdw* | | | | | | | | | | | |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Roman Lopez, Miguel Angel Junior | *MiguelRomn* | L | | L | | L | L | | L | | C | |
+| Guillen Chavez, Eduardo Martín | *Eduardox30-wq* | | L | | L | | | C | | C | | C |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design / italopancor* | C | L | C | L | C | C | C | C | C | L | L |
+| Taza Curay, Eduardo Miguel | *Edutaza10* | | | | | | | | | L | | |
+| Salcedo Muñoz, Andy Alfredo Hipolito | *Andy (Andy777sdw)* | | | | | | | L | | | | |
 
 *L = líder técnico según commits; C = colaborador en integración o corrección según commits.*
 
-Los commits `f996f76`, `abf4721`, `c0a7e0d`, `8566fb7`, `10b2615`, `649bdeb`, `e882b34` y `c30ae36`–`edaf35b` sustentan las asignaciones principales. La `C` de Eduardo en Deployment corresponde a la documentación Scalar (`e6f4f9b`); no implica que configuró Railway. Las celdas vacías de Taza y Salcedo indican que no se localizaron commits suyos del Sprint 3 en los repositorios consultados, sin descartar aportes en pruebas, revisión o coordinación.
+Las dos `L` de Commercial y Projects distinguen la implementación en rama de Italo de la integración posterior de Eduardo (`ead7ae1`, `08beacd`, `8566fb7`, `10b2615`). En Alerting se registran la implementación de Andy (`dea462d`, `2d56059`), trabajo inicial de Italo (`786238b`) e integración de Eduardo (`649bdeb`). En Compliance, Taza desarrolló el contexto en su rama (`5374cb5`, `7dbdd54`) y Eduardo lo integró (`e882b34`). Miguel aportó también correcciones de tooling del frontend (`a2740af`). La `C` de Eduardo en Deployment corresponde a Scalar (`e6f4f9b`); no demuestra que configuró Railway. Los nombres `Andy` e `italopancor` son autorías de Git vinculadas aquí con los integrantes por el contexto de los repositorios; revisar la identidad de autor en GitHub antes de usar los números como evaluación individual.
 
 #### 5.2.3.3. Sprint Backlog 3
 <a id="5-2-3-3-sprint-backlog-3"></a>
 
-El backlog reconstruye las tareas terminadas a partir de commits y del producto observado. Los códigos `T3-*` organizan esta sección del informe; no se presentan como ID del tablero. Las horas, Story Points y responsables acordados en la planificación siguen pendientes de cotejo con Trello. `Done` indica implementación verificable en el repositorio, mientras que `Verificado en UI` indica además una observación en la aplicación publicada.
+El backlog reconstruye las tareas terminadas a partir de commits de todas las ramas y del producto observado. Los códigos `T3-*` organizan esta sección del informe; no se presentan como ID del tablero. Las horas y Story Points siguen pendientes de cotejo con Trello. El organizador confirmó que las actividades asignadas al backend se completaron. `Done` indica implementación verificable en el repositorio, mientras que `Verificado en UI` indica además una observación en la aplicación publicada.
 
 | Task ID | Aspecto / tarea | Entregable y criterio de revisión | Responsable técnico verificable | Evidencia | Estado |
 |:---|:---|:---|:---|:---|:---|
@@ -585,10 +588,10 @@ El backlog reconstruye las tareas terminadas a partir de commits y del producto 
 | T3-03 | Activos y despliegue de sensores | Puntos, sensores, asignación, calibración y activación | Roman Lopez | `abf4721`, `5f8f413`; controladores de Assets | Done |
 | T3-04 | Monitoreo ambiental | Mediciones, perfiles de umbral, dashboard e historial | Roman Lopez; corrección MySQL: Italo Pancorbo | Controladores de Monitoring; `d627226` | Done |
 | T3-05 | Gestión de incidencias | Apertura, asignación, acciones, evidencias, resolución y cierre | Roman Lopez | `c0a7e0d`, `2012d74`, `d32e7ff`, `7871af1` | Done |
-| T3-06 | Cuenta empresarial y suscripción | Registro y activación persistente de la empresa | Eduardo Guillen | `8566fb7`, `8068edc`, `6ca15c2` | Verificado en UI |
-| T3-07 | Proyectos, tramos y frentes | Alta y consulta de proyectos con tramos; compatibilidad de ID de empresa | Eduardo Guillen; correcciones: Italo Pancorbo | `10b2615`, `bf1b706`, `1ea7d7b`, `95d452b` | Verificado en UI |
-| T3-08 | Reglas y alertas ambientales | Evaluación de riesgo, reglas y migración | Eduardo Guillen | `649bdeb`, `a7c0f42` | Done |
-| T3-09 | Cumplimiento y reportes | Tablas, solicitud de reporte y generación PDF | Eduardo Guillen | `e882b34`, `5d5acc1` | Done |
+| T3-06 | Cuenta empresarial y suscripción | Registro y activación persistente de la empresa | Italo Pancorbo (rama inicial); Eduardo Guillen (integración) | `ead7ae1`, `c561342`, `8566fb7`, `8068edc` | Verificado en UI |
+| T3-07 | Proyectos, tramos y frentes | Alta y consulta de proyectos con tramos; compatibilidad de ID de empresa | Italo Pancorbo (rama inicial y correcciones); Eduardo Guillen (integración) | `08beacd`, `d56d160`, `10b2615`, `1ea7d7b`, `95d452b` | Verificado en UI |
+| T3-08 | Reglas y alertas ambientales | Evaluación de riesgo, reglas y migración | Andy Salcedo (rama inicial); Italo Pancorbo (trabajo inicial); Eduardo Guillen (integración) | `dea462d`, `2d56059`, `786238b`, `649bdeb`, `a7c0f42` | Done |
+| T3-09 | Cumplimiento y reportes | Tablas, solicitud de reporte y generación PDF | Eduardo Taza (rama inicial); Eduardo Guillen (integración) | `5374cb5`, `7dbdd54`, `e882b34`, `5d5acc1` | Done |
 | T3-10 | Documentación de API | Referencia Scalar y documento OpenAPI publicados | Eduardo Guillen | `e6f4f9b`; captura de Scalar en 5.2.3.6 | Verificado en UI |
 | T3-11 | Integración de la Web Application | Repositorios HTTP reales para los ocho contextos y comprobación de lectura | Italo Pancorbo | `c30ae36`, `f212066`, `9880def`, `55d71fa`, `7505f65`, `b009ef4`, `edaf35b` | Done |
 | T3-12 | Publicación del backend | Dockerfile y servicio ASP.NET Core accesible en Railway | Italo Pancorbo (Dockerfile); configuración final de Railway por confirmar | `f8518d2`; captura en 5.2.3.7 | Verificado en UI |
@@ -605,7 +608,11 @@ En el frontend, la integración sustituyó el consumo de datos simulados por rep
 |:---|:---|:---|
 | Backend | `c0a7e0d`, `2012d74`, `d32e7ff` | Endpoints de incidencias, acciones correctivas y evidencias |
 | Backend | `10b2615`, `bf1b706` | Gestión de proyectos y migración de sus tablas |
+| Backend, rama de proyectos | `08beacd`, `d56d160` | Implementación inicial del dominio y API de proyectos |
+| Backend, rama de comercial | `ead7ae1`, `c561342` | Modelo y API inicial de suscripciones |
+| Backend, rama de alertas | `dea462d`, `2d56059`, `786238b` | Agregados y API iniciales de alertas desarrollados en ramas de trabajo |
 | Backend | `649bdeb`, `a7c0f42` | Evaluación de alertas y migración |
+| Backend, rama de cumplimiento | `5374cb5`, `7dbdd54` | Entidades y API iniciales de reportes |
 | Backend | `e882b34`, `5d5acc1` | Reportes ambientales y migración |
 | Backend | `e6f4f9b` | Referencia interactiva Scalar |
 | Backend | `f8518d2` | Configuración Docker para Railway |
@@ -653,14 +660,27 @@ La vista general de Railway muestra los servicios FrontEnd, BackEnd y MySQL en e
 
 ![Sprint 3: variable de conexión MySQL configurada en el backend, con valor oculto](/assets/images/chapter5/Sprint3-Backend-Database-Variable.png)
 
-El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su corrección para pruebas locales en `b277b7e`; GitHub Pages inició un nuevo despliegue tras el push. Para cerrar la evidencia de publicación de la Landing Page debe añadirse una captura de su despliegue finalizado, sin mostrar variables secretas.
+El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su corrección para pruebas locales en `b277b7e`. La captura de GitHub Pages muestra el último despliegue de `main` en estado correcto y marcado como activo. Esto confirma la publicación de la landing actualizada; la prueba del flujo de acceso se documenta en 5.2.3.5.
+
+![Sprint 3: despliegue finalizado y activo de la Landing Page en GitHub Pages](/assets/images/chapter5/Sprint3-Landing-Deployment.png)
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 <a id="5-2-3-8-team-collaboration-insights-during-sprint"></a>
 
-El historial del backend registra Pull Requests de integración y trabajo por contextos, mientras el frontend reúne una secuencia de cambios para adaptar cada vista a la API real. La revisión conjunta permitió detectar diferencias entre identificadores de empresa, representación de tramos, datos disponibles en las respuestas y rutas de operación; las correcciones quedaron trazadas en commits como `1ea7d7b`, `95d452b` y `4264b4c`. Las métricas de participación, fechas de reuniones y conclusiones de retrospectiva requieren los analíticos y actas del equipo para no atribuir acuerdos que no constan en el código.
+Para el recuento se consultaron las ramas locales y de seguimiento remoto de los cuatro repositorios (`git log --branches --remotes`) y se contaron hashes únicos, sin commits de merge, entre el **13/10/2026 y el 14/11/2026**, inclusive, según la fecha de commit. Se excluyeron referencias de *stash*. Las distintas firmas `italopancor`, `italopan` y `pancorboitalo-design` se agruparon por el mismo correo de autor. La firma `Andy` del backend y del informe se presenta junto a Salcedo Muñoz por correspondencia con el trabajo de Alerting, pendiente de ratificación de identidad en GitHub. Los números son actividad de Git en el periodo, no horas trabajadas ni una medida de calidad; el informe incluye también cambios ajenos al capítulo 5.
 
-El principal aprendizaje técnico fue que el funcionamiento local o con Fake API no garantizaba el comportamiento en producción: fue necesario verificar la persistencia en MySQL, los contratos HTTP reales y las redirecciones entre la Landing Page y la aplicación desplegada.
+| Integrante / autoría agrupada | Backend | Frontend | Landing Page | Report | Total |
+|:---|---:|---:|---:|---:|---:|
+| Roman Lopez, Miguel Angel Junior (`MiguelRomn`) | 177 | 7 | 0 | 0 | 184 |
+| Pancorbo Amorós, Italo Raul (`italopancor`, `italopan`, `pancorboitalo-design`) | 28 | 12 | 2 | 9 | 51 |
+| Guillen Chavez, Eduardo Martín (`Eduardox30-wq`) | 14 | 0 | 0 | 0 | 14 |
+| Salcedo Muñoz, Andy Alfredo Hipolito (`Andy`) | 8 | 0 | 0 | 2 | 10 |
+| Taza Curay, Eduardo Miguel (`Edutaza10`) | 6 | 0 | 0 | 0 | 6 |
+| **Total de commits únicos sin merges** | **233** | **19** | **2** | **11** | **265** |
+
+El backend concentró la mayor parte de los commits granulares: Miguel creó la base compartida e implementó IAM, activos, monitoreo e incidencias; Italo desarrolló en ramas iniciales proyectos, comercial y parte de alertas; Andy desarrolló la rama de alertas; Taza desarrolló la rama de cumplimiento; Eduardo integró comercial, proyectos, alertas y cumplimiento en la plataforma. En el frontend, Italo realizó las conexiones a la API real y Miguel aportó ajustes de acceso, navegación, pruebas y herramientas de calidad. La Landing Page recibió dos cambios para enlazarla a Railway. En el informe hubo actualizaciones de Italo y Andy. Algunos commits de ramas iniciales representan trabajo que luego fue sustituido o reimplementado durante la integración; el recuento no debe leerse como 265 entregables finales.
+
+La integración reveló diferencias entre identificadores de empresa, representación de tramos, datos disponibles y rutas de operación. Las correcciones quedaron trazadas en `1ea7d7b`, `95d452b` y `4264b4c`. El aprendizaje técnico observable fue que la ejecución local o con Fake API no garantizaba el comportamiento en producción: hubo que verificar persistencia MySQL, contratos HTTP reales y redirecciones entre la Landing Page y la aplicación. Los acuerdos de retrospectiva del equipo permanecen pendientes de su acta.
 
 ## 5.3. Validation Interviews
 <a id="5-3-validation-interviews"></a>
@@ -763,7 +783,3 @@ Como recorrido mínimo, evaluar el paso de la Landing Page al registro, la creac
 - **Fecha de publicación y responsables:** `[pendiente]`
 - **Guion o minutaje por funcionalidad:** `[pendiente]`
 - **Evidencia de versión mostrada (URL o commit):** `[pendiente]`
-
-## Conclusiones
-
-`[Redactar después de completar las entrevistas, la evaluación heurística y el video. Distinguir funcionalidades implementadas de resultados de validación con participantes y de limitaciones pendientes.]`
