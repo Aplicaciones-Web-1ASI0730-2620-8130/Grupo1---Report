@@ -630,7 +630,13 @@ La siguiente captura muestra la vista de proyectos en el frontend publicado, con
 
 ![Sprint 3: proyecto vial de demostración listado desde el backend en Railway](/assets/images/chapter5/Sprint3-Project-List.png)
 
-Para la revisión formal deben añadirse capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias.
+En el detalle del mismo proyecto se observan dos tramos activos, sus progresivas PK y las acciones para agregar, editar o eliminar tramos. La segunda captura muestra el formulario de edición abierto para **Santa Rosa–Yangas**, con los campos de nombre, PK inicial y PK final. Esta evidencia confirma que la interfaz permite llegar a la edición; no muestra una modificación guardada.
+
+![Sprint 3: detalle del proyecto VIA-SRY-01 con dos tramos activos](/assets/images/chapter5/Sprint3-Project-Sections.png)
+
+![Sprint 3: formulario de edición del tramo Santa Rosa–Yangas](/assets/images/chapter5/Sprint3-Section-Edit-Form.png)
+
+Para la revisión formal aún se requieren capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias. El tablero de Trello con estimaciones e identificadores oficiales se incorporará cuando esté disponible.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 <a id="5-2-3-6-services-documentation-evidence-for-sprint-review"></a>
