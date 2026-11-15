@@ -628,3 +628,87 @@ El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su cor
 El historial del backend registra Pull Requests de integración y trabajo por contextos, mientras el frontend reúne una secuencia de cambios para adaptar cada vista a la API real. La revisión conjunta permitió detectar diferencias entre identificadores de empresa, representación de tramos, datos disponibles en las respuestas y rutas de operación; las correcciones quedaron trazadas en commits como `1ea7d7b`, `95d452b` y `4264b4c`. Las métricas de participación, fechas de reuniones y conclusiones de retrospectiva requieren los analíticos y actas del equipo para no atribuir acuerdos que no constan en el código.
 
 El principal aprendizaje técnico fue que el funcionamiento local o con Fake API no garantizaba el comportamiento en producción: fue necesario verificar la persistencia en MySQL, los contratos HTTP reales y las redirecciones entre la Landing Page y la aplicación desplegada.
+
+## 5.3. Product Validation
+<a id="5-3-product-validation"></a>
+
+Esta sección queda preparada para documentar entrevistas de validación de la versión integrada de EcoRoad. Las preguntas son una guía semiestructurada: el entrevistador puede pedir ejemplos y profundizar en las respuestas. Ninguna entrevista ni conclusión se considera realizada hasta incorporar su registro y evidencia.
+
+### 5.3.1. Objetivo y participantes
+<a id="5-3-1-objetivo-y-participantes"></a>
+
+**Objetivo:** evaluar si EcoRoad ayuda a registrar proyectos viales, organizar el monitoreo ambiental, interpretar alertas, atender incidencias y preparar evidencia para reportes. También se busca identificar dificultades de uso y funciones faltantes antes de proponer mejoras.
+
+**Perfiles a convocar:**
+
+- Responsable de obra o de gestión de proyectos en una empresa constructora o de mantenimiento vial.
+- Ingeniero, supervisor o consultor ambiental que registre mediciones, revise alertas o prepare reportes.
+
+**Datos por completar antes de entrevistar:** número y criterio de selección de participantes; fechas; modalidad; duración; entrevistador; vínculo del participante con el proceso; método de consentimiento y autorización para grabar o citar. Usar códigos como `E01` en el informe y registrar datos personales solo cuando sea necesario y exista autorización.
+
+### 5.3.2. Protocolo de entrevista
+<a id="5-3-2-protocolo-de-entrevista"></a>
+
+1. Explicar que se evalúa el producto, que no hay respuestas correctas y que la participación es voluntaria. Solicitar consentimiento para tomar notas y, por separado, para grabar.
+2. Preguntar por la práctica actual del participante antes de mostrar EcoRoad.
+3. Compartir la Landing Page y la aplicación publicada. Usar una cuenta de demostración autorizada y datos ficticios; no pedir al participante que introduzca credenciales personales.
+4. Plantear tareas concretas y observar qué pasos intenta realizar, dónde se detiene y qué espera ver. Evitar guiarlo hasta que haya terminado cada tarea.
+5. Formular las preguntas de cierre, registrar citas textuales breves con permiso y confirmar que el resumen representa su opinión.
+
+**Tareas sugeridas para la prueba:** llegar desde la Landing Page al registro o inicio de sesión; encontrar el proyecto vial y su tramo; localizar un punto o sensor; interpretar una lectura PM10 y una alerta; revisar una incidencia y su acción correctiva; encontrar las fuentes de un reporte ambiental. Si alguna tarea requiere modificar datos de producción, usar un registro de demostración acordado y anotarlo en el acta.
+
+### 5.3.3. Guía de preguntas
+<a id="5-3-3-guia-de-preguntas"></a>
+
+**Contexto del participante**
+
+1. ¿Cuál es tu función en un proyecto vial y qué decisiones ambientales tomas o apoyas?
+2. ¿Cómo registran hoy proyectos, tramos, puntos de monitoreo, mediciones e incidencias? ¿Qué herramientas utilizan?
+3. ¿Qué información necesitas consultar con más frecuencia y cuánto tarda normalmente en estar disponible?
+
+**Durante la prueba de EcoRoad**
+
+4. Al ver la Landing Page, ¿qué entiendes que ofrece EcoRoad y a quién está dirigido? ¿Qué esperarías al pulsar el botón de registro?
+5. ¿Te resultó claro cómo encontrar el proyecto, sus tramos y frentes de trabajo? ¿Qué dato te faltó para identificar el lugar correcto?
+6. ¿Cómo interpretarías el valor de una medición, los umbrales y el estado de una alerta? ¿Qué harías después de verla?
+7. ¿Qué información necesitarías para asignar, documentar y cerrar una incidencia de forma responsable?
+8. ¿El reporte mostrado reúne la información que necesitarías para una revisión interna o una auditoría? ¿Qué evidencia o dato falta?
+9. ¿En qué momento dudaste, tuviste que retroceder o necesitaste ayuda? Describe qué esperabas que ocurriera.
+
+**Cierre**
+
+10. ¿Qué parte del flujo te ahorraría trabajo en una situación real y cuál no utilizarías todavía? ¿Por qué?
+11. ¿Qué riesgo o limitación te impediría usar EcoRoad con datos de un proyecto real?
+12. Si pudieras cambiar una sola cosa antes de volver a probarlo, ¿cuál sería?
+13. En una escala de 1 a 5, ¿qué tan fácil fue completar las tareas? ¿Qué explica esa calificación?
+
+**Repreguntas opcionales por perfil:** a constructoras, consultar por varios proyectos, responsables y seguimiento de frentes; a supervisores ambientales, consultar por trazabilidad de mediciones, criterios de umbral, evidencias de campo y requisitos del reporte. No sugerir que la aplicación certifica cumplimiento normativo: el PDF actual resume identificadores y cantidades y no incorpora firma criptográfica verificada.
+
+### 5.3.4. Registro de cada entrevista
+<a id="5-3-4-registro-de-cada-entrevista"></a>
+
+Repetir esta ficha por participante, sin sustituir sus respuestas por una interpretación del equipo:
+
+| Campo | Registro |
+|:---|:---|
+| Código y perfil | `[E01; rol y tipo de organización]` |
+| Fecha, duración y modalidad | `[pendiente]` |
+| Entrevistador y consentimiento | `[pendiente; indicar si autorizó notas, grabación y cita]` |
+| Tareas completadas / con ayuda / no completadas | `[pendiente; anotar el motivo observado]` |
+| Necesidades y problemas previos | `[pendiente; preguntas 1–3]` |
+| Hallazgos durante el recorrido | `[pendiente; preguntas 4–9 y observaciones]` |
+| Valor percibido y barreras | `[pendiente; preguntas 10–12]` |
+| Facilidad de uso y explicación | `[pendiente; respuesta a la pregunta 13]` |
+| Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
+| Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
+
+### 5.3.5. Síntesis y decisiones de producto
+<a id="5-3-5-sintesis-y-decisiones-de-producto"></a>
+
+Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. Indicar cuántos participantes mencionaron cada punto y distinguir lo observado durante una tarea de lo declarado en una respuesta. Evitar porcentajes con muestras pequeñas o no representativas.
+
+| Hallazgo | Evidencia y participantes | Impacto en el flujo | Cambio propuesto | Prioridad / estado |
+|:---|:---|:---|:---|:---|
+| `[pendiente]` | `[códigos E01…, cita u observación]` | `[pendiente]` | `[pendiente]` | `[pendiente]` |
+
+**Conclusión de validación:** `[pendiente de entrevistas y análisis; describir qué hipótesis se apoyan, cuáles no y qué se probará después]`.
