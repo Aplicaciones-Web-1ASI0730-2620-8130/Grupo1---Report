@@ -599,6 +599,10 @@ El backlog vincula las tareas terminadas con las historias de usuario de EcoRoad
 
 **Sprint Board de EcoRoad:** [Sprint 3 en Trello](https://trello.com/invite/b/6af96cc3b31b2f3ac6f7858d/ATTI06b3af4493183313e4c1b7fd9cdafe8cD3C2DA79/sprint-3-ecoroad). La distribución de tarjetas se tomó de la captura proporcionada; el detalle interno de cada tarjeta y sus horas no se pudo consultar desde el informe.
 
+La captura del tablero muestra las 13 tarjetas en **Done** y las listas **To do**, **In Process** y **To Review** con cero tarjetas. La columna Done tiene desplazamiento interno, por lo que no se ven los títulos de todas las tarjetas a la vez.
+
+![Sprint 3: tablero de Trello de EcoRoad con 13 tarjetas en Done](/assets/images/chapter5/Sprint3-Trello-Board.png)
+
 #### 5.2.3.4. Development Evidence for Sprint Review
 <a id="5-2-3-4-development-evidence-for-sprint-review"></a>
 
