@@ -542,26 +542,55 @@ Durante el Sprint 2 cada integrante implementó al menos un bounded context de l
 
 El Sprint 3 se orientó a reemplazar la API simulada del Sprint 2 por servicios reales, persistir la información en MySQL y publicar una versión integrada de EcoRoad. El objetivo verificable fue recorrer desde la Landing Page el registro de empresa, el inicio de sesión y la gestión de un proyecto vial con monitoreo, alertas, incidencias y reportes, conservando los datos entre sesiones.
 
-La fecha, hora, participantes, velocidad y estimación formal del Sprint Planning no constan en los repositorios consultados; deben completarse con el acta o tablero del equipo antes de entregar el informe. Como punto de partida técnico, el Sprint 2 había dejado la interfaz Vue y una Fake API en Vercel. La revisión del Sprint 3 identificó la necesidad de integrar los ocho contextos con ASP.NET Core, resolver diferencias entre contratos HTTP, configurar MySQL y desplegar los tres componentes públicos.
+| Sprint # | Sprint 3 |
+|:---|:---|
+| **Sprint Planning Background** | **Reconstrucción técnica a partir de repositorios; validar con el acta del equipo.** |
+| Date / Time / Location | `[pendiente de acta de Sprint Planning 3]` |
+| Prepared By / Attendees | `[pendiente de acta; no se deduce asistencia de los commits]` |
+| Sprint 2 Review Summary | Se entregó una aplicación Vue con los ocho bounded contexts conectados a una Fake API en Vercel y una Landing Page enlazada al inicio de sesión. |
+| Sprint 2 Retrospective Summary | `[pendiente de acta; no se atribuyen acuerdos no documentados]` |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Integrar la Web Application con servicios ASP.NET Core y MySQL, publicar la solución y verificar que una empresa de demostración pueda acceder, gestionar un proyecto vial y consultar sus datos tras volver a iniciar sesión. |
+| Criterio de revisión | Recorrido Landing Page → registro o inicio de sesión → proyecto y tramo → monitoreo, alertas e incidencias → reporte; verificación de endpoints en Scalar y despliegues en Railway. |
+| Sprint 3 Velocity / Sum of Story Points | `[pendiente del tablero; no se calculan Story Points a partir de commits]` |
+
+Como punto de partida técnico, la revisión del Sprint 2 dejó interfaces y contratos HTTP simulados. El trabajo del Sprint 3 incluyó persistencia real, adaptación de contratos entre frontend y backend, despliegue de los servicios y verificación del flujo público. La tabla siguiente documenta entregables observables; la aprobación formal del objetivo debe contrastarse con la Sprint Review.
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 <a id="5-2-3-2-aspect-leaders-and-collaborators"></a>
 
-El historial de Git permite atribuir aportes técnicos, pero no demuestra por sí solo los cargos de líder o colaborador acordados en la planificación. Se registran aportes de Miguel Roman en incidencias e integración del backend; de Eduardo Guillen en comercial, proyectos, alertas, cumplimiento y documentación de API; y de Italo Pancorbo en integración del frontend, correcciones de proyectos, despliegue del backend y enlace de la Landing Page. La matriz oficial de responsables debe contrastarse con el tablero del Sprint.
+Esta matriz identifica responsables técnicos según la autoría de los commits del Sprint 3. `L` señala la implementación principal verificable de un aspecto y `C` una contribución de integración o corrección. No representa roles acordados en el Sprint Planning; esa asignación y las contribuciones no reflejadas en Git deben cotejarse con el tablero del equipo.
+
+| Integrante | GitHub | Base, IAM, activos, monitoreo e incidencias | Comercial, proyectos, alertas y cumplimiento | Integración del frontend | Despliegue y Landing Page |
+|:---|:---|:---:|:---:|:---:|:---:|
+| Roman Lopez, Miguel Angel Junior | `MiguelRomn` | L | | | |
+| Guillen Chavez, Eduardo Martín | `Eduardox30-wq` | | L | | C |
+| Pancorbo Amorós, Italo Raul | `pancorboitalo-design` | C | C | L | L |
+| Taza Curay, Eduardo Miguel | `Edutaza10` | | | | |
+| Salcedo Muñoz, Andy Alfredo Hipolito | `Andy777sdw` | | | | |
+
+Las celdas vacías indican que la autoría consultada no permite asignar un rol técnico en este Sprint; no significan ausencia en reuniones, revisión o pruebas. En particular, el despliegue mostrado en Railway no permite inferir por sí solo quién lo configuró desde la interfaz.
 
 #### 5.2.3.3. Sprint Backlog 3
 <a id="5-2-3-3-sprint-backlog-3"></a>
 
-Las siguientes actividades resumen trabajo observable en el código y en el producto. Sus identificadores son descriptivos para este informe; no sustituyen los ID, horas ni Story Points del tablero oficial.
+El backlog reconstruye las tareas terminadas a partir de commits y del producto observado. Los códigos `T3-*` organizan esta sección del informe; no se presentan como ID del tablero. Las horas, Story Points y responsables acordados en la planificación siguen pendientes de cotejo con Trello. `Done` indica implementación verificable en el repositorio, mientras que `Verificado en UI` indica además una observación en la aplicación publicada.
 
-| Actividad | Entregable verificable | Evidencia |
-|:---|:---|:---|
-| Servicios de identidad y comercial | Registro de empresa, suscripción, sesiones y permisos persistidos | Controladores `CompanyAccountsController`, `AuthenticationController`, `UsersController` e `InvitationsController` |
-| Proyectos y activos | Proyectos, tramos, frentes, puntos y sensores con operaciones REST | `ProjectsController`, `MonitoringPointsController` y `SensorsController` |
-| Monitoreo y alertas | Mediciones, perfiles de umbral, reglas, evaluación y atención de alertas | Controladores de Monitoring y Alerting |
-| Incidencias y cumplimiento | Acciones correctivas, evidencias, cierre y generación de reporte PDF | Controladores de Incidents y Compliance |
-| Integración web | Vistas Vue conectadas a los endpoints reales y comprobación de lectura | Commits `c30ae36` a `edaf35b` del frontend |
-| Publicación | Backend y frontend en Railway; Landing Page en GitHub Pages enlazada al registro e inicio de sesión vigentes | `Dockerfile`, `assets/app-config.js` y commits de despliegue |
+| Task ID | Aspecto / tarea | Entregable y criterio de revisión | Responsable técnico verificable | Evidencia | Estado |
+|:---|:---|:---|:---|:---|:---|
+| T3-01 | Base de Web Services y persistencia | Solución .NET, DbContext, repositorios y conexión MySQL | Roman Lopez | `9bf11f6`, `4f90b64`, `5a52832` | Done |
+| T3-02 | IAM y control de acceso | Registro, sesiones, colaboradores, permisos y migración | Roman Lopez | `f996f76`, `a233b60`, `b45ee78` | Done |
+| T3-03 | Activos y despliegue de sensores | Puntos, sensores, asignación, calibración y activación | Roman Lopez | `abf4721`, `5f8f413`; controladores de Assets | Done |
+| T3-04 | Monitoreo ambiental | Mediciones, perfiles de umbral, dashboard e historial | Roman Lopez; corrección MySQL: Italo Pancorbo | Controladores de Monitoring; `d627226` | Done |
+| T3-05 | Gestión de incidencias | Apertura, asignación, acciones, evidencias, resolución y cierre | Roman Lopez | `c0a7e0d`, `2012d74`, `d32e7ff`, `7871af1` | Done |
+| T3-06 | Cuenta empresarial y suscripción | Registro y activación persistente de la empresa | Eduardo Guillen | `8566fb7`, `8068edc`, `6ca15c2` | Verificado en UI |
+| T3-07 | Proyectos, tramos y frentes | Alta y consulta de proyectos con tramos; compatibilidad de ID de empresa | Eduardo Guillen; correcciones: Italo Pancorbo | `10b2615`, `bf1b706`, `1ea7d7b`, `95d452b` | Verificado en UI |
+| T3-08 | Reglas y alertas ambientales | Evaluación de riesgo, reglas y migración | Eduardo Guillen | `649bdeb`, `a7c0f42` | Done |
+| T3-09 | Cumplimiento y reportes | Tablas, solicitud de reporte y generación PDF | Eduardo Guillen | `e882b34`, `5d5acc1` | Done |
+| T3-10 | Documentación de API | Referencia Scalar y documento OpenAPI publicados | Eduardo Guillen | `e6f4f9b`; captura de Scalar en 5.2.3.6 | Verificado en UI |
+| T3-11 | Integración de la Web Application | Repositorios HTTP reales para los ocho contextos y comprobación de lectura | Italo Pancorbo | `c30ae36`, `f212066`, `9880def`, `55d71fa`, `7505f65`, `b009ef4`, `edaf35b` | Done |
+| T3-12 | Publicación del backend | Dockerfile y servicio ASP.NET Core accesible en Railway | Italo Pancorbo (Dockerfile); configuración final de Railway por confirmar | `f8518d2`; captura en 5.2.3.7 | Verificado en UI |
+| T3-13 | Enlace y publicación de Landing Page | Registro e inicio de sesión dirigidos al frontend actual | Italo Pancorbo | `2713388`, `b277b7e` | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 <a id="5-2-3-4-development-evidence-for-sprint-review"></a>
