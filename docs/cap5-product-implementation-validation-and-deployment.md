@@ -531,3 +531,100 @@ Durante el Sprint 2 cada integrante implementó al menos un bounded context de l
 | Taza Curay, Eduardo Miguel | Edutaza10 | Compliance & Reporting | 2 |
 
 ![insights front](/assets/images/InsightsFront.jpeg)
+
+### 5.2.3. Sprint 3
+<a id="5-2-3-sprint-3"></a>
+
+#### 5.2.3.1. Sprint Planning 3
+<a id="5-2-3-1-sprint-planning-3"></a>
+
+El Sprint 3 se orientó a reemplazar la API simulada del Sprint 2 por servicios reales, persistir la información en MySQL y publicar una versión integrada de EcoRoad. El objetivo verificable fue recorrer desde la Landing Page el registro de empresa, el inicio de sesión y la gestión de un proyecto vial con monitoreo, alertas, incidencias y reportes, conservando los datos entre sesiones.
+
+La fecha, hora, participantes, velocidad y estimación formal del Sprint Planning no constan en los repositorios consultados; deben completarse con el acta o tablero del equipo antes de entregar el informe. Como punto de partida técnico, el Sprint 2 había dejado la interfaz Vue y una Fake API en Vercel. La revisión del Sprint 3 identificó la necesidad de integrar los ocho contextos con ASP.NET Core, resolver diferencias entre contratos HTTP, configurar MySQL y desplegar los tres componentes públicos.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+<a id="5-2-3-2-aspect-leaders-and-collaborators"></a>
+
+El historial de Git permite atribuir aportes técnicos, pero no demuestra por sí solo los cargos de líder o colaborador acordados en la planificación. Se registran aportes de Miguel Roman en incidencias e integración del backend; de Eduardo Guillen en comercial, proyectos, alertas, cumplimiento y documentación de API; y de Italo Pancorbo en integración del frontend, correcciones de proyectos, despliegue del backend y enlace de la Landing Page. La matriz oficial de responsables debe contrastarse con el tablero del Sprint.
+
+#### 5.2.3.3. Sprint Backlog 3
+<a id="5-2-3-3-sprint-backlog-3"></a>
+
+Las siguientes actividades resumen trabajo observable en el código y en el producto. Sus identificadores son descriptivos para este informe; no sustituyen los ID, horas ni Story Points del tablero oficial.
+
+| Actividad | Entregable verificable | Evidencia |
+|:---|:---|:---|
+| Servicios de identidad y comercial | Registro de empresa, suscripción, sesiones y permisos persistidos | Controladores `CompanyAccountsController`, `AuthenticationController`, `UsersController` e `InvitationsController` |
+| Proyectos y activos | Proyectos, tramos, frentes, puntos y sensores con operaciones REST | `ProjectsController`, `MonitoringPointsController` y `SensorsController` |
+| Monitoreo y alertas | Mediciones, perfiles de umbral, reglas, evaluación y atención de alertas | Controladores de Monitoring y Alerting |
+| Incidencias y cumplimiento | Acciones correctivas, evidencias, cierre y generación de reporte PDF | Controladores de Incidents y Compliance |
+| Integración web | Vistas Vue conectadas a los endpoints reales y comprobación de lectura | Commits `c30ae36` a `edaf35b` del frontend |
+| Publicación | Backend y frontend en Railway; Landing Page en GitHub Pages enlazada al registro e inicio de sesión vigentes | `Dockerfile`, `assets/app-config.js` y commits de despliegue |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+<a id="5-2-3-4-development-evidence-for-sprint-review"></a>
+
+El backend usa ASP.NET Core sobre .NET 10 y Entity Framework Core con MySQL. Sus contextos de identidad, comercial, proyectos, activos, monitoreo, alertas, incidencias y cumplimiento exponen controladores REST. Las migraciones crean las tablas necesarias; `Program.cs` aplica las migraciones pendientes al iniciar. Los datos de ejemplo automáticos se cargan únicamente en el entorno `Development`, por lo que las cuentas y proyectos de producción deben registrarse o migrarse expresamente.
+
+En el frontend, la integración sustituyó el consumo de datos simulados por repositorios HTTP para los mismos contextos. Se corrigieron diferencias de contratos y se añadió `npm run smoke:real` para comprobar rutas de lectura sin escribir datos. La Landing Page ahora dirige el acceso a la aplicación publicada en Railway, incluso durante la prueba local de la landing.
+
+| Repositorio | Commit | Aporte |
+|:---|:---|:---|
+| Backend | `c0a7e0d`, `2012d74`, `d32e7ff` | Endpoints de incidencias, acciones correctivas y evidencias |
+| Backend | `10b2615`, `bf1b706` | Gestión de proyectos y migración de sus tablas |
+| Backend | `649bdeb`, `a7c0f42` | Evaluación de alertas y migración |
+| Backend | `e882b34`, `5d5acc1` | Reportes ambientales y migración |
+| Backend | `e6f4f9b` | Referencia interactiva Scalar |
+| Backend | `f8518d2` | Configuración Docker para Railway |
+| Frontend | `c30ae36`, `f212066`, `9880def` | Integración de identidad, comercial, proyectos, activos y monitoreo |
+| Frontend | `55d71fa`, `7505f65`, `b009ef4` | Integración de alertas, incidencias y reportes |
+| Frontend | `28dfb3f`, `edaf35b` | Captura y evaluación de monitoreo; comprobación de API real |
+| Landing Page | `2713388`, `b277b7e` | Enlaces de registro y acceso al frontend de Railway |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+<a id="5-2-3-5-execution-evidence-for-sprint-review"></a>
+
+Se comprobó manualmente el flujo publicado: desde la Landing Page se llega al registro o al inicio de sesión; se creó una cuenta empresarial de demostración con un correo bajo `ecoroad.example`, se inició sesión y se registró el proyecto **Mejoramiento del corredor vial Santa Rosa–Yangas** con tramo y frente de trabajo. En la aplicación se configuraron un perfil de umbral para PM10 y una regla diurna, se registró una lectura de demostración y se recorrieron las vistas de sensores y puntos, alertas, incidencias, colaboradores y reportes. En la vista de reportes se observó una solicitud vinculada al proyecto. Estas comprobaciones reflejan el recorrido observado; no equivalen a una prueba automatizada de extremo a extremo ni acreditan mediciones ambientales reales.
+
+La siguiente captura muestra la vista de proyectos en el frontend publicado, con la sesión de demostración y el proyecto `VIA-SRY-01` recuperado del backend. Constituye evidencia visual de lectura de datos persistidos, aunque por sí sola no demuestra una nueva autenticación ni el resto del flujo.
+
+![Sprint 3: proyecto vial de demostración listado desde el backend en Railway](/assets/images/chapter5/Sprint3-Project-List.png)
+
+Para la revisión formal deben añadirse capturas fechadas o video de los demás pasos del flujo, el resultado de la prueba tras cerrar y volver a iniciar sesión y el registro de defectos encontrados. Las contraseñas, tokens y cadenas de conexión deben quedar fuera de las evidencias.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+<a id="5-2-3-6-services-documentation-evidence-for-sprint-review"></a>
+
+El backend publica el documento OpenAPI en `/openapi/v1.json` y la referencia interactiva Scalar en `/scalar`. Los controladores del código constituyen la fuente para comprobar métodos, cuerpos y respuestas de los servicios reales. A diferencia de los contratos provisionales del Sprint 2, las rutas implementadas incluyen `POST /api/company-accounts`, `POST /api/iam/sessions`, `GET/POST /api/projects`, `GET/POST /api/assets/sensors`, `GET/POST /api/monitoring/measurements`, `GET /api/alerts`, `GET/POST /api/incidents` y `POST /api/compliance-reports`. También existen operaciones específicas para tramos, calibración, umbrales, evaluación de alertas, acciones correctivas, evidencias y generación del documento PDF.
+
+La URL pública de consulta es https://ecoroad-back-end-production.up.railway.app/scalar. La página inicial de Scalar identifica la API EcoRoad y permite descargar el documento OpenAPI; la vista de operaciones muestra las rutas de cuentas empresariales y suscripciones con métodos y parámetros. Las capturas evidencian la publicación de la documentación, no la ejecución exitosa de esos endpoints.
+
+![Sprint 3: vista inicial de la documentación EcoRoad API en Scalar](/assets/images/chapter5/Sprint3-Scalar-Overview.png)
+
+![Sprint 3: operaciones de cuentas empresariales documentadas en Scalar](/assets/images/chapter5/Sprint3-Scalar-Endpoints.png)
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+<a id="5-2-3-7-software-deployment-evidence-for-sprint-review"></a>
+
+La versión integrada utiliza tres servicios en Railway: frontend Vue, backend ASP.NET Core y MySQL. El backend se construye con el `Dockerfile` del repositorio y se conecta a la base de datos mediante configuración de entorno. La Landing Page permanece en GitHub Pages y su configuración `assets/app-config.js` apunta al frontend actual. Las direcciones observadas durante la revisión son:
+
+- Landing Page: https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/
+- Web Application: https://ecoroad-frontend-production.up.railway.app/
+- API y documentación: https://ecoroad-back-end-production.up.railway.app/scalar
+
+La vista general de Railway muestra los servicios FrontEnd, BackEnd y MySQL en estado *Online*. El detalle del frontend muestra un despliegue activo y exitoso asociado a un commit de GitHub. En el backend se observa la presencia de `ConnectionStrings__DefaultConnection` con su valor oculto; esto acredita la configuración de la variable, sin exponer la cadena ni demostrar por sí solo una consulta a MySQL.
+
+![Sprint 3: servicios frontend, backend y MySQL en línea en Railway](/assets/images/chapter5/Sprint3-Railway-Services.png)
+
+![Sprint 3: despliegue exitoso del frontend en Railway](/assets/images/chapter5/Sprint3-Frontend-Deployment.png)
+
+![Sprint 3: variable de conexión MySQL configurada en el backend, con valor oculto](/assets/images/chapter5/Sprint3-Backend-Database-Variable.png)
+
+El repositorio de la Landing Page registra el nuevo enlace en `2713388` y su corrección para pruebas locales en `b277b7e`; GitHub Pages inició un nuevo despliegue tras el push. Para cerrar la evidencia de publicación de la Landing Page debe añadirse una captura de su despliegue finalizado, sin mostrar variables secretas.
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+<a id="5-2-3-8-team-collaboration-insights-during-sprint"></a>
+
+El historial del backend registra Pull Requests de integración y trabajo por contextos, mientras el frontend reúne una secuencia de cambios para adaptar cada vista a la API real. La revisión conjunta permitió detectar diferencias entre identificadores de empresa, representación de tramos, datos disponibles en las respuestas y rutas de operación; las correcciones quedaron trazadas en commits como `1ea7d7b`, `95d452b` y `4264b4c`. Las métricas de participación, fechas de reuniones y conclusiones de retrospectiva requieren los analíticos y actas del equipo para no atribuir acuerdos que no constan en el código.
+
+El principal aprendizaje técnico fue que el funcionamiento local o con Fake API no garantizaba el comportamiento en producción: fue necesario verificar la persistencia en MySQL, los contratos HTTP reales y las redirecciones entre la Landing Page y la aplicación desplegada.
