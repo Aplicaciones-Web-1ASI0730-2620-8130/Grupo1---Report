@@ -30,7 +30,7 @@ Para la concepción visual de la Landing Page y de la Web Application, el equipo
 * **Wireframes, Mock-ups y Prototypes:** Figma — https://www.figma.com/
 
 #### Software Development
-La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web Application se implementa con Vue 3, Vue Router y la biblioteca de componentes PrimeVue, utilizando Vite como herramienta de construcción y Node.js como entorno de ejecución para las tareas de desarrollo y para la Fake API utilizada durante el Sprint 2. Los Web Services se implementarán con ASP.NET Core y Entity Framework Core en C#.
+La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web Application se implementó con Vue 3, Vue Router y PrimeVue; Vite se utiliza para construirla y Node.js para las tareas de desarrollo. Durante el Sprint 2 se utilizó una Fake API en Node.js. En el Sprint 3 se integró la aplicación con Web Services reales implementados en C# con ASP.NET Core, Entity Framework Core y MySQL.
 
 * **IDEs y editores:** Visual Studio Code — https://code.visualstudio.com/ ; WebStorm — https://www.jetbrains.com/webstorm/ ; JetBrains Rider (para C#) — https://www.jetbrains.com/rider/
 * **Gestor de IDEs:** JetBrains Toolbox — https://www.jetbrains.com/toolbox-app/
@@ -40,16 +40,17 @@ La Landing Page se implementó con HTML5, CSS3 y JavaScript. La Frontend Web App
 * **Control de versiones:** Git — https://git-scm.com/downloads
 
 #### Software Documentation
-El informe del proyecto se redacta en archivos Markdown (.md) dentro del repositorio del informe en GitHub, siguiendo el flujo de trabajo GitFlow. La documentación de los Web Services se elaborará con OpenAPI Specification vía Swagger.
+El informe del proyecto se redacta en archivos Markdown (.md) dentro del repositorio del informe en GitHub. En el Sprint 3 los Web Services publicaron un documento OpenAPI y una referencia interactiva con Scalar.
 
 * **Informe:** Markdown en GitHub — https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/Grupo1---Report
-* **Documentación de Web Services:** Swagger / OpenAPI — https://swagger.io/
+* **Documentación de Web Services:** OpenAPI y Scalar — https://ecoroad-back-end-production.up.railway.app/scalar
 
 #### Software Deployment
-La Landing Page se publica en GitHub Pages y la Frontend Web Application en Vercel, ambas con despliegue continuo desde su repositorio de GitHub.
+La Landing Page se publica en GitHub Pages. La primera versión de la Web Application se publicó en Vercel durante el Sprint 2; la versión integrada del Sprint 3 se publica en Railway junto con el backend ASP.NET Core y MySQL.
 
 * **Landing Page:** GitHub Pages — https://pages.github.com/
-* **Frontend Web Application:** Vercel — https://vercel.com/
+* **Primera versión del frontend (Sprint 2):** Vercel — https://vercel.com/
+* **Versión integrada (Sprint 3):** Railway — https://railway.com/
 
 ### 5.1.2. Source Code Management
 <a id="5-1-2-source-code-management"></a>
@@ -60,12 +61,12 @@ El equipo gestiona el código fuente mediante **GitHub** como plataforma de cont
 | :--- | :--- | :--- |
 | Project Report | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/Grupo1---Report | — |
 | Landing Page | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-LandingPage | https://aplicaciones-web-1asi0730-2620-8130.github.io/EcoRoad-LandingPage/ |
-| Frontend Web Application | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd | https://ecoroad-frontend-ddli-peach.vercel.app/ |
-| Web Services | Se creará en el Sprint 3 | Se desplegará en el Sprint 3 |
+| Frontend Web Application | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd | https://ecoroad-frontend-production.up.railway.app/ |
+| Web Services | https://github.com/Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-Back-End | https://ecoroad-back-end-production.up.railway.app/scalar |
 
 #### GitFlow Workflow
 
-El equipo implementa **GitFlow** como modelo de ramificación para gestionar el ciclo de vida del código. Las ramas definidas son:
+El equipo documentó **GitFlow** como modelo de ramificación para el trabajo inicial. El historial de los repositorios también registra commits directos y Pull Requests de integración en etapas posteriores; por ello, la siguiente lista describe el flujo previsto y no una regla cumplida por todos los cambios:
 
 - **`main`**: rama principal que contiene la versión estable publicada. Solo recibe merges desde `release` o `hotfix`.
 - **`develop`**: rama de integración donde se consolidan los features completados antes de pasar a producción.
@@ -83,10 +84,7 @@ Para el nombramiento de versiones se aplica **Semantic Versioning 2.0.0** con el
 - `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
 - `PATCH`: correcciones de errores compatibles con versiones anteriores.
 
-| Producto | Sprint 1 | Sprint 2 |
-| :--- | :--- | :--- |
-| Landing Page | `v1.0.0` | `v1.1.0` (enlace del call-to-action de inicio de sesión hacia la Web Application) |
-| Frontend Web Application | — | `v1.0.0` |
+Las versiones `v1.0.0` y `v1.1.0` mencionadas en la planificación describen hitos previstos. Antes de declararlas versiones publicadas en este informe se deben comprobar las etiquetas correspondientes en Git. El despliegue del Sprint 3 se identifica aquí por sus commits y direcciones, sin asignarle un número de versión no verificado.
 
 #### Conventional Commits
 
@@ -132,7 +130,7 @@ El equipo adopta las siguientes guías de estilo y convenciones de codificación
 
 #### C# & ASP.NET Core (Web Services)
 - Se aplican las **C# Coding Conventions** de Microsoft: `PascalCase` para clases, métodos y propiedades públicas; `camelCase` para parámetros y variables locales; prefijo `I` para interfaces.
-- Se aplican las **Microsoft ASP.NET Core Coding Guidelines**: controladores con sufijo `Controller`, rutas REST en minúsculas y en plural (por ejemplo `/api/v1/projects`) e inyección de dependencias por constructor.
+- Se emplean controladores con sufijo `Controller`, rutas bajo `/api/` (por ejemplo `/api/projects`) e inyección de dependencias. Los contratos reales se consultan en la documentación OpenAPI publicada.
 
 #### Gherkin (Acceptance Criteria)
 - Se aplican las **Gherkin Conventions for Readable Specifications**: un solo nivel de indentación para `Given/When/Then`, escenarios redactados en tercera persona y en tiempo presente, sin referencias a detalles de interfaz.
@@ -140,13 +138,13 @@ El equipo adopta las siguientes guías de estilo y convenciones de codificación
 ### 5.1.4. Software Deployment Configuration
 <a id="5-1-4-software-deployment-configuration"></a>
 
-En esta sección se describe la configuración de despliegue de los productos digitales publicados hasta el Sprint 2.
+En esta sección se describe la configuración de despliegue de los productos digitales hasta el Sprint 3. Se conserva el despliegue de Vercel como antecedente histórico del Sprint 2.
 
 #### Landing Page — GitHub Pages
 
 El Landing Page de EcoRoad se despliega como sitio web estático mediante **GitHub Pages**, directamente desde su repositorio.
 
-1. Asegurarse de que la rama `main` contiene los archivos del Landing Page (`index.html`, carpetas `css/`, `js/`, `assets/`).
+1. Asegurarse de que la rama `main` contiene `index.html` y la carpeta `assets/` del Landing Page.
 2. Ingresar al repositorio en GitHub y navegar a **Settings > Pages**.
 3. En la sección **Source**, seleccionar la rama `main` y la carpeta `/ (root)`.
 4. Hacer clic en **Save**. GitHub Pages genera automáticamente la URL de despliegue.
@@ -156,7 +154,7 @@ Cualquier push a la rama `main` actualiza automáticamente el sitio desplegado.
 
 #### Frontend Web Application — Vercel
 
-La Web Application de EcoRoad (Vue 3 + Vite) se despliega en **Vercel**, conectado al repositorio `EcoRoad-FrontEnd`.
+La primera versión de la Web Application de EcoRoad (Vue 3 + Vite) se desplegó en **Vercel**, conectado al repositorio `EcoRoad-FrontEnd`. Esta configuración corresponde al Sprint 2 y no a la versión integrada actual.
 
 1. Ingresar a https://vercel.com/ con la cuenta de GitHub del equipo y seleccionar **Add New > Project**.
 2. Importar el repositorio `Aplicaciones-Web-1ASI0730-2620-8130/EcoRoad-FrontEnd`.
@@ -164,6 +162,10 @@ La Web Application de EcoRoad (Vue 3 + Vite) se despliega en **Vercel**, conecta
 4. El archivo `vercel.json` del repositorio define las reglas de *rewrite*: las rutas `/api/*` se dirigen a la función serverless `api/index.js`, que expone la Fake API, y el resto de rutas se dirige a `index.html` para que Vue Router resuelva la navegación de la SPA.
 5. Hacer clic en **Deploy**. Vercel construye la aplicación y publica la URL https://ecoroad-frontend-ddli-peach.vercel.app/
 6. Cada push a la rama configurada genera un nuevo despliegue de forma automática.
+
+#### Versión integrada — Railway
+
+En el Sprint 3 se publicaron servicios separados para el frontend Vue, el backend ASP.NET Core y MySQL en el entorno `production` de Railway. El backend se construye con el `Dockerfile` del repositorio y recibe la conexión a la base de datos mediante `ConnectionStrings__DefaultConnection`, cuyo valor no se incluye en el informe. El frontend público utiliza el backend real. La Landing Page en GitHub Pages apunta a `https://ecoroad-frontend-production.up.railway.app` mediante `assets/app-config.js`. La evidencia visual y las direcciones de los servicios se presentan en 5.2.3.7.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 <a id="5-2-landing-page-services-applications-implementation"></a>
@@ -629,13 +631,13 @@ El historial del backend registra Pull Requests de integración y trabajo por co
 
 El principal aprendizaje técnico fue que el funcionamiento local o con Fake API no garantizaba el comportamiento en producción: fue necesario verificar la persistencia en MySQL, los contratos HTTP reales y las redirecciones entre la Landing Page y la aplicación desplegada.
 
-## 5.3. Product Validation
-<a id="5-3-product-validation"></a>
+## 5.3. Validation Interviews
+<a id="5-3-validation-interviews"></a>
 
 Esta sección queda preparada para documentar entrevistas de validación de la versión integrada de EcoRoad. Las preguntas son una guía semiestructurada: el entrevistador puede pedir ejemplos y profundizar en las respuestas. Ninguna entrevista ni conclusión se considera realizada hasta incorporar su registro y evidencia.
 
-### 5.3.1. Objetivo y participantes
-<a id="5-3-1-objetivo-y-participantes"></a>
+### 5.3.1. Diseño de Entrevistas
+<a id="5-3-1-diseno-de-entrevistas"></a>
 
 **Objetivo:** evaluar si EcoRoad ayuda a registrar proyectos viales, organizar el monitoreo ambiental, interpretar alertas, atender incidencias y preparar evidencia para reportes. También se busca identificar dificultades de uso y funciones faltantes antes de proponer mejoras.
 
@@ -646,8 +648,7 @@ Esta sección queda preparada para documentar entrevistas de validación de la v
 
 **Datos por completar antes de entrevistar:** número y criterio de selección de participantes; fechas; modalidad; duración; entrevistador; vínculo del participante con el proceso; método de consentimiento y autorización para grabar o citar. Usar códigos como `E01` en el informe y registrar datos personales solo cuando sea necesario y exista autorización.
 
-### 5.3.2. Protocolo de entrevista
-<a id="5-3-2-protocolo-de-entrevista"></a>
+#### Protocolo de entrevista
 
 1. Explicar que se evalúa el producto, que no hay respuestas correctas y que la participación es voluntaria. Solicitar consentimiento para tomar notas y, por separado, para grabar.
 2. Preguntar por la práctica actual del participante antes de mostrar EcoRoad.
@@ -657,8 +658,7 @@ Esta sección queda preparada para documentar entrevistas de validación de la v
 
 **Tareas sugeridas para la prueba:** llegar desde la Landing Page al registro o inicio de sesión; encontrar el proyecto vial y su tramo; localizar un punto o sensor; interpretar una lectura PM10 y una alerta; revisar una incidencia y su acción correctiva; encontrar las fuentes de un reporte ambiental. Si alguna tarea requiere modificar datos de producción, usar un registro de demostración acordado y anotarlo en el acta.
 
-### 5.3.3. Guía de preguntas
-<a id="5-3-3-guia-de-preguntas"></a>
+#### Guía de preguntas
 
 **Contexto del participante**
 
@@ -684,8 +684,8 @@ Esta sección queda preparada para documentar entrevistas de validación de la v
 
 **Repreguntas opcionales por perfil:** a constructoras, consultar por varios proyectos, responsables y seguimiento de frentes; a supervisores ambientales, consultar por trazabilidad de mediciones, criterios de umbral, evidencias de campo y requisitos del reporte. No sugerir que la aplicación certifica cumplimiento normativo: el PDF actual resume identificadores y cantidades y no incorpora firma criptográfica verificada.
 
-### 5.3.4. Registro de cada entrevista
-<a id="5-3-4-registro-de-cada-entrevista"></a>
+### 5.3.2. Registro de Entrevistas
+<a id="5-3-2-registro-de-entrevistas"></a>
 
 Repetir esta ficha por participante, sin sustituir sus respuestas por una interpretación del equipo:
 
@@ -702,8 +702,7 @@ Repetir esta ficha por participante, sin sustituir sus respuestas por una interp
 | Citas autorizadas | `[pendiente; entrecomillar solo palabras efectivamente pronunciadas]` |
 | Evidencia | `[enlace a notas, audio o video autorizado; conservar fuera del repositorio si contiene datos personales]` |
 
-### 5.3.5. Síntesis y decisiones de producto
-<a id="5-3-5-sintesis-y-decisiones-de-producto"></a>
+#### Síntesis y decisiones de producto
 
 Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. Indicar cuántos participantes mencionaron cada punto y distinguir lo observado durante una tarea de lo declarado en una respuesta. Evitar porcentajes con muestras pequeñas o no representativas.
 
@@ -712,3 +711,28 @@ Después de realizar las entrevistas, resumir los hallazgos por tema y perfil. I
 | `[pendiente]` | `[códigos E01…, cita u observación]` | `[pendiente]` | `[pendiente]` | `[pendiente]` |
 
 **Conclusión de validación:** `[pendiente de entrevistas y análisis; describir qué hipótesis se apoyan, cuáles no y qué se probará después]`.
+
+### 5.3.3. Evaluaciones según heurísticas
+<a id="5-3-3-evaluaciones-segun-heuristicas"></a>
+
+**Estado:** pendiente de evaluación. Se propone revisar la versión desplegada de EcoRoad con las diez heurísticas de usabilidad de Nielsen, indicando evaluador, fecha, ruta y tarea observada. Cada hallazgo debe incluir captura o descripción reproducible, heurística afectada, gravedad, propuesta de corrección y resultado de una nueva revisión. No se asigna aquí una calificación global ni se afirma que la evaluación ya se realizó.
+
+| ID | Pantalla y tarea | Heurística | Hallazgo verificable | Gravedad (0–4) | Mejora propuesta | Estado |
+|:---|:---|:---|:---|:---:|:---|:---|
+| `[H01]` | `[ruta y tarea]` | `[heurística]` | `[observación y evidencia]` | `[pendiente]` | `[pendiente]` | `[pendiente]` |
+
+Como recorrido mínimo, evaluar el paso de la Landing Page al registro, la creación de empresa y proyecto, la comprensión de PK y umbrales, la captura de mediciones, la atención de alertas e incidencias y la generación de reportes. Registrar también hallazgos positivos, errores de validación y restricciones conocidas de la versión actual.
+
+## 5.4. Video About-the-Product
+<a id="5-4-video-about-the-product"></a>
+
+**Estado:** pendiente de producción y publicación. El video debe mostrar la versión integrada y publicada de EcoRoad, con un recorrido verificable desde la Landing Page hasta la aplicación: registro o acceso de demostración, proyecto y tramo, monitoreo y sensores, alerta e incidencia, y reporte ambiental. Usar datos ficticios y ocultar contraseñas, tokens y cadenas de conexión.
+
+- **Enlace público del video:** `[pendiente]`
+- **Fecha de publicación y responsables:** `[pendiente]`
+- **Guion o minutaje por funcionalidad:** `[pendiente]`
+- **Evidencia de versión mostrada (URL o commit):** `[pendiente]`
+
+## Conclusiones
+
+`[Redactar después de completar las entrevistas, la evaluación heurística y el video. Distinguir funcionalidades implementadas de resultados de validación con participantes y de limitaciones pendientes.]`
