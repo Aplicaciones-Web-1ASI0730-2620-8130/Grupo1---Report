@@ -302,7 +302,7 @@ La sección "About Team" presenta al equipo detrás de la plataforma bajo el tí
 La sección "Our Team" presenta a los integrantes del proyecto bajo el título "Meet the multidisciplinary team behind EcoRoad's environmental telemetry platform". Organiza los perfiles en tarjetas individuales que incluyen fotografía, como Software Engineers y una breve descripción profesional centrada en sus habilidades de desarrollo y contribución a la plataforma. Justo debajo, la sección concluye con un banner final de conversión enfocado en la transformación de la sostenibilidad ambiental, ofreciendo botones directos para iniciar o agendar una sesión con un especialista.
 
 <div align="center">
-  <img src="../assets/images/chapter4/ourteam.png" alt="Paso 4">
+  <img src="../assets/images/chapter4/ourteam.jpeg" alt="Paso 4">
 </div>
 
 **Footer**
