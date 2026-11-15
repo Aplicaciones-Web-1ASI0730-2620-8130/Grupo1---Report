@@ -181,23 +181,43 @@ Creemos que lograremos una gestión más eficiente de carteras de múltiples pro
 #### 1.2.2.4. Lean UX Canvas
 <a id="1-2-2-4-lean-ux-canvas"></a>
 
-| **1. Business Problems** | **2. Business Outcomes** | **3. Users** | **4. User Outcomes** |
-| :--- | :--- | :--- | :--- |
-| • Registro manual y disperso de indicadores ambientales en proyectos viales.<br>• Falta de visibilidad en tiempo real y detección tardía de superaciones normativas.<br>• Exposición a sanciones severas (OEFA/MTC) y procesos de auditoría lentos y costosos.<br>• Desconfianza estructural entre empresas constructoras y supervisoras. | • Incremento en la adquisición de suscripciones corporativas (planes Profesional y Enterprise).<br>• Reducción medible en el tiempo promedio de detección de incumplimientos normativos.<br>• Aumento en la tasa de renovación y retención de clientes tras el primer ciclo.<br>• Mayor volumen de proyectos gestionados por cliente en simultáneo. | • Responsables de gestión ambiental e ingenieros residentes de obra.<br>• Supervisores de campo de empresas constructoras viales.<br>• Auditores y consultores ambientales registrados en el RNCA (SENACE).<br>• Gerentes de cartera y PMO corporativa. | • Identifican incidencias antes de que escalen a multas o paralizaciones.<br>• Reducen el tiempo operativo dedicado a consolidar planillas y reportes en papel.<br>• Generan expedientes de auditoría con datos inalterables y trazables.<br>• Perciben una herramienta que agiliza su trabajo diario en campo y oficina. |
-
-| **5. Solutions** | **6. Hypotheses** | **7. Features** | **8. Channel & Cost / Revenue** |
-| :--- | :--- | :--- | :--- |
-| • Plataforma SaaS centralizada en la nube con arquitectura orientada a servicios.<br>• Módulo web responsive para registro de telemetría de campo y puntos de control.<br>• Motor automatizado de evaluación de umbrales normativos y alertas tempranas.<br>• Tableros geolocalizados y Kanban de incidencias con evidencia fotográfica. | • **Visualización:** Si los responsables obtienen visibilidad geolocalizada en tiempo real, lograremos una detección más temprana.<br>• **Reporteo:** Si las consultoras usan el reporte automático, reduciremos el tiempo y costo de auditorías.<br>• **Estandarización:** Si el sistema emite alertas automáticas, lograremos una respuesta más rápida ante incumplimientos.<br>• **Optimización:** Si la PMO ve un mapa consolidado, gestionará su cartera de proyectos eficientemente. | • Tableros geolocalizados en tiempo real por punto de monitoreo ambiental.<br>• Generador automático de reportes de auditoría en formato PDF.<br>• Sistema de alertas tempranas con tickets de incidencia vinculados.<br>• Dashboard de control multi-proyecto y gestión de roles (RBAC). | • **Canales:** Alianzas estratégicas con CAPECO, prospección B2B y marketing digital para gerentes de proyectos viales.<br>• **Estructura de costos:** Desarrollo de software, infraestructura cloud (servidores/API) y logística de sensores IoT en comodato (HaaS).<br>• **Modelo de ingresos:** Suscripción dual SaaS/HaaS escalable (planes Base, Profesional y Enterprise). |
+![Lean UX Canvas](assets/images/chapter1/LeanUxCanvas.png)
 
 ## 1.3 Segmentos Objetivos
 <a id="1-3-segmentos-objetivos"></a>
 
-EcoRoad está dirigida a dos segmentos B2B específicos relacionados con la ejecución, mejora y conservación de la infraestructura vial[cite: 3]:
+EcoRoad está dirigida a dos segmentos B2B específicos relacionados con la ejecución, mejora y conservación de la infraestructura vial:
 
 ### Segmento 1: Empresas constructoras viales
 
-Son empresas encargadas de ejecutar proyectos de construcción de carreteras y otras obras de infraestructura vial, representadas por sus equipos de operaciones y residentes de obra. Utilizarán EcoRoad para monitorear el impacto ambiental generado por sus actividades, identificar riesgos y gestionar oportunamente las incidencias ambientales que puedan presentarse durante la ejecución de sus proyectos. La plataforma les permitirá administrar múltiples proyectos desde una misma cuenta, visualizar el estado ambiental de cada uno y realizar seguimiento de las alertas, incidencias y acciones correctivas correspondientes.
+Características demográficas:
+
+* Edad: Entre 27 y 50 años.
+* Género: Indistinto (con mayor representación masculina en puestos de campo).
+* Ocupación: Gerentes de proyecto, Ingenieros Residentes, Jefes de Supervisión y Responsables/Especialistas en Gestión Ambiental.
+* Nivel educativo: Profesionales titulados y colegiados en Ingeniería Civil, Ingeniería Ambiental o Ingeniería de la Construcción, idealmente con especializaciones en gestión de proyectos o regulación ambiental.
+* Ubicación geográfica: Sedes centrales principalmente en Lima Metropolitana, con operaciones de campo descentralizadas en toda la red vial nacional del Perú.
+
+Información estadística de sustento:
+
+De acuerdo con la Cámara Peruana de la Construcción (CAPECO), la inversión en infraestructura pública representa uno de los motores más dinámicos del país, donde los proyectos viales (carreteras, puentes, vías urbanas) concentran más del 40% del presupuesto de inversión pública asignado a transportes.
+
+A nivel normativo en el Perú, el Ministerio de Transportes y Comunicaciones (MTC) y el OEFA exigen el cumplimiento estricto de los Estudios de Impacto Ambiental (EIA). Las penalidades por infracciones ambientales en obras viales pueden superar las 100 UIT, lo que genera una necesidad crítica de supervisión en tiempo real para mitigar sobrecostos por paralizaciones o multas.
+
 
 ### Segmento 2: Empresas de mantenimiento y rehabilitación vial
 
-Son empresas encargadas de realizar actividades de conservación, mejora y rehabilitación de vías de transporte terrestre existentes[cite: 3]. Utilizarán EcoRoad para supervisar las condiciones ambientales durante sus operaciones en campo y gestionar los riesgos específicos asociados a estas labores[cite: 3]. Al igual que las constructoras, podrán centralizar la información ambiental y el control de diferentes proyectos y frentes de trabajo desde una sola plataforma SaaS[cite: 3].
+Características demográficas:
+* Edad: Entre 24 y 48 años.
+* Género: Indistinto.
+* Ocupación: Supervisores de mantenimiento vial, Coordinadores de Seguridad y Medio Ambiente y personal técnico de campo.
+* Nivel educativo: Bachilleres o licenciados en Ingeniería Ambiental, Ingeniería Civil, Ingeniería Geográfica o técnicos especializados en conservación vial.
+* Ubicación geográfica: Zonas de influencia de los principales corredores viales y concesiones nacionales (Costa, Sierra y Selva del Perú).
+
+Información estadística de sustento:
+
+El Índice de Digitalización de McKinsey & Company posiciona al sector de la construcción e infraestructura en el penúltimo lugar de adopción tecnológica entre 22 industrias evaluadas a nivel global, arrastrando una alta dependencia de bitácoras en papel y reportes manuales en Excel.
+
+Según el Organismo Supervisor de la Inversión en Infraestructura de Transporte de Uso Público (Ositran), el Perú cuenta con miles de kilómetros de carreteras concesionadas que requieren mantenimiento rutinario y periódico obligatorio. La falta de reportes inmediatos de incidencias en estas áreas remotas incrementa los tiempos de respuesta ante desastres ambientales (como derrumbes o contaminación de cuencas) en hasta un 300%.
+
+El uso de herramientas móviles y tecnologías en la nube para la gestión de activos y monitoreo ambiental en campo ha demostrado reducir el tiempo de recolección de datos en un 45% y mejorar el cumplimiento de compromisos socioambientales ante fiscalizaciones del Estado.
